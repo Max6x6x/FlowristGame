@@ -115,6 +115,18 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
 .search { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 .search input { flex: 2 1 220px; height: 44px; border: 0; border-radius: var(--r-s); background: var(--card); padding: 0 14px; font-weight: 600; box-shadow: var(--shadow); outline: none; }
 .search select { flex: 1 1 180px; height: 44px; }
+.stats h2 { margin: 0; font-size: 20px; font-weight: 800; }
+.stats .sum { color: var(--ink-2); font-size: 14px; margin: 2px 0 8px; }
+.statrows { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 4px 20px; }
+.stat { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; align-items: center; border: 0; background: none; text-align: left; padding: 8px 6px; border-radius: 12px; }
+.stat:hover { background: var(--ground); }
+.stat .n { font-weight: 600; font-size: 14px; line-height: 1.3; }
+.stat .v { font-weight: 800; font-size: 14px; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.stat .roundbar { grid-column: 1 / -1; flex: none; height: 6px; }
+.thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
+.thumb { position: relative; }
+.thumb img { width: 84px; height: 84px; object-fit: cover; border-radius: 12px; display: block; }
+.thumb button { position: absolute; top: -6px; right: -6px; width: 28px; height: 28px; border-radius: 14px; border: 0; background: var(--bad); color: #fff; display: grid; place-items: center; }
 .count { color: var(--ink-2); font-size: 14px; margin: 10px 4px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(156px, 1fr)); gap: 10px; }
 .tile { background: var(--card); border: 0; border-radius: var(--r-m); overflow: hidden; padding: 0; text-align: left; box-shadow: var(--shadow); }
@@ -182,6 +194,7 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
 
   <!-- LIST -->
   <section id="list" class="hidden">
+    <div class="panel stats" id="stats" style="margin-top:10px"></div>
     <div class="search">
       <input id="lQ" type="search" placeholder="Keresés latin vagy magyar névre…" aria-label="Keresés">
       <select id="lCat" aria-label="Kategória"></select>
@@ -276,8 +289,11 @@ function hintText(name, level) {
   return name.trim().split(/\s+/).map(w => [...w].map(c => !/\p{L}/u.test(c) ? c : shown-- > 0 ? c : "_").join(" ")).join("   ");
 }
 
-// ---------- spaced repetition (Leitner boxes 0..5, per device) ----------
+// ---------- spaced repetition (Leitner boxes 0..5; stamps = last answer time, for syncing) ----------
 let boxes = store.get("boxes", {});
+let stamps = store.get("stamps", {});
+const isWeak = id => boxes[id] !== undefined && boxes[id] <= 1;
+const isLearned = id => (boxes[id] ?? 0) >= 3;
 function pick(pool, avoidId) {
   const cands = pool.length > 1 ? pool.filter(p => p.id !== avoidId) : pool;
   const w = cands.map(p => 2 ** (5 - (boxes[p.id] ?? 0)));
@@ -289,8 +305,48 @@ function grade(id, results, hints) {
   const b = boxes[id] ?? 0;
   const clean = results.every(r => r === "ok") && hints < 2;
   boxes[id] = clean ? Math.min(5, b + 1) : results.includes("bad") ? 0 : b;
-  store.set("boxes", boxes);
+  stamps[id] = Date.now();
+  store.set("boxes", boxes); store.set("stamps", stamps);
+  progDirty = true;
 }
+
+// ---------- progress sync: progress.json on the "progress" branch (no Pages rebuilds), only with a token ----------
+let progSha = null, progDirty = false;
+const fromB64 = b => new TextDecoder().decode(Uint8Array.from(atob(b.replace(/\n/g, "")), c => c.charCodeAt(0)));
+function mergeProgress(remote) {
+  for (const [id, t] of Object.entries(remote.stamps || {})) {
+    if ((stamps[id] ?? 0) < t) { boxes[id] = remote.boxes[id]; stamps[id] = t; }
+  }
+  // anything newer here than there needs pushing
+  progDirty = progDirty || Object.entries(stamps).some(([id, t]) => (remote.stamps?.[id] ?? 0) < t);
+  store.set("boxes", boxes); store.set("stamps", stamps);
+}
+async function pullProgress() {
+  if (!tok()) return;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${REPO}/contents/progress.json?ref=progress`,
+      { cache: "no-store", headers: { Authorization: `Bearer ${tok()}`, Accept: "application/vnd.github+json" } });
+    if (r.status === 404) { progDirty = progDirty || Object.keys(stamps).length > 0; return; }
+    if (!r.ok) return;
+    const j = await r.json();
+    progSha = j.sha;
+    mergeProgress(JSON.parse(fromB64(j.content)));
+  } catch {}
+}
+async function pushProgress() {
+  if (!tok() || !progDirty) return;
+  progDirty = false;
+  const content = bytesToB64(new TextEncoder().encode(JSON.stringify({ boxes, stamps })));
+  try {
+    const r = await gh("progress.json", { method: "PUT", body: JSON.stringify({ message: "Haladás mentése", content, branch: "progress", ...(progSha ? { sha: progSha } : {}) }) });
+    progSha = r.content.sha;
+  } catch {
+    progDirty = true;
+    await pullProgress(); // probably saved from another device meanwhile: merge, retry next tick
+  }
+}
+setInterval(pushProgress, 60000);
+document.addEventListener("visibilitychange", () => document.hidden ? pushProgress() : pullProgress());
 
 // ---------- settings + today counter ----------
 const settings = Object.assign({ mode: "both", cat: "", round: "0" }, store.get("settings", {}));
@@ -304,9 +360,13 @@ const renderToday = () => { $("#today").textContent = `ma ${today.ok} / ${today.
 let round = null;   // { size, items: [], answers: [] } when a fixed-length round is running
 let current = null; // { p, hints, done, results }
 let lastId = null;
+const WEAK = "__weak";
 function pool() {
-  return plants.filter(p => p.image && (!settings.cat || p.categories.includes(settings.cat)) && (settings.mode !== "hu" || p.hu));
+  return plants.filter(p => p.image && (settings.mode !== "hu" || p.hu) &&
+    (!settings.cat || (settings.cat === WEAK ? isWeak(p.id) : p.categories.includes(settings.cat))));
 }
+// primary photo plus extra iNaturalist photos; one is chosen at random per question
+const photosOf = p => [{ image: p.image, credit: p.credit }, ...(p.more || [])].filter(x => x.image);
 function startRound() {
   const size = +settings.round;
   round = size ? { size, items: [...pool()].sort(() => Math.random() - .5).slice(0, size), answers: [] } : null;
@@ -318,13 +378,15 @@ function next() {
   if (!pl.length) { current = null; return renderPlay(); }
   const p = round ? round.items[round.answers.length] : pick(pl, lastId);
   lastId = p.id;
-  current = { p, hints: 0, done: false, results: [] };
+  const ph = photosOf(p);
+  current = { p, photo: ph[Math.floor(Math.random() * ph.length)], hints: 0, done: false, results: [] };
   renderPlay();
 }
 function controlsHtml() {
   const seg = [["lat", "Latin"], ["hu", "Magyar"], ["both", "Mindkettő"]]
     .map(([v, t]) => `<button data-mode="${v}" aria-pressed="${settings.mode === v}">${t}</button>`).join("");
-  const cats = `<option value="">Minden kategória</option>` + categories().map(c => `<option${c === settings.cat ? " selected" : ""}>${esc(c)}</option>`).join("");
+  const weak = plants.filter(p => p.image && isWeak(p.id)).length;
+  const cats = `<option value="">Minden kategória</option><option value="${WEAK}"${settings.cat === WEAK ? " selected" : ""}>Csak a hibásak (${weak})</option>` + categories().map(c => `<option${c === settings.cat ? " selected" : ""}>${esc(c)}</option>`).join("");
   const rounds = [["0", "Folyamatos"], ["20", "20-as kör"], ["50", "50-es vizsgakör"]]
     .map(([v, t]) => `<option value="${v}"${v === settings.round ? " selected" : ""}>${t}</option>`).join("");
   return `<div class="controls"><div class="seg" role="group" aria-label="Mit írjak?">${seg}</div>
@@ -338,7 +400,8 @@ function bindControls() {
 function renderPlay() {
   const area = $("#playArea");
   if (!current) {
-    area.innerHTML = `<div class="panel">${controlsHtml()}<p class="empty">Ebben a kategóriában még nincs képes növény.</p></div>`;
+    const why = settings.cat === WEAK ? "Most nincs hibás növényed. Gyakorolj tovább, és amit elrontasz, itt jön vissza." : "Ebben a kategóriában még nincs képes növény.";
+    area.innerHTML = `<div class="panel">${controlsHtml()}<p class="empty">${why}</p></div>`;
     return bindControls();
   }
   const { p } = current;
@@ -355,7 +418,7 @@ function renderPlay() {
   area.innerHTML = `
     ${controlsHtml()}
     <div class="photo">
-      <img src="${esc(p.image)}" alt="Felismerendő növény" id="pImg">
+      <img src="${esc(current.photo.image)}" alt="Felismerendő növény" id="pImg">
       ${prog}
       <button class="zoom" id="pZoom" aria-label="Kép nagyítása">${ICON.zoom}</button>
     </div>
@@ -370,7 +433,9 @@ function renderPlay() {
       <div id="pSolution"></div>
     </div>`;
   bindControls();
-  $("#pImg").onclick = $("#pZoom").onclick = () => openViewer(p.image);
+  // an extra (hotlinked) photo that fails to load falls back to the photo stored in the repo
+  $("#pImg").onerror = () => { if (current.photo.image !== p.image) { current.photo = photosOf(p)[0]; $("#pImg").src = p.image; } };
+  $("#pImg").onclick = $("#pZoom").onclick = () => openViewer(current.photo.image);
   $("#pHint").onclick = hint;
   $("#pCheck").onclick = () => current.done ? next() : reveal();
   const inputs = [...area.querySelectorAll(".field input")];
@@ -416,19 +481,19 @@ function reveal() {
   today.n++; if (results.every(r => r === "ok")) today.ok++;
   store.set("today", today); renderToday();
   if (round) round.answers.push({ p, results, hints: current.hints });
-  $("#pSolution").innerHTML = solutionHtml(p);
+  $("#pSolution").innerHTML = solutionHtml(p, current.photo.credit);
   $("#pHint").disabled = true;
   $("#pCheck").textContent = round && round.answers.length >= round.items.length ? "Eredmény" : "Következő";
   $("#pCheck").focus();
 }
-function solutionHtml(p) {
+function solutionHtml(p, credit) {
   return `<div class="solution">
     <div class="lat">${esc(p.latin)}</div>
     <div class="hu">${esc(p.hu) || '<span class="muted">nincs magyar név megadva</span>'}</div>
     ${p.verify ? '<div class="flag">Automatikusan talált név — az Adminban ellenőrizd</div>' : ""}
     ${p.aliases?.length ? `<div class="meta">Más néven: ${esc(p.aliases.join(", "))}</div>` : ""}
     ${p.note ? `<div class="meta">${esc(p.note)}</div>` : ""}
-    <div class="meta">${esc(p.categories.join(" · "))}${p.credit ? ` · Kép: ${esc(p.credit)}` : ""}</div>
+    <div class="meta">${esc(p.categories.join(" · "))}${credit ? ` · Kép: ${esc(credit)}` : ""}</div>
   </div>`;
 }
 function summary() {
@@ -443,6 +508,7 @@ function summary() {
       <img src="${esc(a.p.image)}" alt=""><div class="t"><i>${esc(a.p.latin)}</i><small>${esc(a.p.hu)}</small></div></div>`).join("")}</div>` : '<p class="empty">Mind hibátlan!</p>'}
   </div>`;
   $("#sAgain").onclick = startRound;
+  pushProgress();
 }
 
 // ---------- zoom viewer: tap to zoom at that point, drag to pan ----------
@@ -461,7 +527,22 @@ $("#viewerClose").onclick = () => viewer.close();
 
 // ---------- list ----------
 function categories() { return [...new Set(plants.flatMap(p => p.categories))]; }
+// progress per category: learned = 3+ clean answers in a row (Leitner box >= 3)
+function renderStats() {
+  const withImg = plants.filter(p => p.image);
+  const learned = withImg.filter(p => isLearned(p.id)).length, weak = withImg.filter(p => isWeak(p.id)).length;
+  const rows = categories().map(c => {
+    const ps = withImg.filter(p => p.categories.includes(c)), l = ps.filter(p => isLearned(p.id)).length;
+    return { c, l, n: ps.length };
+  }).filter(r => r.n);
+  $("#stats").innerHTML = `<h2>Haladás</h2>
+    <p class="sum">${learned} / ${withImg.length} növényt tudsz · ${weak} hibás vár ismétlésre · koppints egy kategóriára a gyakorláshoz</p>
+    <div class="statrows">${rows.map(r => `<button class="stat" data-cat="${esc(r.c)}">
+      <span class="n">${esc(r.c)}</span><span class="v">${r.l} / ${r.n}</span>
+      <span class="roundbar" aria-hidden="true"><div style="width:${r.l / r.n * 100}%"></div></span></button>`).join("")}</div>`;
+}
 function renderList() {
+  renderStats();
   const q = deacc(norm($("#lQ").value)), cat = $("#lCat").value;
   const rows = plants.filter(p => (!cat || p.categories.includes(cat)) &&
     (!q || deacc(norm([p.latin, p.hu, ...(p.aliases || [])].join(" "))).includes(q)));
@@ -512,12 +593,15 @@ function renderAdminList() {
 }
 function openEditor(id) {
   const p = plants.find(x => x.id === id);
-  let newImg = null;
+  let newImg = null, addImg = null, more = [...(p.more || [])];
   const el = $("#aEdit");
   el.classList.remove("hidden");
   el.innerHTML = `
     <div class="photo" id="ePhoto">${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.latin)}">` : '<p class="empty">Nincs kép — tölts fel egyet lent.</p>'}</div>
-    <label for="eFile">Kép cseréje</label><input type="file" accept="image/*" id="eFile">
+    <label for="eFile">Fő kép cseréje</label><input type="file" accept="image/*" id="eFile">
+    <label>További képek (gyakorlásnál véletlenszerűen váltakoznak)</label>
+    <div class="thumbs" id="eMore"></div>
+    <label for="eAdd">Kép hozzáadása</label><input type="file" accept="image/*" id="eAdd">
     <label for="eLat">Latin név</label><input type="text" id="eLat" value="${esc(p.latin)}" spellcheck="false">
     <label for="eHu">Hivatalos magyar név</label><input type="text" id="eHu" value="${esc(p.hu)}" spellcheck="false">
     <label for="eAli">Más elfogadott nevek (vesszővel)</label><input type="text" id="eAli" value="${esc((p.aliases || []).join(", "))}" spellcheck="false">
@@ -527,6 +611,15 @@ function openEditor(id) {
     <p class="msg" id="eMsg" aria-live="polite"></p>`;
   el.scrollIntoView({ behavior: "smooth", block: "start" });
   $("#eFile").onchange = async e => { if (!e.target.files[0]) return; newImg = await resizeToJpeg(e.target.files[0]); $("#ePhoto").innerHTML = `<img src="${newImg.url}" alt="Új kép">`; };
+  const drawMore = () => {
+    $("#eMore").innerHTML = more.map((m, i) => `<div class="thumb"><img src="${esc(m.image)}" alt="További kép ${i + 1}">
+      <button data-i="${i}" aria-label="Kép ${i + 1} törlése"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>`).join("")
+      + (addImg ? `<div class="thumb"><img src="${addImg.url}" alt="Új kép"></div>` : "")
+      || '<p class="muted">Nincs további kép.</p>';
+  };
+  drawMore();
+  $("#eMore").onclick = e => { const b = e.target.closest("button[data-i]"); if (b) { more.splice(+b.dataset.i, 1); drawMore(); } };
+  $("#eAdd").onchange = async e => { if (!e.target.files[0]) return; addImg = await resizeToJpeg(e.target.files[0]); drawMore(); };
   $("#eClose").onclick = () => el.classList.add("hidden");
   $("#eSave").onclick = async () => {
     const msg = t => $("#eMsg").textContent = t;
@@ -544,6 +637,13 @@ function openEditor(id) {
         await gh(path, { method: "PUT", body: JSON.stringify({ message: `Kép csere: ${patch.latin}`, content: newImg.b64 }) });
         Object.assign(patch, { image: path, credit: "Saját feltöltés" });
       }
+      if (addImg) {
+        msg("Kép feltöltése…");
+        const path = `images/${crypto.randomUUID().slice(0, 12)}.jpg`;
+        await gh(path, { method: "PUT", body: JSON.stringify({ message: `Új kép: ${patch.latin}`, content: addImg.b64 }) });
+        more.push({ image: path, credit: "Saját feltöltés" });
+      }
+      if (JSON.stringify(more) !== JSON.stringify(p.more || [])) patch.more = more;
       msg("Mentés…");
       // merge into the latest committed data.json so edits made on another device aren't lost
       const { sha, data } = await getDataFile();
@@ -558,6 +658,7 @@ function openEditor(id) {
       pending[p.id] = { patch, at: Date.now() };
       store.set("pending", pending);
       if (newImg) p.image = newImg.url;
+      addImg = null; drawMore();
       msg("Mentve. A többi eszközön 1–2 perc múlva látszik.");
       renderAdminList();
     } catch (e) { msg("Nem sikerült: " + e.message); }
@@ -616,9 +717,16 @@ function applyPending(list) {
 fetch("data.json?v=" + Date.now()).then(r => r.json()).then(d => {
   plants = applyPending(d);
   renderTokenState();
+  pullProgress();
   $("#lCat").innerHTML = `<option value="">Minden kategória (${plants.length})</option>` + categories().map(c => `<option>${esc(c)}</option>`).join("");
   $("#lQ").oninput = $("#lCat").onchange = renderList;
   $("#aQ").oninput = $("#aFilter").onchange = renderAdminList;
+  $("#stats").onclick = e => {
+    const s = e.target.closest(".stat");
+    if (!s) return;
+    settings.cat = s.dataset.cat; settings.round = "0"; saveSettings();
+    showTab("play"); startRound(); window.scrollTo(0, 0);
+  };
   $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t && tok()) { showTab("admin"); openEditor(t.dataset.id); } };
   $("#aList").onclick = e => { const t = e.target.closest(".row"); if (t) openEditor(t.dataset.id); };
   renderToday();
