@@ -1098,8 +1098,8 @@ function openEditor(id) {
       pending[p.id] = { patch, at: Date.now() };
       store.set("pending", pending);
       if (newImg) p.image = newImg.url;
-      addImg = null; drawMore();
-      msg("Mentve. A többi eszközön 1–2 perc múlva látszik.");
+      el.classList.add("hidden");
+      toast(`<span>Mentve: <i>${esc(p.latin)}</i>. A többi eszközön 1–2 perc múlva látszik.</span>`);
       renderAdminList();
     } catch (e) { msg("Nem sikerült: " + e.message); }
     finally { $("#eSave").disabled = false; }
