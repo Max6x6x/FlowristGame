@@ -136,6 +136,40 @@ select { flex: 1; min-width: 0; height: 40px; border: 0; border-radius: var(--r-
 .flag { color: var(--almost); font-weight: 700; font-size: 13px; }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
 
+/* ---------- motion: the reveal is the authored moment; everything else is feedback or continuity ---------- */
+:root { --ease-out: cubic-bezier(.16, 1, .3, 1); }
+/* verdict line settles in under each field */
+.verdict:not(:empty) { animation: settle .32s var(--ease-out) both; }
+.field:nth-of-type(2) .verdict:not(:empty) { animation-delay: .08s; }
+@keyframes settle { from { opacity: 0; transform: translateY(-4px); } }
+/* the field fills with its verdict colour from the left, like ink soaking in */
+.field.ok input, .field.almost input, .field.bad input { animation: soak .45s var(--ease-out) both; }
+@keyframes soak { from { background-position: 100% 0; } }
+.field.ok input { background: linear-gradient(90deg, var(--go-soft) 50%, var(--card) 50%) 0 0 / 200% 100%; }
+.field.almost input { background: linear-gradient(90deg, var(--almost-soft) 50%, var(--card) 50%) 0 0 / 200% 100%; }
+.field.bad input { background: linear-gradient(90deg, var(--bad-soft) 50%, var(--card) 50%) 0 0 / 200% 100%; }
+/* the wrong letter pops once so the eye lands on it */
+.verdict mark, .exgiven mark { display: inline-block; animation: markpop .5s .25s var(--ease-out) both; }
+@keyframes markpop { 0% { transform: scale(1); } 40% { transform: scale(1.35); } 100% { transform: scale(1); } }
+/* each hint press: the newly revealed letter drops into place */
+.hint .newl { display: inline-block; font-weight: 800; color: var(--go-text); animation: drop .35s var(--ease-out) both; }
+@keyframes drop { from { opacity: 0; transform: translateY(-6px); } }
+/* exam results arrive as a list, capped stagger */
+.exrow { animation: rise .32s var(--ease-out) both; animation-delay: calc(var(--i, 0) * 35ms); }
+/* tile photo grows into the detail photo (View Transitions) */
+::view-transition-group(plant-photo) { animation-duration: .38s; animation-timing-function: var(--ease-out); }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* keep fades and colour (they carry state); drop movement */
+  .verdict:not(:empty), .exrow, .solution, .hint .newl { animation-name: fade; }
+  .verdict mark, .exgiven mark { animation: none; }
+  .field.ok input, .field.almost input, .field.bad input { animation: none; background-position: 0 0; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+  dialog.viewer img, .btn { transition: none; }
+}
+@keyframes fade { from { opacity: 0; } }
+
 /* ---------- zoom overlay ---------- */
 dialog.viewer { padding: 0; border: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; background: #0d0c0b; overflow: hidden; }
 dialog.viewer::backdrop { background: #0d0c0b; }
@@ -528,6 +562,15 @@ function renderPlay() {
   // don't pop the phone keyboard over the photo; on desktop start typing right away
   if (matchMedia("(min-width: 900px)").matches) inputs[0]?.focus();
 }
+// ---------- photo motion: a stepped photo slides in from the step direction; a new plant's photo fades in once loaded ----------
+const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+function arrive(img, dir = 0) {
+  const frames = dir && !reduceMotion()
+    ? [{ opacity: 0, transform: `translateX(${dir * 28}px)` }, { opacity: 1, transform: "none" }]
+    : [{ opacity: 0 }, { opacity: 1 }];
+  const run = () => img.animate(frames, { duration: dir ? 260 : 220, easing: "cubic-bezier(.16, 1, .3, 1)" });
+  if (img.complete && img.naturalWidth) run(); else img.addEventListener("load", run, { once: true });
+}
 // ---------- photo gallery: arrows + dots under the photo, swipe, tap = zoom (practice and detail page) ----------
 function gallery(img, stepEl, photos, idx, onChange) {
   const g = { idx };
@@ -540,25 +583,27 @@ function gallery(img, stepEl, photos, idx, onChange) {
       + `<span class="dots" aria-label="${g.idx + 1}. kép a ${n}-ből">${photos.map((_, i) => `<i${i === g.idx ? ' class="on"' : ""}></i>`).join("")}</span>`
       + arrow(1, "Következő kép", "M9 5l7 7-7 7");
   };
-  g.show = i => {
+  g.show = (i, dir = 0) => {
     const n = photos.length;
     g.idx = ((i % n) + n) % n;
     img.src = photos[g.idx].image;
+    arrive(img, dir);
     draw();
     onChange?.(photos[g.idx]);
   };
-  stepEl.onclick = e => { const b = e.target.closest("[data-step]"); if (b) g.show(g.idx + +b.dataset.step); };
+  stepEl.onclick = e => { const b = e.target.closest("[data-step]"); if (b) g.show(g.idx + +b.dataset.step, +b.dataset.step); };
   // a hotlinked extra photo that fails to load is dropped from the set
   img.onerror = () => { if (photos.length > 1) { photos.splice(g.idx, 1); g.show(g.idx); } };
   // swipe left/right steps; a tap (no swipe) opens the zoom viewer
   let x0 = null, swiped = false;
   img.onpointerdown = e => { x0 = e.clientX; swiped = false; };
   img.onpointerup = e => {
-    if (x0 !== null && Math.abs(e.clientX - x0) > 40 && photos.length > 1) { swiped = true; g.show(g.idx + (e.clientX < x0 ? 1 : -1)); }
+    if (x0 !== null && Math.abs(e.clientX - x0) > 40 && photos.length > 1) { const d = e.clientX < x0 ? 1 : -1; swiped = true; g.show(g.idx + d, d); }
     x0 = null;
   };
   img.onclick = () => { if (!swiped) openViewer(photos[g.idx].image); };
   draw();
+  arrive(img);
   return g;
 }
 function hint() {
@@ -566,7 +611,15 @@ function hint() {
   current.hints++;
   const { p } = current;
   // each word stays on one line; lines may only break between words
-  const show = (el, name) => { if (el) el.innerHTML = hintText(name, current.hints).split("   ").map(w => `<span style="white-space:nowrap">${esc(w)}</span>`).join("   "); };
+  // the letter revealed by this press is marked .newl so it drops into place
+  const show = (el, name) => {
+    if (!el) return;
+    let k = 0;
+    const fresh = current.hints - 2; // index among letters of the newest one (first press reveals none)
+    el.innerHTML = hintText(name, current.hints).split("   ").map(w => `<span style="white-space:nowrap">${
+      w.split(" ").map(c => /\p{L}/u.test(c) && c !== "_" ? (k++ === fresh ? `<b class="newl">${esc(c)}</b>` : esc(c)) : esc(c)).join(" ")
+    }</span>`).join("   ");
+  };
   show($("#h-lat"), p.latin.replace(/\s*\([^)]*\)|\s*\/.*$/g, ""));
   show($("#h-hu"), p.hu);
   $("#pHintN").textContent = current.hints;
@@ -699,7 +752,7 @@ function examQuestion() {
   const area = $("#examArea"), n = exam.answers.length, total = exam.items.length;
   if (n >= total) return examResult();
   const p = exam.items[n], needLat = exam.mode !== "hu", needHu = exam.mode !== "lat" && !!p.hu;
-  const photos = photosOf(p);
+  const photos = photosOf(p), first = Math.floor(Math.random() * photos.length);
   area.className = "play" + (needLat && needHu ? " two" : "");
   const field = (id, label, cls) => `<div class="field ${cls}"><label for="ex-${id}">${label}</label>
     <input id="ex-${id}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="${id === "lat" && needHu ? "next" : "done"}"></div>`;
@@ -709,7 +762,7 @@ function examQuestion() {
       <button class="quit" id="exQuit">Kilépés</button>
     </div>
     <div class="photo">
-      <img id="exImg" src="${esc(photos[0].image)}" alt="Felismerendő növény">
+      <img id="exImg" src="${esc(photos[first].image)}" alt="Felismerendő növény">
       <div class="stepper" id="exStep"></div>
       <button class="zoom" id="exZoom" aria-label="Kép nagyítása">${ICON.zoom}</button>
     </div>
@@ -718,8 +771,7 @@ function examQuestion() {
       ${needHu ? field("hu", "Hivatalos magyar név", "hu") : ""}
       <div class="actions"><button class="btn go" id="exNext">${n + 1 === total ? "Befejezés" : "Tovább"}</button></div>
     </div>`;
-  const g = gallery($("#exImg"), $("#exStep"), photos, Math.floor(Math.random() * photos.length), null);
-  g.show(g.idx);
+  const g = gallery($("#exImg"), $("#exStep"), photos, first, null);
   $("#exZoom").onclick = () => openViewer(photos[g.idx].image);
   const go = () => {
     exam.answers.push({ p, lat: needLat ? $("#ex-lat").value : null, hu: needHu ? $("#ex-hu").value : null });
@@ -760,9 +812,9 @@ function examResult() {
     <h2>${good} / ${fields.length} helyes név (${Math.round(good / Math.max(1, fields.length) * 100)}%)</h2>
     <p class="muted">${plantsOk} / ${exam.answers.length} növény teljesen hibátlan · elöl a hibásak</p>
     <div class="actions"><button class="btn go" id="exAgain">Új vizsga</button></div>
-    <div class="rows">${rows.map(a => {
+    <div class="rows">${rows.map((a, i) => {
       const allOk = Object.values(a.res).every(x => x.r === "ok");
-      return `<div class="row exrow${allOk ? " allok" : ""}"><img src="${esc(a.p.image)}" alt="">
+      return `<div class="row exrow${allOk ? " allok" : ""}" style="--i:${Math.min(i, 12)}"><img src="${esc(a.p.image)}" alt="">
         <div class="t">
           ${a.res.lat ? line("Latin", a.lat, a.res.lat, a.p.latin) : ""}
           ${a.res.hu ? line("Magyar", a.hu, a.res.hu, a.p.hu) : ""}
@@ -839,8 +891,27 @@ function closeDetail() {
   $("#lMain").classList.remove("hidden");
   window.scrollTo(0, listScroll);
 }
+// shared-element morph: the photo travels between the tile and the detail page (View Transitions; instant without support)
+function morph(fromImg, update, getTo) {
+  if (!document.startViewTransition || reduceMotion() || !fromImg) return update();
+  // a still-running earlier morph may hold the name; two holders would cancel this transition
+  document.querySelectorAll("img").forEach(i => { i.style.viewTransitionName = ""; });
+  fromImg.style.viewTransitionName = "plant-photo";
+  const t = document.startViewTransition(() => {
+    fromImg.style.viewTransitionName = "";
+    update();
+    const to = getTo();
+    if (to) { to.style.viewTransitionName = "plant-photo"; to.getAnimations().forEach(a => a.cancel()); }
+  });
+  t.finished.finally(() => { const to = getTo(); if (to) to.style.viewTransitionName = ""; });
+}
+const tileImg = id => document.querySelector(`#lGrid .tile[data-id="${CSS.escape(id)}"] img`);
 // phone back gesture / browser back closes the detail page
-addEventListener("popstate", () => { if (detailId !== null) closeDetail(); });
+addEventListener("popstate", () => {
+  if (detailId === null) return;
+  const id = detailId;
+  morph($("#dImg"), closeDetail, () => tileImg(id));
+});
 
 // ---------- admin: commits data.json + images through the GitHub contents API ----------
 const tok = () => store.get("ghToken", "");
@@ -1019,7 +1090,7 @@ fetch("data.json?v=" + Date.now()).then(r => r.json()).then(d => {
     settings.cat = s.dataset.cat; settings.round = "0"; saveSettings();
     showTab("play"); startRound(); window.scrollTo(0, 0);
   };
-  $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t) openDetail(t.dataset.id); };
+  $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t) morph(t.querySelector("img"), () => openDetail(t.dataset.id), () => $("#dImg")); };
   $("#aList").onclick = e => { const t = e.target.closest(".row"); if (t) openEditor(t.dataset.id); };
   renderToday();
   startRound();
