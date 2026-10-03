@@ -71,6 +71,8 @@ def inat(name):
         return {"hu": "", "img": "", "credit": ""}
     t = res[0]
     ph = t.get("default_photo") or {}
+    if not ph.get("license_code"):  # "all rights reserved" may not be republished in a public repo
+        ph = {}
     cn = t.get("preferred_common_name") or ""
     species = t.get("rank") in ("species", "hybrid", "variety", "subspecies") and " " in name
     return {"hu": cn if species and cn.lower() != t["name"].lower() else "",
