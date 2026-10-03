@@ -3896,10 +3896,15 @@
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
-  "image": "",
-  "credit": "",
+  "image": "images/b0a18d0a-a5c.jpg",
+  "credit": "Saját feltöltés",
   "src": "Schmidt Gábor",
-  "verify": true
+  "more": [
+   {
+    "image": "images/f8b5141d-3ef.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "stachys-byzantina",
