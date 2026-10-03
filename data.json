@@ -560,9 +560,11 @@
  {
   "id": "nemesia-strumosa",
   "latin": "Nemesia strumosa",
-  "hu": "",
-  "aliases": [],
-  "note": "",
+  "hu": "tarka vörösbegyvirág",
+  "aliases": [
+   "nemézia"
+  ],
+  "note": "https://citygreen.hu/tarka-vorosbegyvirag-nemesia-strumosa-gondozasa/",
   "categories": [
    "Palántaként is forgalmazott egynyári növények"
   ],
@@ -581,9 +583,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/31140252/large.jpeg",
     "credit": "iNaturalist: (c) mikemittelmeyer, some rights reserved (CC BY-NC)"
    }
-  ],
-  "alt": [
-   "tarka vörösbegyvirág (ChatGPT: gyanús)"
   ]
  },
  {
