@@ -212,7 +212,14 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
 .search input { flex: 2 1 220px; height: 44px; border: 0; border-radius: var(--r-s); background: var(--card); padding: 0 14px; font-weight: 600; box-shadow: var(--shadow); outline: none; }
 .search select { flex: 1 1 180px; height: 44px; }
 .stats h2 { margin: 0; font-size: 20px; font-weight: 800; }
-.stats .sum { color: var(--ink-2); font-size: 14px; margin: 2px 0 8px; }
+.stats .sum { display: block; color: var(--ink-2); font-size: 14px; font-weight: 600; margin-top: 2px; }
+.stats summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; min-height: 44px; margin: -4px; padding: 4px; border-radius: 14px; }
+.stats summary::-webkit-details-marker { display: none; }
+.stats summary:hover .chev { color: var(--ink); }
+.stats .chev { flex: none; color: var(--ink-2); transition: transform .25s var(--ease-out, ease); }
+.stats details[open] .chev { transform: rotate(180deg); }
+.stats details[open] .statrows { animation: fade .25s ease-out; }
+.stats .hint2 { margin: 10px 0 4px; }
 .statrows { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 4px 20px; }
 .stat { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; align-items: center; border: 0; background: none; text-align: left; padding: 8px 6px; border-radius: 12px; }
 .stat:hover { background: var(--ground); }
@@ -747,11 +754,18 @@ function renderStats() {
     const ps = withImg.filter(p => p.categories.includes(c)), l = ps.filter(p => isLearned(p.id)).length;
     return { c, l, n: ps.length };
   }).filter(r => r.n);
-  $("#stats").innerHTML = `<h2>Haladás</h2>
-    <p class="sum">${learned} / ${withImg.length} növényt tudsz · ${weak} hibás vár ismétlésre · koppints egy kategóriára a gyakorláshoz</p>
+  // collapsible; the summary line stays visible when closed, open/closed is remembered
+  $("#stats").innerHTML = `<details id="statsBox"${store.get("statsOpen", false) ? " open" : ""}>
+    <summary>
+      <span><h2>Haladás</h2><span class="sum">${learned} / ${withImg.length} növényt tudsz · ${weak} hibás vár ismétlésre</span></span>
+      <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <p class="muted hint2">Koppints egy kategóriára, és azt gyakorolhatod.</p>
     <div class="statrows">${rows.map(r => `<button class="stat" data-cat="${esc(r.c)}">
       <span class="n">${r.l === r.n ? `<span class="done" title="Az egész kategória megvan">${FLOWER}</span>` : ""}${esc(r.c)}</span><span class="v">${r.l} / ${r.n}</span>
-      <span class="roundbar" aria-hidden="true"><div style="width:${r.l / r.n * 100}%"></div></span></button>`).join("")}</div>`;
+      <span class="roundbar" aria-hidden="true"><div style="width:${r.l / r.n * 100}%"></div></span></button>`).join("")}</div>
+  </details>`;
+  $("#statsBox").ontoggle = e => store.set("statsOpen", e.target.open);
 }
 function renderList() {
   renderStats();
