@@ -68,6 +68,17 @@ select { flex: 1; min-width: 0; height: 40px; border: 0; border-radius: var(--r-
 .play { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 10px; }
 .photo { position: relative; border-radius: var(--r-l); overflow: hidden; background: var(--sunk); height: min(42dvh, 460px); }
 .photo img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+.plantnav { display: flex; justify-content: space-between; margin: -6px -8px 2px; }
+.plantnav button { display: flex; align-items: center; gap: 4px; min-height: 44px; padding: 0 10px; border: 0; border-radius: 12px; background: none; font-weight: 700; font-size: 14px; color: var(--ink-2); }
+.plantnav button:hover:not(:disabled) { background: var(--ground); color: var(--ink); }
+.plantnav button:disabled { opacity: .35; }
+.stepper { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); display: flex; align-items: center; gap: 2px; background: rgba(20, 18, 15, .62); border-radius: 24px; padding: 2px; }
+.stepper button { width: 44px; height: 44px; border: 0; border-radius: 22px; background: none; color: #fff; display: grid; place-items: center; }
+.stepper button:active { background: rgba(255, 255, 255, .18); }
+.stepper .dots { display: flex; gap: 6px; padding: 0 4px; }
+.stepper .dots i { width: 8px; height: 8px; border-radius: 4px; background: rgba(255, 255, 255, .45); transition: width .2s, background .2s; }
+.stepper .dots i.on { width: 20px; background: #fff; }
+.photo img { touch-action: pan-y; }
 .zoom { position: absolute; right: 12px; top: 12px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--card); color: var(--ink); display: grid; place-items: center; box-shadow: var(--shadow); }
 .progress { position: absolute; left: 12px; top: 12px; }
 .panel { background: var(--card); border-radius: var(--r-l); padding: 16px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 6px; }
@@ -75,7 +86,7 @@ select { flex: 1; min-width: 0; height: 40px; border: 0; border-radius: var(--r-
 .field input { width: 100%; height: 52px; border-radius: var(--r-s); border: 2px solid var(--sunk); background: var(--card); padding: 0 14px; font-weight: 700; font-size: 18px; outline: none; transition: border-color .2s, background .2s; }
 .field input:focus { border-color: var(--go); }
 .field.lat input { font-style: italic; }
-.play.two .photo { height: min(34dvh, 460px); }
+.play.two .photo { height: min(31dvh, 460px); }
 .done .field .hint { display: none; }
 .roundrow { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 14px; color: var(--go-text); font-variant-numeric: tabular-nums; }
 .roundbar { flex: 1; height: 8px; border-radius: 3px; background: var(--sunk); overflow: hidden; }
@@ -367,20 +378,35 @@ function pool() {
 }
 // primary photo plus extra iNaturalist photos; one is chosen at random per question
 const photosOf = p => [{ image: p.image, credit: p.credit }, ...(p.more || [])].filter(x => x.image);
+// plants shown in continuous mode, so "Előző" can step back and "Következő" forward again
+let history = [], hpos = -1;
 function startRound() {
   const size = +settings.round;
   round = size ? { size, items: [...pool()].sort(() => Math.random() - .5).slice(0, size), answers: [] } : null;
+  history = []; hpos = -1;
   next();
+}
+function showPlant(p) {
+  lastId = p.id;
+  const ph = photosOf(p);
+  const idx = Math.floor(Math.random() * ph.length);
+  current = { p, photos: ph, idx, photo: ph[idx], hints: 0, done: false, results: [] };
+  renderPlay();
 }
 function next() {
   if (round && round.answers.length >= round.items.length) return summary();
   const pl = pool();
   if (!pl.length) { current = null; return renderPlay(); }
-  const p = round ? round.items[round.answers.length] : pick(pl, lastId);
-  lastId = p.id;
-  const ph = photosOf(p);
-  current = { p, photo: ph[Math.floor(Math.random() * ph.length)], hints: 0, done: false, results: [] };
-  renderPlay();
+  if (round) return showPlant(round.items[round.answers.length]);
+  if (hpos < history.length - 1) return showPlant(history[++hpos]);
+  history.push(pick(pl, lastId)); hpos = history.length - 1;
+  showPlant(history[hpos]);
+}
+function prev() { if (!round && hpos > 0) showPlant(history[--hpos]); }
+// skip without grading; in a round the plant goes to the back of the queue
+function skip() {
+  if (round) round.items.push(round.items.splice(round.answers.length, 1)[0]);
+  next();
 }
 function controlsHtml() {
   const seg = [["lat", "Latin"], ["hu", "Magyar"], ["both", "Mindkettő"]]
@@ -419,10 +445,15 @@ function renderPlay() {
     ${controlsHtml()}
     <div class="photo">
       <img src="${esc(current.photo.image)}" alt="Felismerendő növény" id="pImg">
+      <div class="stepper" id="pStep"></div>
       ${prog}
       <button class="zoom" id="pZoom" aria-label="Kép nagyítása">${ICON.zoom}</button>
     </div>
     <div class="panel">
+      <div class="plantnav">
+        <button id="pPrev"${round || hpos < 1 ? " disabled" : ""}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Előző</button>
+        <button id="pSkip">Kihagyás<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
       ${bar}
       ${needLat ? field("lat", "lat", "Latin név") : ""}
       ${needHu ? field("hu", "hu", "Hivatalos magyar név") : ""}
@@ -434,9 +465,25 @@ function renderPlay() {
     </div>`;
   bindControls();
   // an extra (hotlinked) photo that fails to load falls back to the photo stored in the repo
-  $("#pImg").onerror = () => { if (current.photo.image !== p.image) { current.photo = photosOf(p)[0]; $("#pImg").src = p.image; } };
-  $("#pImg").onclick = $("#pZoom").onclick = () => openViewer(current.photo.image);
+  // a hotlinked extra photo that fails to load is dropped from this plant's set
+  $("#pImg").onerror = () => {
+    if (current.photos.length < 2) return;
+    current.photos.splice(current.idx, 1);
+    showPhoto(current.idx);
+  };
+  drawStepper();
+  // swipe left/right on the photo steps; a tap (no swipe) opens the zoom viewer
+  let x0 = null, swiped = false;
+  $("#pImg").onpointerdown = e => { x0 = e.clientX; swiped = false; };
+  $("#pImg").onpointerup = e => {
+    if (x0 !== null && Math.abs(e.clientX - x0) > 40 && current.photos.length > 1) { swiped = true; showPhoto(current.idx + (e.clientX < x0 ? 1 : -1)); }
+    x0 = null;
+  };
+  $("#pImg").onclick = () => { if (!swiped) openViewer(current.photo.image); };
+  $("#pZoom").onclick = () => openViewer(current.photo.image);
   $("#pHint").onclick = hint;
+  $("#pPrev").onclick = prev;
+  $("#pSkip").onclick = () => current.done ? next() : skip();
   $("#pCheck").onclick = () => current.done ? next() : reveal();
   const inputs = [...area.querySelectorAll(".field input")];
   inputs.forEach((x, i) => x.onkeydown = e => {
@@ -447,6 +494,26 @@ function renderPlay() {
   });
   // don't pop the phone keyboard over the photo; on desktop start typing right away
   if (matchMedia("(min-width: 900px)").matches) inputs[0]?.focus();
+}
+// ---------- photo stepper: prev / dots / next under the photo ----------
+function drawStepper() {
+  const n = current.photos.length, el = $("#pStep");
+  if (n < 2) { el.innerHTML = ""; el.classList.add("hidden"); return; }
+  el.classList.remove("hidden");
+  const arrow = (d, label, path) => `<button data-step="${d}" aria-label="${label}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${path}"/></svg></button>`;
+  el.innerHTML = arrow(-1, "Előző kép", "M15 5l-7 7 7 7")
+    + `<span class="dots" aria-label="${current.idx + 1}. kép a ${n}-ből">${current.photos.map((_, i) => `<i${i === current.idx ? ' class="on"' : ""}></i>`).join("")}</span>`
+    + arrow(1, "Következő kép", "M9 5l7 7-7 7");
+  el.onclick = e => { const b = e.target.closest("[data-step]"); if (b) showPhoto(current.idx + +b.dataset.step); };
+}
+function showPhoto(i) {
+  const n = current.photos.length;
+  current.idx = ((i % n) + n) % n;
+  current.photo = current.photos[current.idx];
+  $("#pImg").src = current.photo.image;
+  drawStepper();
+  const credit = $("#pCredit");
+  if (credit) credit.textContent = current.photo.credit ? ` · Kép: ${current.photo.credit}` : "";
 }
 function hint() {
   if (current.done) return;
@@ -483,6 +550,7 @@ function reveal() {
   if (round) round.answers.push({ p, results, hints: current.hints });
   $("#pSolution").innerHTML = solutionHtml(p, current.photo.credit);
   $("#pHint").disabled = true;
+  $("#pSkip").classList.add("hidden");
   $("#pCheck").textContent = round && round.answers.length >= round.items.length ? "Eredmény" : "Következő";
   $("#pCheck").focus();
 }
@@ -493,7 +561,7 @@ function solutionHtml(p, credit) {
     ${p.verify ? '<div class="flag">Automatikusan talált név — az Adminban ellenőrizd</div>' : ""}
     ${p.aliases?.length ? `<div class="meta">Más néven: ${esc(p.aliases.join(", "))}</div>` : ""}
     ${p.note ? `<div class="meta">${esc(p.note)}</div>` : ""}
-    <div class="meta">${esc(p.categories.join(" · "))}${credit ? ` · Kép: ${esc(credit)}` : ""}</div>
+    <div class="meta">${esc(p.categories.join(" · "))}<span id="pCredit">${credit ? ` · Kép: ${esc(credit)}` : ""}</span></div>
   </div>`;
 }
 function summary() {
