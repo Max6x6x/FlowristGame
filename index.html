@@ -193,9 +193,20 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
   <!-- ADMIN -->
   <section id="admin" class="hidden adm">
     <div class="panel" style="margin-top:10px">
-      <label for="aTok">GitHub token</label>
-      <input id="aTok" type="password" autocomplete="off">
-      <p class="muted">Csak ezen az eszközön tárolódik. Fine-grained token, csak a FlowristGame repóra, „Contents: Read and write” joggal. Mentés után 1–2 perc, mire mindenhol megjelenik.</p>
+      <div id="tokSet" class="hidden">
+        <p style="margin:0;font-weight:800">A mentés be van állítva ezen az eszközön.</p>
+        <p class="muted">A javításaid azonnal itt látszanak, a többi eszközön 1–2 perc múlva.</p>
+        <div class="actions">
+          <button class="btn soft" id="tokForget">Kijelentkezés</button>
+          <button class="btn go" id="tokLink">Link másik eszközre</button>
+        </div>
+        <p class="msg" id="tokMsg" aria-live="polite"></p>
+      </div>
+      <div id="tokUnset">
+        <label for="aTok">GitHub token</label>
+        <input id="aTok" type="password" autocomplete="off">
+        <p class="muted">Egyszer kell megadni eszközönként — vagy nyisd meg a kapott „mentés” linket ezen az eszközön.</p>
+      </div>
     </div>
     <div class="search">
       <input id="aQ" type="search" placeholder="Növény keresése…" aria-label="Növény keresése">
@@ -461,7 +472,7 @@ function renderList() {
 }
 
 // ---------- admin: commits data.json + images through the GitHub contents API ----------
-const tok = () => $("#aTok").value.trim();
+const tok = () => store.get("ghToken", "");
 async function gh(path, opts = {}) {
   const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
     ...opts, cache: "no-store", headers: { Authorization: `Bearer ${tok()}`, Accept: "application/vnd.github+json" },
@@ -542,8 +553,12 @@ function openEditor(id) {
       const content = bytesToB64(new TextEncoder().encode(JSON.stringify(data, null, 1)));
       await gh("data.json", { method: "PUT", body: JSON.stringify({ message: `Javítás: ${patch.latin}`, content, sha }) });
       Object.assign(p, patch); if (!p.verify) delete p.verify;
-      if (newImg) p.image = newImg.url; // show now; the published file is live in 1–2 minutes
-      msg("Mentve.");
+      // Pages republishes in 1–2 min; until then this device re-applies the edit on every load
+      const pending = store.get("pending", {});
+      pending[p.id] = { patch, at: Date.now() };
+      store.set("pending", pending);
+      if (newImg) p.image = newImg.url;
+      msg("Mentve. A többi eszközön 1–2 perc múlva látszik.");
       renderAdminList();
     } catch (e) { msg("Nem sikerült: " + e.message); }
     finally { $("#eSave").disabled = false; }
@@ -559,13 +574,48 @@ function showTab(tab) {
   if (tab === "admin") renderAdminList();
 }
 document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => showTab(b.dataset.tab));
+
+// one-time setup link: …/#token=… stores the token and removes it from the address bar
+if (location.hash.startsWith("#token=")) {
+  store.set("ghToken", decodeURIComponent(location.hash.slice(7)));
+  history.replaceState(null, "", location.pathname + location.search);
+  store.set("tab", "admin");
+}
+function renderTokenState() {
+  const has = !!store.get("ghToken", "");
+  $("#tokSet").classList.toggle("hidden", !has);
+  $("#tokUnset").classList.toggle("hidden", has);
+  $("#aTok").value = store.get("ghToken", "");
+}
+$("#aTok").onchange = () => { store.set("ghToken", $("#aTok").value.trim()); renderTokenState(); };
+$("#tokForget").onclick = () => { store.set("ghToken", ""); renderTokenState(); };
+$("#tokLink").onclick = async () => {
+  const link = `${location.origin}${location.pathname}#token=${encodeURIComponent(store.get("ghToken", ""))}`;
+  try { await navigator.clipboard.writeText(link); $("#tokMsg").textContent = "Link kimásolva. Küldd el magadnak, és nyisd meg a másik eszközön. Ne oszd meg mással!"; }
+  catch { prompt("Másold ki ezt a linket:", link); }
+};
+
+// edits saved on this device but not yet visible in the published data.json
+function applyPending(list) {
+  const pending = store.get("pending", {});
+  const same = (a, b) => JSON.stringify(a ?? false) === JSON.stringify(b ?? false);
+  for (const [id, { patch, at }] of Object.entries(pending)) {
+    const p = list.find(x => x.id === id);
+    const published = p && Object.entries(patch).every(([k, v]) => same(p[k], v));
+    if (!p || published || Date.now() - at > 864e5) { delete pending[id]; continue; }
+    Object.assign(p, patch);
+    if (!p.verify) delete p.verify;
+  }
+  store.set("pending", pending);
+  return list;
+}
+
 fetch("data.json?v=" + Date.now()).then(r => r.json()).then(d => {
-  plants = d;
+  plants = applyPending(d);
+  renderTokenState();
   $("#lCat").innerHTML = `<option value="">Minden kategória (${plants.length})</option>` + categories().map(c => `<option>${esc(c)}</option>`).join("");
   $("#lQ").oninput = $("#lCat").onchange = renderList;
   $("#aQ").oninput = $("#aFilter").onchange = renderAdminList;
-  $("#aTok").value = store.get("ghToken", "");
-  $("#aTok").onchange = () => store.set("ghToken", tok());
   $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t) { showTab("admin"); openEditor(t.dataset.id); } };
   $("#aList").onclick = e => { const t = e.target.closest(".row"); if (t) openEditor(t.dataset.id); };
   renderToday();
