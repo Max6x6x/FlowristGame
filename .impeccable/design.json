@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T09:58:13.842Z",
+  "title": "Design System: Növényismeret",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f3efe8",
+        "tonalRamp": [
+          "oklch(15% 0.010 81.8)",
+          "oklch(25% 0.010 81.8)",
+          "oklch(35% 0.010 81.8)",
+          "oklch(45% 0.010 81.8)",
+          "oklch(55% 0.010 81.8)",
+          "oklch(70% 0.010 81.8)",
+          "oklch(85% 0.004 81.8)",
+          "oklch(95% 0.004 81.8)"
+        ],
+        "darkMode": "#1b1916"
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ],
+        "darkMode": "#262320"
+      },
+      "sunk": {
+        "role": "neutral",
+        "displayName": "Oat",
+        "canonical": "#e8e2d7",
+        "tonalRamp": [
+          "oklch(15% 0.016 82.8)",
+          "oklch(25% 0.016 82.8)",
+          "oklch(35% 0.016 82.8)",
+          "oklch(45% 0.016 82.8)",
+          "oklch(55% 0.016 82.8)",
+          "oklch(70% 0.016 82.8)",
+          "oklch(85% 0.006 82.8)",
+          "oklch(95% 0.006 82.8)"
+        ],
+        "darkMode": "#33302b"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Bark Ink",
+        "canonical": "#1d1b18",
+        "tonalRamp": [
+          "oklch(15% 0.006 78.2)",
+          "oklch(25% 0.006 78.2)",
+          "oklch(35% 0.006 78.2)",
+          "oklch(45% 0.006 78.2)",
+          "oklch(55% 0.006 78.2)",
+          "oklch(70% 0.006 78.2)",
+          "oklch(85% 0.003 78.2)",
+          "oklch(95% 0.003 78.2)"
+        ],
+        "darkMode": "#f1ece4"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Driftwood",
+        "canonical": "#5b564e",
+        "tonalRamp": [
+          "oklch(15% 0.014 79.7)",
+          "oklch(25% 0.014 79.7)",
+          "oklch(35% 0.014 79.7)",
+          "oklch(45% 0.014 79.7)",
+          "oklch(55% 0.014 79.7)",
+          "oklch(70% 0.014 79.7)",
+          "oklch(85% 0.006 79.7)",
+          "oklch(95% 0.006 79.7)"
+        ],
+        "darkMode": "#c3bbae"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Pebble",
+        "canonical": "#6f695f",
+        "tonalRamp": [
+          "oklch(15% 0.017 80.7)",
+          "oklch(25% 0.017 80.7)",
+          "oklch(35% 0.017 80.7)",
+          "oklch(45% 0.017 80.7)",
+          "oklch(55% 0.017 80.7)",
+          "oklch(70% 0.017 80.7)",
+          "oklch(85% 0.007 80.7)",
+          "oklch(95% 0.007 80.7)"
+        ],
+        "darkMode": "#a59d90"
+      },
+      "go": {
+        "role": "primary",
+        "displayName": "Meadow Green",
+        "canonical": "#267a41",
+        "tonalRamp": [
+          "oklch(15% 0.120 150.5)",
+          "oklch(25% 0.120 150.5)",
+          "oklch(35% 0.120 150.5)",
+          "oklch(45% 0.120 150.5)",
+          "oklch(55% 0.120 150.5)",
+          "oklch(70% 0.120 150.5)",
+          "oklch(85% 0.048 150.5)",
+          "oklch(95% 0.048 150.5)"
+        ],
+        "darkMode": "#4fb06d"
+      },
+      "go-ink": {
+        "role": "primary",
+        "displayName": "On Green",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ],
+        "darkMode": "#0f1a12"
+      },
+      "go-soft": {
+        "role": "primary",
+        "displayName": "Sprout Wash",
+        "canonical": "#e3f3e8",
+        "tonalRamp": [
+          "oklch(15% 0.022 155.9)",
+          "oklch(25% 0.022 155.9)",
+          "oklch(35% 0.022 155.9)",
+          "oklch(45% 0.022 155.9)",
+          "oklch(55% 0.022 155.9)",
+          "oklch(70% 0.022 155.9)",
+          "oklch(85% 0.009 155.9)",
+          "oklch(95% 0.009 155.9)"
+        ],
+        "darkMode": "#1f3a27"
+      },
+      "go-text": {
+        "role": "primary",
+        "displayName": "Deep Meadow Text",
+        "canonical": "#23703c",
+        "tonalRamp": [
+          "oklch(15% 0.111 150.6)",
+          "oklch(25% 0.111 150.6)",
+          "oklch(35% 0.111 150.6)",
+          "oklch(45% 0.111 150.6)",
+          "oklch(55% 0.111 150.6)",
+          "oklch(70% 0.111 150.6)",
+          "oklch(85% 0.044 150.6)",
+          "oklch(95% 0.044 150.6)"
+        ],
+        "darkMode": "#7fd197"
+      },
+      "almost": {
+        "role": "secondary",
+        "displayName": "Burnt Amber",
+        "canonical": "#9a5b00",
+        "tonalRamp": [
+          "oklch(15% 0.119 65.1)",
+          "oklch(25% 0.119 65.1)",
+          "oklch(35% 0.119 65.1)",
+          "oklch(45% 0.119 65.1)",
+          "oklch(55% 0.119 65.1)",
+          "oklch(70% 0.119 65.1)",
+          "oklch(85% 0.048 65.1)",
+          "oklch(95% 0.048 65.1)"
+        ],
+        "darkMode": "#f0b44c"
+      },
+      "almost-soft": {
+        "role": "secondary",
+        "displayName": "Apricot Wash",
+        "canonical": "#fbeed4",
+        "tonalRamp": [
+          "oklch(15% 0.037 84.6)",
+          "oklch(25% 0.037 84.6)",
+          "oklch(35% 0.037 84.6)",
+          "oklch(45% 0.037 84.6)",
+          "oklch(55% 0.037 84.6)",
+          "oklch(70% 0.037 84.6)",
+          "oklch(85% 0.015 84.6)",
+          "oklch(95% 0.015 84.6)"
+        ],
+        "darkMode": "#3d3020"
+      },
+      "bad": {
+        "role": "tertiary",
+        "displayName": "Brick Red",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "oklch(15% 0.120 28.7)",
+          "oklch(25% 0.120 28.7)",
+          "oklch(35% 0.120 28.7)",
+          "oklch(45% 0.120 28.7)",
+          "oklch(55% 0.120 28.7)",
+          "oklch(70% 0.120 28.7)",
+          "oklch(85% 0.048 28.7)",
+          "oklch(95% 0.048 28.7)"
+        ],
+        "darkMode": "#ff8a80"
+      },
+      "bad-soft": {
+        "role": "tertiary",
+        "displayName": "Blush Wash",
+        "canonical": "#fbe3e0",
+        "tonalRamp": [
+          "oklch(15% 0.027 26.2)",
+          "oklch(25% 0.027 26.2)",
+          "oklch(35% 0.027 26.2)",
+          "oklch(45% 0.027 26.2)",
+          "oklch(55% 0.027 26.2)",
+          "oklch(70% 0.027 26.2)",
+          "oklch(85% 0.011 26.2)",
+          "oklch(95% 0.011 26.2)"
+        ],
+        "darkMode": "#43231f"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Revealed Latin",
+        "purpose": "Revealed Latin name; 800 italic, 26px phone / 34px desktop."
+      },
+      "headline": {
+        "displayName": "Revealed Hungarian",
+        "purpose": "Revealed official Hungarian name; 21px phone / 24px desktop."
+      },
+      "title": {
+        "displayName": "App Title",
+        "purpose": "App name in the header."
+      },
+      "input": {
+        "displayName": "Answer Input",
+        "purpose": "Typed answers; italic in Latin fields."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text; buttons use 16px 800."
+      },
+      "hint": {
+        "displayName": "Letter Hint",
+        "purpose": "Progressive letter hints under answer fields; tabular, tracked."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, meta lines, solution keys."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 1px 2px rgba(0,0,0,.07), 0 6px 18px rgba(0,0,0,.05)",
+        "darkValue": "0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.25)",
+        "purpose": "Panels, tiles, soft buttons, selects, search, chip, zoom button."
+      },
+      {
+        "name": "segment-selected",
+        "value": "0 1px 2px rgba(0,0,0,.12)",
+        "purpose": "Active option in the segmented control."
+      }
+    ],
+    "motion": [
+      {
+        "name": "spring-press",
+        "value": "transform .15s cubic-bezier(.3,1.6,.5,1); :active scale(.96)",
+        "purpose": "Button press feedback."
+      },
+      {
+        "name": "ease-out-soft",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Solution rise-in (.35s, 8px), round progress width (.4s), viewer zoom (.25s)."
+      },
+      {
+        "name": "state-fade",
+        "value": ".2s",
+        "purpose": "Background, color and border-color changes on segments and inputs."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop",
+        "value": "900px",
+        "purpose": "Two-sided layout, header tabs; below it the bottom tab bar and sticky action row."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-go",
+      "description": "Main action (Mutasd!, Következő, Mentés); fills the action row.",
+      "html": "<button class=\"ds-btn-go\">Mutasd!</button>",
+      "css": ".ds-btn-go { height: 52px; border: 0; border-radius: 16px; padding: 0 20px; font: 800 16px Nunito, system-ui, sans-serif; background: var(--go, #267a41); color: var(--go-ink, #fff); cursor: pointer; transition: transform .15s cubic-bezier(.3,1.6,.5,1), background .2s; } .ds-btn-go:active { transform: scale(.96); } .ds-btn-go:focus-visible { outline: 3px solid var(--go, #267a41); outline-offset: 2px; }"
+    },
+    {
+      "name": "Soft Button",
+      "kind": "button",
+      "refersTo": "button-soft",
+      "description": "Secondary action (Súgó, Bezár) with optional hint badge.",
+      "html": "<button class=\"ds-btn-soft\">Súgó<span class=\"ds-badge\">2</span></button>",
+      "css": ".ds-btn-soft { height: 52px; border: 0; border-radius: 16px; padding: 0 20px; font: 800 16px Nunito, system-ui, sans-serif; background: var(--card, #fff); color: var(--ink, #1d1b18); box-shadow: 0 1px 2px rgba(0,0,0,.07), 0 6px 18px rgba(0,0,0,.05); cursor: pointer; transition: transform .15s cubic-bezier(.3,1.6,.5,1); } .ds-btn-soft:active { transform: scale(.96); } .ds-btn-soft:focus-visible { outline: 3px solid var(--go, #267a41); outline-offset: 2px; } .ds-btn-soft:disabled { background: var(--sunk, #e8e2d7); color: var(--ink-3, #6f695f); box-shadow: none; } .ds-badge { display: inline-block; min-width: 22px; margin-left: 6px; padding: 1px 7px; border-radius: 11px; background: var(--go-soft, #e3f3e8); color: var(--go-text, #23703c); font-size: 13px; }"
+    },
+    {
+      "name": "Answer Field",
+      "kind": "input",
+      "refersTo": "input-answer",
+      "description": "Labelled answer input with hint line; italic for Latin.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-lat\">Latin név</label><input id=\"ds-lat\" autocomplete=\"off\"><div class=\"ds-hint\">7   5</div></div>",
+      "css": ".ds-field { font-family: Nunito, system-ui, sans-serif; } .ds-field label { display: block; font-size: 13px; font-weight: 700; color: var(--ink-2, #5b564e); margin: 4px 0 4px 4px; } .ds-field input { width: 100%; height: 52px; border-radius: 14px; border: 2px solid var(--sunk, #e8e2d7); background: var(--card, #fff); color: var(--ink, #1d1b18); padding: 0 14px; font: italic 700 18px Nunito, system-ui, sans-serif; outline: none; caret-color: var(--go, #267a41); transition: border-color .2s, background .2s; } .ds-field input:focus { border-color: var(--go, #267a41); } .ds-hint { font-size: 15px; letter-spacing: .06em; color: var(--ink-2, #5b564e); padding: 4px 6px 0; font-variant-numeric: tabular-nums; white-space: pre-wrap; }"
+    },
+    {
+      "name": "Answer Feedback",
+      "kind": "custom",
+      "refersTo": "input-answer-almost",
+      "description": "Field wash plus verdict line; wrong letters marked amber.",
+      "html": "<div class=\"ds-fb\"><input class=\"ds-fb-almost\" value=\"Ageratum houstonianum\"><div class=\"ds-verdict\">Majdnem: Ageratum houst<mark>o</mark>nianum</div></div>",
+      "css": ".ds-fb { font-family: Nunito, system-ui, sans-serif; } .ds-fb input { width: 100%; height: 52px; border-radius: 14px; border: 2px solid var(--almost-soft, #fbeed4); background: var(--almost-soft, #fbeed4); color: var(--ink, #1d1b18); padding: 0 14px; font: italic 700 18px Nunito, system-ui, sans-serif; } .ds-verdict { font-size: 14px; font-weight: 800; padding: 4px 6px 0; color: var(--almost, #9a5b00); } .ds-verdict mark { background: var(--almost, #9a5b00); color: var(--card, #fff); border-radius: 4px; padding: 0 2px; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented",
+      "description": "Mode switch: Latin / Magyar / Mindkettő.",
+      "html": "<div class=\"ds-seg\" role=\"group\"><button>Latin</button><button>Magyar</button><button aria-pressed=\"true\">Mindkettő</button></div>",
+      "css": ".ds-seg { display: flex; background: var(--sunk, #e8e2d7); border-radius: 14px; padding: 4px; } .ds-seg button { flex: 1; height: 38px; border: 0; border-radius: 10px; background: transparent; font: 700 14px Nunito, system-ui, sans-serif; color: var(--ink-2, #5b564e); cursor: pointer; transition: background .2s, color .2s; } .ds-seg button:hover { color: var(--ink, #1d1b18); } .ds-seg button:focus-visible { outline: 3px solid var(--go, #267a41); outline-offset: 2px; } .ds-seg button[aria-pressed=\"true\"] { background: var(--card, #fff); color: var(--ink, #1d1b18); box-shadow: 0 1px 2px rgba(0,0,0,.12); }"
+    },
+    {
+      "name": "Answer Panel with Solution",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "White panel holding fields; revealed names rise in on Warm Paper.",
+      "html": "<div class=\"ds-panel\"><div class=\"ds-sol\"><div class=\"ds-k\">Latin</div><div class=\"ds-lat\">Ageratum houstonianum</div><div class=\"ds-hu\">mexikói bojtocska</div></div></div>",
+      "css": ".ds-panel { background: var(--card, #fff); border-radius: 28px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.07), 0 6px 18px rgba(0,0,0,.05); font-family: Nunito, system-ui, sans-serif; color: var(--ink, #1d1b18); } .ds-sol { background: var(--ground, #f3efe8); border-radius: 20px; padding: 16px 18px; animation: ds-rise .35s cubic-bezier(.2,.8,.2,1); } .ds-k { font-size: 13px; font-weight: 700; color: var(--ink-2, #5b564e); } .ds-lat { font-style: italic; font-weight: 800; font-size: 26px; line-height: 1.15; margin-top: 2px; } .ds-hu { font-weight: 700; font-size: 21px; } @keyframes ds-rise { from { opacity: 0; transform: translateY(8px); } }"
+    },
+    {
+      "name": "Bottom Tab Bar",
+      "kind": "nav",
+      "refersTo": "tab-active-desktop",
+      "description": "Phone navigation; on desktop the same buttons become header pills.",
+      "html": "<nav class=\"ds-tabs\"><button aria-current=\"page\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21c-4.5-3-8-6.2-8-11a8 8 0 0 1 16 0c0 4.8-3.5 8-8 11z\"/><path d=\"M12 21V11\"/></svg>Gyakorlás</button><button><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><rect x=\"4\" y=\"4\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"13\" y=\"4\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"4\" y=\"13\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"13\" y=\"13\" width=\"7\" height=\"7\" rx=\"2\"/></svg>Lista</button><button><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 20h4L19 9l-4-4L4 16v4z\"/><path d=\"M13.5 6.5l4 4\"/></svg>Admin</button></nav>",
+      "css": ".ds-tabs { display: flex; justify-content: space-around; background: var(--card, #fff); padding: 8px 0 10px; border-top: 1px solid var(--sunk, #e8e2d7); } .ds-tabs button { border: 0; background: none; display: flex; flex-direction: column; align-items: center; gap: 2px; font: 700 12px Nunito, system-ui, sans-serif; color: var(--ink-3, #6f695f); min-width: 72px; padding: 4px 0; cursor: pointer; } .ds-tabs button:hover { color: var(--ink-2, #5b564e); } .ds-tabs button:focus-visible { outline: 3px solid var(--go, #267a41); outline-offset: 2px; } .ds-tabs button[aria-current=\"page\"] { color: var(--go-text, #23703c); } .ds-tabs svg { width: 24px; height: 24px; }"
+    },
+    {
+      "name": "Plant Tile",
+      "kind": "card",
+      "refersTo": "tile",
+      "description": "List grid tile: 4:3 photo over italic Latin and Hungarian name.",
+      "html": "<button class=\"ds-tile\"><div class=\"ds-img\"></div><div class=\"ds-t\"><i>Ageratum houstonianum</i>mexikói bojtocska</div></button>",
+      "css": ".ds-tile { width: 180px; background: var(--card, #fff); border: 0; border-radius: 20px; overflow: hidden; padding: 0; text-align: left; box-shadow: 0 1px 2px rgba(0,0,0,.07), 0 6px 18px rgba(0,0,0,.05); cursor: pointer; font-family: Nunito, system-ui, sans-serif; color: var(--ink, #1d1b18); } .ds-tile:focus-visible { outline: 3px solid var(--go, #267a41); outline-offset: 2px; } .ds-img { aspect-ratio: 4/3; background: var(--sunk, #e8e2d7); } .ds-t { padding: 8px 10px 10px; font-size: 14px; } .ds-t i { display: block; font-weight: 800; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Pocket Coach",
+    "overview": "A friendly study companion for one exam, not a quiz form. The screen is a warm, tinted ground carrying soft white cards with generous radii; the photo card is the question and gets the biggest share of the viewport. Everything reachable by thumb sits low on the phone, and presses answer with a small spring.\n\nColor is mostly quiet: warm paper, white, and warm-grey ink. One saturated green carries every pressable primary action and the \"correct\" state. Amber means \"almost\" (an accent-only miss), red means wrong. Nunito, a rounded humanist sans at heavy weights, keeps the voice friendly and readable at arm's length.\n\nThe system refuses the grey form-with-a-header quiz look: no hairline-boxed forms, no flat toolbars, no cold neutrals.",
+    "keyCharacteristics": [
+      "Warm tinted ground (never pure white) under white cards.",
+      "Generous, nested radii: 28px cards, 20px inner surfaces, 14px controls.",
+      "One green for action and correctness; amber and red only as answer feedback.",
+      "Nunito at 700-800 for anything interactive or answering.",
+      "Spring press feedback on buttons; gentle rise-in for the revealed answer.",
+      "Light and dark modes share every token name; dark mode swaps values only."
+    ],
+    "rules": [
+      {
+        "name": "The One Green Rule",
+        "body": "Saturated green marks what can be pressed or what is right (plus the focus ring and round progress). Never use it for decoration, headings, or illustration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Feedback-Only Rule",
+        "body": "Amber and red appear only as answer feedback (verdicts, field washes, the wrong-letter mark, the verify flag). They are never button or chrome colors.",
+        "section": "colors"
+      },
+      {
+        "name": "The Same-Names Rule",
+        "body": "Dark mode overrides values on `:root`; components never branch on theme.",
+        "section": "colors"
+      },
+      {
+        "name": "The Latin Is Italic Rule",
+        "body": "Every Latin binomial (answer field, revealed name, list tile, admin row) is set italic, matching botanical convention. Hungarian names stay upright.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight Carries Rank Rule",
+        "body": "Hierarchy comes from weight and size inside Nunito; no second typeface.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper-And-Card Rule",
+        "body": "Depth is white card on warm paper plus the single card-lift shadow. Sunk surfaces are tone, not inset shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the page on Warm Paper (`#f3efe8`) and put content on white cards with the single card-lift shadow.",
+      "Do reserve Meadow Green (`#267a41`) for primary actions, the active tab, focus, correct state and round progress.",
+      "Do set every Latin name in italic, and reveal names only after the answer is checked.",
+      "Do keep primary actions 52px tall with the 0.96 spring press, and keep the action row within thumb reach on phone.",
+      "Do nest radii from 28px (cards) to 20px (inner surfaces) to 14px (controls).",
+      "Do define new colors as `:root` custom properties with a dark-mode value under the same name."
+    ],
+    "donts": [
+      "Don't build grey form-with-a-header quiz screens: no cold neutral grounds, no hairline-boxed forms.",
+      "Don't use amber or red for anything except answer feedback.",
+      "Don't add hard or offset shadows; depth is the soft card lift plus tone.",
+      "Don't introduce a second typeface; rank comes from Nunito's weights.",
+      "Don't use square or barely-rounded corners on cards, controls or buttons."
+    ]
+  }
+}
