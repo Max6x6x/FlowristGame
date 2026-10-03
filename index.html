@@ -226,6 +226,11 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
 .stat .n { font-weight: 600; font-size: 14px; line-height: 1.3; }
 .stat .v { font-weight: 800; font-size: 14px; font-variant-numeric: tabular-nums; color: var(--ink-2); }
 .stat .roundbar { grid-column: 1 / -1; flex: none; height: 6px; }
+.srcline { margin: 4px 0 0 4px; font-size: 13px; }
+.altnames { margin-top: 8px; }
+.altnames .dk { display: block; margin: 0 0 6px 4px; }
+.tag.alt { border: 1.5px dashed var(--almost); background: var(--almost-soft); color: var(--ink); cursor: pointer; min-height: 36px; font: inherit; font-size: 14px; font-weight: 700; }
+.tag.alt:hover { border-style: solid; }
 .thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
 .thumb { position: relative; }
 .thumb img { width: 84px; height: 84px; object-fit: cover; border-radius: 12px; display: block; }
@@ -1035,6 +1040,9 @@ function openEditor(id) {
     <label for="eAdd">Kép hozzáadása</label><input type="file" accept="image/*" id="eAdd">
     <label for="eLat">Latin név</label><input type="text" id="eLat" value="${esc(p.latin)}" spellcheck="false">
     <label for="eHu">Hivatalos magyar név</label><input type="text" id="eHu" value="${esc(p.hu)}" spellcheck="false">
+    ${p.src ? `<p class="muted srcline">Forrás: ${esc(p.src)}</p>` : ""}
+    ${p.alt?.length ? `<div class="altnames"><span class="dk">Más források szerint — koppints az átvételhez:</span>
+      <div class="chips">${p.alt.map(a => `<button type="button" class="tag alt" data-name="${esc(a.replace(/\s*\([^)]*\)$/, ""))}">${esc(a)}</button>`).join("")}</div></div>` : ""}
     <label for="eAli">Más elfogadott nevek (vesszővel)</label><input type="text" id="eAli" value="${esc((p.aliases || []).join(", "))}" spellcheck="false">
     <label for="eNote">Jegyzet</label><textarea id="eNote" rows="2">${esc(p.note)}</textarea>
     <label class="check"><input type="checkbox" id="eVer" ${p.verify ? "" : "checked"}> A magyar név ellenőrizve</label>
@@ -1049,6 +1057,7 @@ function openEditor(id) {
       || '<p class="muted">Nincs további kép.</p>';
   };
   drawMore();
+  el.querySelectorAll(".tag.alt").forEach(b => b.onclick = () => { $("#eHu").value = b.dataset.name; $("#eHu").focus(); });
   $("#eMore").onclick = e => { const b = e.target.closest("button[data-i]"); if (b) { more.splice(+b.dataset.i, 1); drawMore(); } };
   $("#eAdd").onchange = async e => { if (!e.target.files[0]) return; addImg = await resizeToJpeg(e.target.files[0]); drawMore(); };
   $("#eClose").onclick = () => el.classList.add("hidden");
@@ -1080,10 +1089,10 @@ function openEditor(id) {
       const { sha, data } = await getDataFile();
       const target = data.find(x => x.id === p.id);
       Object.assign(target, patch);
-      if (!target.verify) delete target.verify;
+      if (!target.verify) { delete target.verify; delete target.alt; } // she decided: alternatives no longer needed
       const content = bytesToB64(new TextEncoder().encode(JSON.stringify(data, null, 1)));
       await gh("data.json", { method: "PUT", body: JSON.stringify({ message: `Javítás: ${patch.latin}`, content, sha }) });
-      Object.assign(p, patch); if (!p.verify) delete p.verify;
+      Object.assign(p, patch); if (!p.verify) { delete p.verify; delete p.alt; }
       // Pages republishes in 1–2 min; until then this device re-applies the edit on every load
       const pending = store.get("pending", {});
       pending[p.id] = { patch, at: Date.now() };

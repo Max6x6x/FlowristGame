@@ -1624,7 +1624,6 @@
   ],
   "image": "images/81e61c91a7.jpg",
   "credit": "iNaturalist: no rights reserved, uploaded by 葉子",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/135048637/large.jpeg",
@@ -1638,7 +1637,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/135048571/large.jpeg",
     "credit": "iNaturalist: no rights reserved, uploaded by 葉子"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "chasmantium-latifolium",
@@ -1749,7 +1749,7 @@
  {
   "id": "helichrysum-bracteatum-var-monstrosum",
   "latin": "Helichrysum bracteatum var. monstrosum",
-  "hu": "",
+  "hu": "szalmarózsa, szalmavirág",
   "aliases": [],
   "note": "",
   "categories": [
@@ -1766,7 +1766,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/27396899/large.jpg",
     "credit": "iNaturalist: (c) Linda Loffler, some rights reserved (CC BY-NC), uploaded by Linda Loffler"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "helipterum-roseum",
@@ -1927,6 +1929,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/195054065/large.jpg",
     "credit": "iNaturalist: (c) Dan Spaulding, some rights reserved (CC BY-NC), uploaded by Dan Spaulding"
    }
+  ],
+  "alt": [
+   "mák (Maszlay)"
   ]
  },
  {
@@ -2164,7 +2169,7 @@
  {
   "id": "campanula-medium",
   "latin": "Campanula medium",
-  "hu": "",
+  "hu": "bögrevirág, harangvirág",
   "aliases": [],
   "note": "",
   "categories": [
@@ -2185,7 +2190,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/71997198/large.jpeg",
     "credit": "iNaturalist: (c) pierabionda, some rights reserved (CC BY-NC), uploaded by pierabionda"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "dianthus-barbatus",
@@ -2399,7 +2406,6 @@
   ],
   "image": "images/0c5e5f01f5.jpg",
   "credit": "iNaturalist: (c) philmb, some rights reserved (CC BY-NC), uploaded by philmb",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/102169457/large.jpeg",
@@ -2409,7 +2415,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/31320160/large.jpeg",
     "credit": "iNaturalist: (c) ramazan_murtazaliev, some rights reserved (CC BY-NC), uploaded by ramazan_murtazaliev"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "alchemilla-mollis",
@@ -2668,7 +2675,6 @@
   ],
   "image": "images/fdb5fbdbdb.jpg",
   "credit": "iNaturalist: (c) prellinchen, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/3721262/large.JPG",
@@ -2682,7 +2688,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/75852545/large.jpg",
     "credit": "iNaturalist: (c) Aliaksandr Mialik, some rights reserved (CC BY-NC), uploaded by Aliaksandr Mialik"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "coreopsis-grandiflora",
@@ -2701,6 +2708,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2031265/large.jpg",
     "credit": "iNaturalist: (c) 2013 Richard Spellenberg, some rights reserved (CC BY-NC-SA)"
    }
+  ],
+  "alt": [
+   "menyecskeszem (Maszlay)"
   ]
  },
  {
@@ -2802,7 +2812,7 @@
  {
   "id": "dendranthema-grandiflorum",
   "latin": "Dendranthema grandiflorum",
-  "hu": "",
+  "hu": "krizantém",
   "aliases": [],
   "note": "",
   "categories": [
@@ -2810,7 +2820,9 @@
    "Növényházi vágott virágok"
   ],
   "image": "images/0dacb27a1b.jpg",
-  "credit": "Wikimedia Commons: Starr-080117-1761-Dendranthema x grandiflorum-flowers-Walmart Kahului-Maui (24900874795).jpg"
+  "credit": "Wikimedia Commons: Starr-080117-1761-Dendranthema x grandiflorum-flowers-Walmart Kahului-Maui (24900874795).jpg",
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "dicentra-spectabilis",
@@ -2868,7 +2880,7 @@
  {
   "id": "erigeron-speciosus",
   "latin": "Erigeron speciosus",
-  "hu": "",
+  "hu": "küllőrojt",
   "aliases": [],
   "note": "",
   "categories": [
@@ -2889,12 +2901,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/159219399/large.jpeg",
     "credit": "iNaturalist: (c) Rand Workman, some rights reserved (CC BY-SA), uploaded by Rand Workman"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "eremurus-stenophyllus",
   "latin": "Eremurus stenophyllus",
-  "hu": "",
+  "hu": "korbácsliliom",
   "aliases": [],
   "note": "",
   "categories": [
@@ -2911,7 +2925,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/59090445/large.jpg",
     "credit": "iNaturalist: (c) Ralph Martin, some rights reserved (CC BY-NC-ND), uploaded by Ralph Martin"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "gaillardia-aristata",
@@ -2938,7 +2954,7 @@
  {
   "id": "gladiolus-cultorum",
   "latin": "Gladiolus cultorum",
-  "hu": "",
+  "hu": "kardvirág",
   "aliases": [],
   "note": "",
   "categories": [
@@ -2956,7 +2972,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/79796691/large.jpeg",
     "credit": "iNaturalist: (c) Вадим, some rights reserved (CC BY-NC), uploaded by Вадим"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "gypsophila-paniculata",
@@ -2983,6 +3001,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/221559681/large.jpeg",
     "credit": "iNaturalist: (c) eceaicovschi, some rights reserved (CC BY-NC)"
    }
+  ],
+  "alt": [
+   "évelő fátyolvirág (Maszlay)"
   ]
  },
  {
@@ -3091,6 +3112,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9804874/large.jpg",
     "credit": "iNaturalist: (c) Marissa, some rights reserved (CC BY-NC), uploaded by Marissa"
    }
+  ],
+  "alt": [
+   "tűzeső (Maszlay)"
   ]
  },
  {
@@ -3145,6 +3169,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13629651/large.jpg",
     "credit": "iNaturalist: (c) saba, some rights reserved (CC BY-NC-SA), uploaded by saba"
    }
+  ],
+  "alt": [
+   "jácint (Maszlay)"
   ]
  },
  {
@@ -3189,7 +3216,7 @@
  {
   "id": "leucanthemum-superbum",
   "latin": "Leucanthemum superbum",
-  "hu": "",
+  "hu": "margitvirág",
   "aliases": [],
   "note": "",
   "categories": [
@@ -3202,7 +3229,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/571210/large.jpg",
     "credit": "iNaturalist: (c) daryl_mitchell, some rights reserved (CC BY-SA)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "lewisia-cotyledon",
@@ -3610,13 +3639,13 @@
   ],
   "image": "images/3c352136ad.jpg",
   "credit": "iNaturalist: (c) rain, some rights reserved (CC BY-NC-ND), uploaded by rain",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/15530457/large.jpg",
     "credit": "iNaturalist: (c) Kew on Flickr, some rights reserved (CC BY-NC-SA)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "platycodon-grandiflorus",
@@ -3736,7 +3765,6 @@
   ],
   "image": "images/aa0f60de1d.jpg",
   "credit": "iNaturalist: (c) jonastid, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/87573048/large.jpg",
@@ -3750,7 +3778,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/608434159/large.jpg",
     "credit": "iNaturalist: (c) Léo-Guy de Repentigny, some rights reserved (CC BY-NC), uploaded by Léo-Guy de Repentigny"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "solidaster-luteus",
@@ -3904,7 +3933,6 @@
   ],
   "image": "images/d1b954bcc8.jpg",
   "credit": "iNaturalist: (c) EmaL, some rights reserved (CC BY-NC), uploaded by EmaL",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/267071156/large.jpg",
@@ -3918,7 +3946,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/479236079/large.jpeg",
     "credit": "iNaturalist: (c) Björn Sothmann, some rights reserved (CC BY-SA), uploaded by Björn Sothmann"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "viola-sororia",
@@ -3971,6 +4000,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/628153205/large.jpg",
     "credit": "iNaturalist: (c) Dmitry Kutcherov, some rights reserved (CC BY-NC), uploaded by Dmitry Kutcherov"
    }
+  ],
+  "alt": [
+   "kis télizöld (TERRA)"
   ]
  },
  {
@@ -4011,7 +4043,6 @@
   ],
   "image": "images/ac14b63da2.jpg",
   "credit": "iNaturalist: (c) astonvill4, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/308002531/large.jpeg",
@@ -4025,12 +4056,13 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/183629911/large.jpg",
     "credit": "iNaturalist: (c) kairune, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "anaphalis-margaritacea",
   "latin": "Anaphalis margaritacea",
-  "hu": "",
+  "hu": "gyöngykosárka",
   "aliases": [],
   "note": "",
   "categories": [
@@ -4051,7 +4083,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/84246458/large.jpg",
     "credit": "iNaturalist: (c) Arnie Hachey, some rights reserved (CC BY-NC), uploaded by Arnie Hachey"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "craspedia-globosa",
@@ -4157,7 +4191,7 @@
  {
   "id": "eryngium-alpinum",
   "latin": "Eryngium alpinum",
-  "hu": "",
+  "hu": "alpesi iringó",
   "aliases": [],
   "note": "",
   "categories": [
@@ -4178,7 +4212,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/82279769/large.jpg",
     "credit": "iNaturalist: (c) Annette Geiser-Barkhausen, some rights reserved (CC BY-NC), uploaded by Annette Geiser-Barkhausen"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "gossypium-hirsutum",
@@ -4209,7 +4245,7 @@
  {
   "id": "liatris-spicata",
   "latin": "Liatris spicata",
-  "hu": "",
+  "hu": "füzéres díszcsorba",
   "aliases": [],
   "note": "",
   "categories": [
@@ -4230,7 +4266,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/435739024/large.jpg",
     "credit": "iNaturalist: (c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "limonium-latifolium",
@@ -4394,6 +4432,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/6761041/large.jpeg",
     "credit": "iNaturalist: (c) Jakub Pełka, some rights reserved (CC BY-NC), uploaded by Jakub Pełka"
    }
+  ],
+  "alt": [
+   "sáfrány (Maszlay)"
   ]
  },
  {
@@ -4460,7 +4501,6 @@
   ],
   "image": "images/9db386967c.jpg",
   "credit": "iNaturalist: (c) AnneTanne, some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/65596751/large.jpeg",
@@ -4474,7 +4514,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/7187858/large.jpg",
     "credit": "iNaturalist: (c) Paul Cools, some rights reserved (CC BY-NC), uploaded by Paul Cools"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "hyacinthoides-hispanica",
@@ -4513,7 +4554,6 @@
   ],
   "image": "images/c8d82fa347.jpg",
   "credit": "iNaturalist: (c) nvicens, some rights reserved (CC BY-NC), uploaded by nvicens",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/176914826/large.jpeg",
@@ -4523,7 +4563,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/259885224/large.jpeg",
     "credit": "iNaturalist: (c) adinie, some rights reserved (CC BY-NC), uploaded by adinie"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "leucojum-aestivum",
@@ -4536,7 +4577,6 @@
   ],
   "image": "images/3d8fef92ed.jpg",
   "credit": "iNaturalist: (c) Markus Ackermann, some rights reserved (CC BY-NC), uploaded by Markus Ackermann",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/67335722/large.jpeg",
@@ -4550,7 +4590,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9686/large.jpg",
     "credit": "iNaturalist: (c) su neko, some rights reserved (CC BY)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "muscari-armeniacum",
@@ -4605,7 +4646,7 @@
  {
   "id": "oxalis-deppei",
   "latin": "Oxalis deppei",
-  "hu": "",
+  "hu": "madársóska",
   "aliases": [],
   "note": "",
   "categories": [
@@ -4626,7 +4667,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/4076632/large.JPG",
     "credit": "iNaturalist: (c) JaguarGozandoSelva, some rights reserved (CC BY-NC), uploaded by JaguarGozandoSelva"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "scilla-peruviana",
@@ -4653,14 +4696,16 @@
  {
   "id": "tulipa-hybrida",
   "latin": "Tulipa hybrida",
-  "hu": "",
+  "hu": "tulipán",
   "aliases": [],
   "note": "",
   "categories": [
    "Hajtatott évelő dísznövények"
   ],
   "image": "images/dca85f2bb3.jpg",
-  "credit": "Wikimedia Commons: Tulipa suaveolens floriade to Canberra.jpg"
+  "credit": "Wikimedia Commons: Tulipa suaveolens floriade to Canberra.jpg",
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "tulipa-gesneriana",
@@ -4714,6 +4759,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/465521925/large.jpg",
     "credit": "iNaturalist: (c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman"
    }
+  ],
+  "alt": [
+   "gyalogakác (Maszlay)"
   ]
  },
  {
@@ -4741,6 +4789,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/68433870/large.jpg",
     "credit": "iNaturalist: (c) Konstantin Romanov, some rights reserved (CC BY-NC), uploaded by Konstantin Romanov"
    }
+  ],
+  "alt": [
+   "nyírfa (Maszlay)"
   ]
  },
  {
@@ -4754,7 +4805,6 @@
   ],
   "image": "images/fba98c1117.jpg",
   "credit": "iNaturalist: (c) Nikolay V Dorofeev, some rights reserved (CC BY-NC), uploaded by Nikolay V Dorofeev",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/244495986/large.jpg",
@@ -4768,7 +4818,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/130874742/large.jpeg",
     "credit": "iNaturalist: (c) Владимир, some rights reserved (CC BY-NC), uploaded by Владимир"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "cornus-sanguinea",
@@ -4845,6 +4896,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1411794/large.jpg",
     "credit": "iNaturalist: (c) Klasse im Garten, some rights reserved (CC BY-NC-ND)"
    }
+  ],
+  "alt": [
+   "csavartmogyoró (Maszlay)"
   ]
  },
  {
@@ -4858,7 +4912,6 @@
   ],
   "image": "images/e12ce888d6.jpg",
   "credit": "iNaturalist: (c) David Midgley, some rights reserved (CC BY-NC-ND)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/244411204/large.jpg",
@@ -4872,7 +4925,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/14213902/large.jpg",
     "credit": "iNaturalist: (c) Hiromi kobori, some rights reserved (CC BY-NC), uploaded by Hiromi kobori"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "poncirus-trifoliata",
@@ -4939,6 +4993,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/65992874/large.jpeg",
     "credit": "iNaturalist: (c) Sandra Falanga, some rights reserved (CC BY-NC), uploaded by Sandra Falanga"
    }
+  ],
+  "alt": [
+   "csavartfűz (Maszlay)"
   ]
  },
  {
@@ -5125,7 +5182,6 @@
   ],
   "image": "images/ced1dd413b.jpg",
   "credit": "iNaturalist: Wouter Hagens, no known copyright restrictions (public domain)",
-  "verify": true,
   "more": [
    {
     "image": "https://static.inaturalist.org/photos/2522634/large.jpg",
@@ -5139,7 +5195,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/282774060/large.jpg",
     "credit": "iNaturalist: (c) jolly04, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "cotinus-coggygria",
@@ -5206,7 +5263,6 @@
   ],
   "image": "images/c3a7897215.jpg",
   "credit": "iNaturalist: (c) tejnarayan, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/39241990/large.jpeg",
@@ -5220,7 +5276,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/642877530/large.jpg",
     "credit": "iNaturalist: (c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "paerthenocissus-quinquefolia",
@@ -5260,6 +5317,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/27174829/large.jpeg",
     "credit": "iNaturalist: (c) mkkennedy, some rights reserved (CC BY-NC), uploaded by mkkennedy"
    }
+  ],
+  "alt": [
+   "tapadókorongos vadszőlő (Maszlay)"
   ]
  },
  {
@@ -5285,7 +5345,6 @@
   ],
   "image": "images/6be9cdf5ed.jpg",
   "credit": "iNaturalist: (c) Дмитрий, some rights reserved (CC BY-NC), uploaded by Дмитрий",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/47092696/large.jpg",
@@ -5295,7 +5354,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/72696506/large.jpeg",
     "credit": "iNaturalist: (c) wsimmons, some rights reserved (CC BY-NC), uploaded by wsimmons"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "quercus-cerris",
@@ -5308,7 +5368,6 @@
   ],
   "image": "images/597061d694.jpg",
   "credit": "iNaturalist: no rights reserved, uploaded by Stephen James McWilliam",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/251489858/large.jpg",
@@ -5322,7 +5381,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/233814691/large.jpg",
     "credit": "iNaturalist: (c) Bart Wursten, some rights reserved (CC BY-NC), uploaded by Bart Wursten"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "quercus-robur",
@@ -5362,7 +5422,6 @@
   ],
   "image": "images/091da38a9c.jpg",
   "credit": "iNaturalist: (c) ssimeto, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/51154566/large.jpg",
@@ -5376,7 +5435,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/301028109/large.jpeg",
     "credit": "iNaturalist: (c) William J. Deml, some rights reserved (CC BY), uploaded by William J. Deml"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "salix-integra",
@@ -5451,7 +5511,6 @@
   ],
   "image": "images/9c7232bb85.jpg",
   "credit": "iNaturalist: (c) rachelgreenbelt, some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/451288706/large.jpeg",
@@ -5465,7 +5524,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1649676/large.jpg",
     "credit": "iNaturalist: (c) harum.koh, some rights reserved (CC BY-SA), uploaded by harum.koh"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "chamelaucium-uncinatum",
@@ -5506,7 +5566,6 @@
   ],
   "image": "images/0910725bab.jpg",
   "credit": "iNaturalist: (c) Andreas Rockstein, some rights reserved (CC BY-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9802/large.jpg",
@@ -5516,7 +5575,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/53973018/large.jpeg",
     "credit": "iNaturalist: (c) lucapassalacqua, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "forsythia-intermedia",
@@ -5543,6 +5603,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/122919/large.jpg",
     "credit": "iNaturalist: (c) -NjuTIKA-, some rights reserved (CC BY-NC-SA)"
    }
+  ],
+  "alt": [
+   "aranycserje, aranyfa (Maszlay)"
   ]
  },
  {
@@ -5627,7 +5690,6 @@
   ],
   "image": "images/d933ab7a71.jpg",
   "credit": "iNaturalist: (c) viviancui, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13733321/large.jpg",
@@ -5641,7 +5703,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/266049360/large.jpg",
     "credit": "iNaturalist: (c) nick_roth, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "lagerstroemia-indica",
@@ -5708,7 +5771,6 @@
   ],
   "image": "images/b6cc9174d9.jpg",
   "credit": "iNaturalist: (c) Petr Harant, some rights reserved (CC BY), uploaded by Petr Harant",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/298751282/large.jpeg",
@@ -5722,7 +5784,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/719259147/large.jpg",
     "credit": "iNaturalist: (c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "lonicera-japonica",
@@ -5795,6 +5858,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1540735/large.jpg",
     "credit": "iNaturalist: (c) candiru, some rights reserved (CC BY)"
    }
+  ],
+  "alt": [
+   "jezsámen (Maszlay)"
   ]
  },
  {
@@ -5845,6 +5911,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/64934544/large.jpg",
     "credit": "iNaturalist: (c) heliamphora, some rights reserved (CC BY-NC)"
    }
+  ],
+  "alt": [
+   "japán díszcseresznye (Maszlay)"
   ]
  },
  {
@@ -5877,7 +5946,7 @@
  {
   "id": "prunus-triloba-multiplex",
   "latin": "Prunus triloba 'Multiplex'",
-  "hu": "",
+  "hu": "babarózsa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -5898,7 +5967,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/93582104/large.jpg",
     "credit": "iNaturalist: (c) manuel m. v., some rights reserved (CC BY)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "rosa-sp",
@@ -5924,7 +5995,6 @@
   ],
   "image": "images/d7357dc1f8.jpg",
   "credit": "iNaturalist: (c) Colin, some rights reserved (CC BY-NC-ND)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/105033271/large.jpg",
@@ -5938,7 +6008,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/125243359/large.jpg",
     "credit": "iNaturalist: no rights reserved, uploaded by Tero Linjama"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "salix-cinerea",
@@ -6085,7 +6156,10 @@
   "image": "images/e6438da7e5.jpg",
   "credit": "iNaturalist: (c) katelayton, some rights reserved (CC BY-NC)",
   "verify": true,
-  "more": []
+  "more": [],
+  "alt": [
+   "labdarózsa (Maszlay)"
+  ]
  },
  {
   "id": "wisteria-sinensis",
@@ -6179,6 +6253,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/558875236/large.jpg",
     "credit": "iNaturalist: (c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman"
    }
+  ],
+  "alt": [
+   "bálványfa (TERRA)"
   ]
  },
  {
@@ -6192,7 +6269,6 @@
   ],
   "image": "images/3f796e291e.jpg",
   "credit": "iNaturalist: (c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/470810124/large.png",
@@ -6202,7 +6278,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/68381523/large.jpeg",
     "credit": "iNaturalist: (c) elena_tikhonova, some rights reserved (CC BY-NC), uploaded by elena_tikhonova"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "callicarpa-bodinieri",
@@ -6324,7 +6401,7 @@
  {
   "id": "cotoneaster-horizontalis",
   "latin": "Cotoneaster horizontalis",
-  "hu": "",
+  "hu": "madárbirs",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6345,7 +6422,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/97278873/large.jpg",
     "credit": "iNaturalist: (c) Salicyna, some rights reserved (CC BY-SA)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "crataegus-monogyna",
@@ -6394,6 +6473,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13507412/large.jpeg",
     "credit": "iNaturalist: (c) Bonnie Kinder, some rights reserved (CC BY-NC), uploaded by Bonnie Kinder"
    }
+  ],
+  "alt": [
+   "európai kecskerágó (Maszlay)"
   ]
  },
  {
@@ -6417,6 +6499,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/737550816/large.jpg",
     "credit": "iNaturalist: (c) Li Jianong, some rights reserved (CC BY-NC), uploaded by Li Jianong"
    }
+  ],
+  "alt": [
+   "bükk (TERRA)"
   ]
  },
  {
@@ -6440,6 +6525,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/216880243/large.jpg",
     "credit": "iNaturalist: (c) TheMountains, some rights reserved (CC BY-NC), uploaded by TheMountains"
    }
+  ],
+  "alt": [
+   "lepényfa (Maszlay)"
   ]
  },
  {
@@ -6454,7 +6542,10 @@
   "image": "images/9ef83ecb0f.jpg",
   "credit": "iNaturalist: (c) spygliukuburys, some rights reserved (CC BY-NC), uploaded by spygliukuburys",
   "verify": true,
-  "more": []
+  "more": [],
+  "alt": [
+   "komló (TERRA)"
+  ]
  },
  {
   "id": "hypericum-inodorum",
@@ -6583,6 +6674,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/7955224/large.jpg",
     "credit": "iNaturalist: (c) Marek Velechovský, some rights reserved (CC BY-NC)"
    }
+  ],
+  "alt": [
+   "sárga fagyöngy, fakín (Maszlay)"
   ]
  },
  {
@@ -6610,6 +6704,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/146755467/large.jpg",
     "credit": "iNaturalist: (c) Arb O'Retum, some rights reserved (CC BY-NC-SA)"
    }
+  ],
+  "alt": [
+   "narancseperfa (Maszlay)"
   ]
  },
  {
@@ -6708,7 +6805,6 @@
   ],
   "image": "images/91a4adf330.jpg",
   "credit": "iNaturalist: (c) Guillaume Fried, some rights reserved (CC BY-NC), uploaded by Guillaume Fried",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/67812800/large.jpeg",
@@ -6722,7 +6818,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/47402120/large.jpg",
     "credit": "iNaturalist: (c) matthew_wills, some rights reserved (CC BY-NC), uploaded by matthew_wills"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "rhus-typhina",
@@ -6762,7 +6859,7 @@
   ],
   "image": "images/657cfe7066.jpg",
   "credit": "Wikimedia Commons: Divlja ruza cvijet 270508.jpg",
-  "verify": true
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "rosa-multiflora",
@@ -6974,8 +7071,8 @@
   ],
   "image": "images/6d62c632d8.jpg",
   "credit": "iNaturalist: (c) katelayton, some rights reserved (CC BY-NC)",
-  "verify": true,
-  "more": []
+  "more": [],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "aucuba-japonica",
@@ -7025,6 +7122,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/18652921/large.jpeg",
     "credit": "iNaturalist: (c) Michael Scherer-Lorenzen, some rights reserved (CC BY-NC), uploaded by Michael Scherer-Lorenzen"
    }
+  ],
+  "alt": [
+   "puszpáng (Maszlay)"
   ]
  },
  {
@@ -7064,7 +7164,6 @@
   ],
   "image": "images/abaf7d0428.jpg",
   "credit": "iNaturalist: (c) Pat Enright, some rights reserved (CC BY-NC), uploaded by Pat Enright",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2985109/large.JPG",
@@ -7078,7 +7177,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2681430/large.jpg",
     "credit": "iNaturalist: (c) Kim, Hyun-tae, some rights reserved (CC BY), uploaded by Kim, Hyun-tae"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "euonymus-fortunei",
@@ -7115,7 +7215,6 @@
   ],
   "image": "images/17156d27ec.jpg",
   "credit": "iNaturalist: (c) Marianna Boi, some rights reserved (CC BY), uploaded by Marianna Boi",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/50733032/large.jpeg",
@@ -7129,7 +7228,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/23968667/large.jpeg",
     "credit": "iNaturalist: (c) Gianni Del Bufalo bygdb, some rights reserved (CC BY), uploaded by Gianni Del Bufalo bygdb"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "helichrysum-italicum",
@@ -7182,6 +7282,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/41124613/large.jpg",
     "credit": "iNaturalist: (c) John Martin, some rights reserved (CC BY-NC-ND), uploaded by John Martin"
    }
+  ],
+  "alt": [
+   "magyal (Maszlay)"
   ]
  },
  {
@@ -7205,6 +7308,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2697773/large.jpg",
     "credit": "iNaturalist: (c) Andrey Zharkikh, some rights reserved (CC BY)"
    }
+  ],
+  "alt": [
+   "keskenylevelű levendula (Maszlay)"
   ]
  },
  {
@@ -7319,6 +7425,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/245543864/large.jpg",
     "credit": "iNaturalist: (c) Plant Image Library, some rights reserved (CC BY-SA)"
    }
+  ],
+  "alt": [
+   "babérmeggy (Maszlay)"
   ]
  },
  {
@@ -7346,6 +7455,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/128600737/large.jpg",
     "credit": "iNaturalist: (c) Παναγιώτης Ραφαηλίδης, some rights reserved (CC BY-NC), uploaded by Παναγιώτης Ραφαηλίδης"
    }
+  ],
+  "alt": [
+   "tűztövis (Maszlay)"
   ]
  },
  {
@@ -7528,7 +7640,6 @@
   ],
   "image": "images/c8a1c4c654.jpg",
   "credit": "iNaturalist: (c) Aleksandr_Levon, some rights reserved (CC BY-NC), uploaded by Aleksandr_Levon",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/92389649/large.jpeg",
@@ -7542,7 +7653,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/29810111/large.jpg",
     "credit": "iNaturalist: (c) Vladimir Tkalčić, some rights reserved (CC BY-NC), uploaded by Vladimir Tkalčić"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "yucca-filamentosa",
@@ -7578,7 +7690,6 @@
   ],
   "image": "images/79c47bcd17.jpg",
   "credit": "iNaturalist: (c) böhringer friedrich, some rights reserved (CC BY-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/10907667/large.jpg",
@@ -7592,7 +7703,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/123049054/large.jpeg",
     "credit": "iNaturalist: (c) Marcin Klisz, some rights reserved (CC BY-NC), uploaded by Marcin Klisz"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "abies-procera",
@@ -7673,6 +7785,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/19722686/large.jpg",
     "credit": "iNaturalist: (c) Franz Xaver, some rights reserved (CC BY-SA)"
    }
+  ],
+  "alt": [
+   "kaukázusi jegenyefenyő/nordmann-fenyő (Maszlay)"
   ]
  },
  {
@@ -7709,7 +7824,6 @@
   ],
   "image": "images/6dfc813672.jpg",
   "credit": "iNaturalist: (c) Elio Giacone, some rights reserved (CC BY-NC), uploaded by Elio Giacone",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/73842968/large.jpg",
@@ -7719,7 +7833,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/73842966/large.jpg",
     "credit": "iNaturalist: (c) John Rusk, some rights reserved (CC BY)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "cryptomeria-japonica",
@@ -7798,7 +7913,6 @@
   ],
   "image": "images/2fefd07996.jpg",
   "credit": "iNaturalist: (c) 鐦鍆錒/锎钔锕（Man Hoimoon）, some rights reserved (CC BY-NC), uploaded by 鐦鍆錒/锎钔锕（Man Hoimoon）",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/438174822/large.jpeg",
@@ -7812,7 +7926,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/69936348/large.jpg",
     "credit": "iNaturalist: (c) Marco Mussita, some rights reserved (CC BY), uploaded by Marco Mussita"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "juniperus-communis",
@@ -7825,7 +7940,6 @@
   ],
   "image": "images/eb954c4f29.jpg",
   "credit": "iNaturalist: (c) FreckLes, some rights reserved (CC BY-NC), uploaded by FreckLes",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/112059387/large.jpeg",
@@ -7839,7 +7953,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/24851076/large.jpg",
     "credit": "iNaturalist: (c) Svetla Sofkova-Bobcheva, some rights reserved (CC BY-NC), uploaded by Svetla Sofkova-Bobcheva"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "juniperus-sp",
@@ -7892,6 +8007,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/75772546/large.jpg",
     "credit": "iNaturalist: (c) Valentin Hamon, some rights reserved (CC BY-NC), uploaded by Valentin Hamon"
    }
+  ],
+  "alt": [
+   "vörösfenyő (Maszlay)"
   ]
  },
  {
@@ -7915,6 +8033,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/110753344/large.jpeg",
     "credit": "iNaturalist: (c) Вотинцевы Елена и Сергей, some rights reserved (CC BY-NC), uploaded by Вотинцевы Елена и Сергей"
    }
+  ],
+  "alt": [
+   "lucfenyő (Maszlay)"
   ]
  },
  {
@@ -7996,6 +8117,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/448684451/large.png",
     "credit": "iNaturalist: (c) Li Jianong, some rights reserved (CC BY-NC), uploaded by Li Jianong"
    }
+  ],
+  "alt": [
+   "törpefenyő (Maszlay)"
   ]
  },
  {
@@ -8009,7 +8133,6 @@
   ],
   "image": "images/89e43b635e.jpg",
   "credit": "iNaturalist: (c) Dijana Dubrović, some rights reserved (CC BY-NC), uploaded by Dijana Dubrović",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/321921042/large.jpg",
@@ -8023,7 +8146,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/85518636/large.jpg",
     "credit": "iNaturalist: (c) Arb O'Retum, some rights reserved (CC BY-NC-SA)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "pinus-pinaster",
@@ -8086,7 +8210,6 @@
   ],
   "image": "images/e33d25dbbc.jpg",
   "credit": "iNaturalist: (c) vyatka, some rights reserved (CC BY-NC), uploaded by vyatka",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/268451762/large.jpg",
@@ -8096,7 +8219,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/71529/large.jpg",
     "credit": "iNaturalist: (c) anemoneprojectors (no internet at the moment), some rights reserved (CC BY-SA)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "pinus-strobus",
@@ -8109,7 +8233,6 @@
   ],
   "image": "images/0e273b7fe1.jpg",
   "credit": "iNaturalist: (c) Forest and Kim Starr, some rights reserved (CC BY)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/390760300/large.jpeg",
@@ -8123,7 +8246,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/179493787/large.jpeg",
     "credit": "iNaturalist: (c) Fen Levy-O'Malley, some rights reserved (CC BY-NC), uploaded by Fen Levy-O'Malley"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "pinus-wallichiana",
@@ -8150,6 +8274,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/8553356/large.jpg",
     "credit": "iNaturalist: (c) Robin Abraham, some rights reserved (CC BY)"
    }
+  ],
+  "alt": [
+   "selyemfenyő (Maszlay)"
   ]
  },
  {
@@ -8254,6 +8381,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/69373138/large.jpeg",
     "credit": "iNaturalist: (c) Florin Feneru, some rights reserved (CC BY), uploaded by Florin Feneru"
    }
+  ],
+  "alt": [
+   "tiszafa (Maszlay)"
   ]
  },
  {
@@ -8267,7 +8397,6 @@
   ],
   "image": "images/2bf562a118.jpg",
   "credit": "iNaturalist: (c) Donna Pomeroy, some rights reserved (CC BY-NC), uploaded by Donna Pomeroy",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/120128278/large.jpeg",
@@ -8281,7 +8410,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/4411854/large.jpg",
     "credit": "iNaturalist: (c) Lee, seong-won, some rights reserved (CC BY-NC), uploaded by Lee, seong-won"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "thujopsis-dolabrata",
@@ -8365,6 +8495,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/61695996/large.jpg",
     "credit": "iNaturalist: (c) jkuo, some rights reserved (CC BY-NC)"
    }
+  ],
+  "alt": [
+   "szobafenyő (Maszlay)"
   ]
  },
  {
@@ -8449,7 +8582,7 @@
  {
   "id": "begonia-rex-cultorum",
   "latin": "Begonia rex-cultorum",
-  "hu": "",
+  "hu": "királybegónia",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8470,7 +8603,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/132990325/large.jpg",
     "credit": "iNaturalist: (c) Alix Sanchis, some rights reserved (CC BY), uploaded by Alix Sanchis"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "calathea-rosea-picta",
@@ -8549,7 +8684,7 @@
  {
   "id": "codiaeum-variegatum",
   "latin": "Codiaeum variegatum",
-  "hu": "",
+  "hu": "kroton / csodacserje",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8566,12 +8701,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/116055887/large.jpeg",
     "credit": "iNaturalist: (c) Liz, some rights reserved (CC BY-NC), uploaded by Liz"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "cordyline-fruticosa",
   "latin": "Cordyline fruticosa",
-  "hu": "",
+  "hu": "színeslevelű bunkóliliom",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8592,7 +8729,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/61299093/large.jpg",
     "credit": "iNaturalist: (c) Justyn Stahl, some rights reserved (CC BY-NC), uploaded by Justyn Stahl"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "coffea-arabica",
@@ -8669,6 +8808,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/240542605/large.jpg",
     "credit": "iNaturalist: (c) botswanabugs, some rights reserved (CC BY-NC), uploaded by botswanabugs"
    }
+  ],
+  "alt": [
+   "vizipálma (Maszlay)"
   ]
  },
  {
@@ -8749,7 +8891,7 @@
  {
   "id": "dracaena-deremensis",
   "latin": "Dracaena deremensis",
-  "hu": "",
+  "hu": "sávos sárkányfa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8770,12 +8912,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/108674188/large.jpeg",
     "credit": "iNaturalist: no rights reserved, uploaded by maryury"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "dracaena-fragrans",
   "latin": "Dracaena fragrans",
-  "hu": "",
+  "hu": "illatos sárkányfa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8796,12 +8940,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/108674188/large.jpeg",
     "credit": "iNaturalist: no rights reserved, uploaded by maryury"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "dracaena-marginata",
   "latin": "Dracaena marginata",
-  "hu": "",
+  "hu": "tarka sárkányfa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8822,7 +8968,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/52095581/large.jpeg",
     "credit": "iNaturalist: (c) David Rabehevitra, some rights reserved (CC BY-NC), uploaded by David Rabehevitra"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "fatshedera-lizei",
@@ -8847,7 +8995,6 @@
   ],
   "image": "images/c8ff7afef7.jpg",
   "credit": "iNaturalist: (c) Napocesco, some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1201141/large.",
@@ -8861,7 +9008,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/66899088/large.jpeg",
     "credit": "iNaturalist: (c) Trish Stretton, some rights reserved (CC BY-NC), uploaded by Trish Stretton"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "ficus-benjamina",
@@ -8888,12 +9036,15 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/68686108/large.jpeg",
     "credit": "iNaturalist: no rights reserved, uploaded by 葉子"
    }
+  ],
+  "alt": [
+   "csüngőágú fikusz (Maszlay)"
   ]
  },
  {
   "id": "ficus-binnendijkii",
   "latin": "Ficus binnendijkii",
-  "hu": "",
+  "hu": "fűzlevelű fikusz",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8914,7 +9065,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/154513855/large.jpg",
     "credit": "iNaturalist: (c) rachelteo, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "ficus-deltoidea",
@@ -8955,6 +9108,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/14335883/large.jpg",
     "credit": "iNaturalist: (c) Igmar Grewar, some rights reserved (CC BY-NC), uploaded by Igmar Grewar"
    }
+  ],
+  "alt": [
+   "gumifa, szobafikusz (Maszlay)"
   ]
  },
  {
@@ -8986,7 +9142,7 @@
  {
   "id": "ficus-lyrata",
   "latin": "Ficus lyrata",
-  "hu": "",
+  "hu": "lantlevelű fikusz",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9007,7 +9163,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/16353752/large.jpg",
     "credit": "iNaturalist: (c) Marco Schmidt, some rights reserved (CC BY-NC-SA), uploaded by Marco Schmidt"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "fittonia-albinensis",
@@ -9081,7 +9239,6 @@
   ],
   "image": "images/244e61cd83.jpg",
   "credit": "iNaturalist: (c) Huerta Los Laureles, some rights reserved (CC BY-NC), uploaded by Huerta Los Laureles",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/74277/large.jpg",
@@ -9091,7 +9248,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/23676736/large.jpeg",
     "credit": "iNaturalist: (c) sozzles, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "pandanus-veitchii",
@@ -9185,7 +9343,7 @@
  {
   "id": "pilea-cadierei",
   "latin": "Pilea cadierei",
-  "hu": "",
+  "hu": "ezüst pílea",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9206,19 +9364,23 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/61684605/large.jpg",
     "credit": "iNaturalist: (c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "schefflera-arboricola",
   "latin": "Schefflera arboricola",
-  "hu": "",
+  "hu": "sugárarália",
   "aliases": [],
   "note": "",
   "categories": [
    "Cserepes levéldísznövények"
   ],
   "image": "images/4cada87043.jpg",
-  "credit": "Wikimedia Commons: Minnehaha Walk MRD 08.jpg"
+  "credit": "Wikimedia Commons: Minnehaha Walk MRD 08.jpg",
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "selaginella-martensii",
@@ -9275,7 +9437,7 @@
  {
   "id": "yucca-elephantipes",
   "latin": "Yucca elephantipes",
-  "hu": "",
+  "hu": "pálmaliliom, elefántláb jukka",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9296,7 +9458,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2828132/large.jpg",
     "credit": "iNaturalist: (c) Michael Chassé, some rights reserved (CC BY-NC-ND), uploaded by Michael Chassé"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "zamioculcas-zamiifolia",
@@ -9319,7 +9483,7 @@
  {
   "id": "adiantum-tenerum",
   "latin": "Adiantum tenerum",
-  "hu": "",
+  "hu": "vénuszfodorka",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9340,7 +9504,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/6517784/large.jpg",
     "credit": "iNaturalist: (c) Magne Flåten, some rights reserved (CC BY-NC-SA), uploaded by Magne Flåten"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "asplenium-nidus",
@@ -9353,7 +9519,6 @@
   ],
   "image": "images/17051ed45f.jpg",
   "credit": "iNaturalist: (c) scallions, some rights reserved (CC BY), uploaded by scallions",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/195802437/large.jpg",
@@ -9363,7 +9528,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/500858958/large.jpeg",
     "credit": "iNaturalist: (c) Leon Perrie, some rights reserved (CC BY), uploaded by Leon Perrie"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "athyrium-niponicum",
@@ -9391,7 +9557,7 @@
  {
   "id": "cyrtomium-falcatum",
   "latin": "Cyrtomium falcatum",
-  "hu": "",
+  "hu": "babérpáfrány",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9412,7 +9578,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/138784341/large.jpg",
     "credit": "iNaturalist: (c) stowellj, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "davallia-mariesii",
@@ -9489,7 +9657,7 @@
  {
   "id": "nephrolepis-cordifolia",
   "latin": "Nephrolepis cordifolia",
-  "hu": "",
+  "hu": "szobapáfrány",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9510,7 +9678,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/77812479/large.jpg",
     "credit": "iNaturalist: (c) rice_d_009, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "nephrolepis-exaltata",
@@ -9523,7 +9693,6 @@
   ],
   "image": "images/c2be80c102.jpg",
   "credit": "iNaturalist: (c) taofeek, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/77550564/large.jpg",
@@ -9537,7 +9706,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/239922994/large.jpg",
     "credit": "iNaturalist: (c) Thomas Irvine, some rights reserved (CC BY), uploaded by Thomas Irvine"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "phlebodium-aureum",
@@ -9568,7 +9738,7 @@
  {
   "id": "platycerium-bifurcatum",
   "latin": "Platycerium bifurcatum",
-  "hu": "",
+  "hu": "szarvasagancs páfrány",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9585,7 +9755,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/53827488/large.jpg",
     "credit": "iNaturalist: (c) sandradennis, some rights reserved (CC BY-NC), uploaded by sandradennis"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "platycerium-elephantotis",
@@ -9661,7 +9833,7 @@
  {
   "id": "chamaedorea-elegans",
   "latin": "Chamaedorea elegans",
-  "hu": "",
+  "hu": "gyompálma / hegyi pálma",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9674,7 +9846,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/73105534/large.jpeg",
     "credit": "iNaturalist: (c) Luis Humberto Vicente-Rivera, some rights reserved (CC BY-NC), uploaded by Luis Humberto Vicente-Rivera"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "chamaerops-humilis",
@@ -9701,6 +9875,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/210574737/large.jpg",
     "credit": "iNaturalist: (c) rudyclaeys, some rights reserved (CC BY-NC)"
    }
+  ],
+  "alt": [
+   "törpe lószőrpálma (Maszlay)"
   ]
  },
  {
@@ -9772,7 +9949,7 @@
  {
   "id": "howea-forsteriana",
   "latin": "Howea forsteriana",
-  "hu": "",
+  "hu": "kenciapálma",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9793,7 +9970,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/70319121/large.jpg",
     "credit": "iNaturalist: (c) Colin Ogle, some rights reserved (CC BY-NC), uploaded by Colin Ogle"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "livistona-rotundifolia",
@@ -9846,6 +10025,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/123547471/large.jpg",
     "credit": "iNaturalist: (c) Gertjan van Noord, some rights reserved (CC BY-ND)"
    }
+  ],
+  "alt": [
+   "kanári datolyapálma / kanári főnixpálma (Maszlay)"
   ]
  },
  {
@@ -9968,6 +10150,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/341319818/large.jpeg",
     "credit": "iNaturalist: (c) Flor Jaramillo, some rights reserved (CC BY-NC), uploaded by Flor Jaramillo"
    }
+  ],
+  "alt": [
+   "amerikai agávé (Maszlay)"
   ]
  },
  {
@@ -10257,6 +10442,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/56963349/large.jpg",
     "credit": "iNaturalist: (c) Jean-Philippe BASUYAUX, some rights reserved (CC BY-NC), uploaded by Jean-Philippe BASUYAUX"
    }
+  ],
+  "alt": [
+   "anyósnyelv / tigrislevél (Maszlay)"
   ]
  },
  {
@@ -10418,6 +10606,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/200200474/large.jpg",
     "credit": "iNaturalist: (c) bennybotany85, some rights reserved (CC BY-NC), uploaded by bennybotany85"
    }
+  ],
+  "alt": [
+   "csokrosinda (Maszlay)"
   ]
  },
  {
@@ -10449,6 +10640,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/10643526/large.jpg",
     "credit": "iNaturalist: (c) Eric Knight, certains droits réservés (CC BY)"
    }
+  ],
+  "alt": [
+   "szobaszőlő / afrikai futóka (Maszlay)"
   ]
  },
  {
@@ -10476,7 +10670,7 @@
  {
   "id": "epipremnum-aureum",
   "latin": "Epipremnum aureum",
-  "hu": "",
+  "hu": "szobafutóka",
   "aliases": [],
   "note": "",
   "categories": [
@@ -10493,12 +10687,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/78148550/large.jpg",
     "credit": "iNaturalist: (c) nmart225, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "ficus-pumila",
   "latin": "Ficus pumila",
-  "hu": "",
+  "hu": "kúszó törpefikusz",
   "aliases": [],
   "note": "",
   "categories": [
@@ -10515,12 +10711,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/554900/large.jpg",
     "credit": "iNaturalist: (c) Ahmad Fuad Morad, some rights reserved (CC BY-NC-SA)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "hedera-canariensis",
   "latin": "Hedera canariensis",
-  "hu": "",
+  "hu": "kanári borostyán",
   "aliases": [],
   "note": "",
   "categories": [
@@ -10541,7 +10739,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/255805787/large.jpeg",
     "credit": "iNaturalist: (c) David G. del Olmo, some rights reserved (CC BY-NC), uploaded by David G. del Olmo"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "monstera-obliqua",
@@ -10646,7 +10846,7 @@
  {
   "id": "philodendron-scandens",
   "latin": "Philodendron scandens",
-  "hu": "",
+  "hu": "szívlevelű filodendron",
   "aliases": [],
   "note": "",
   "categories": [
@@ -10659,7 +10859,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/724199/large.jpg",
     "credit": "iNaturalist: (c) ecos de pedra, some rights reserved (CC BY-NC-SA)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "rhipsalis-sp",
@@ -10807,7 +11009,7 @@
  {
   "id": "syngonium-podophyllum",
   "latin": "Syngonium podophyllum",
-  "hu": "",
+  "hu": "nyíllevél",
   "aliases": [],
   "note": "",
   "categories": [
@@ -10824,12 +11026,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/215283206/large.jpeg",
     "credit": "iNaturalist: (c) Ivelisse Irizarry, some rights reserved (CC BY-NC), uploaded by Ivelisse Irizarry"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "tradescantia-albiflora",
   "latin": "Tradescantia albiflora",
-  "hu": "",
+  "hu": "pletyka",
   "aliases": [],
   "note": "",
   "categories": [
@@ -10846,7 +11050,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/247170901/large.jpeg",
     "credit": "iNaturalist: (c) Johnson Chen, some rights reserved (CC BY-NC), uploaded by Johnson Chen"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "zebrina-pendula",
@@ -11100,6 +11306,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/37624919/large.jpg",
     "credit": "iNaturalist: (c) Eric Keith, some rights reserved (CC BY-NC), uploaded by Eric Keith"
    }
+  ],
+  "alt": [
+   "kukoricalevél (Maszlay)"
   ]
  },
  {
@@ -11220,6 +11429,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/88530826/large.jpg",
     "credit": "iNaturalist: (c) Bart Wursten, some rights reserved (CC BY-NC), uploaded by Bart Wursten"
    }
+  ],
+  "alt": [
+   "szerencsebambusz (Maszlay)"
   ]
  },
  {
@@ -11471,7 +11683,7 @@
  {
   "id": "gaultheria-shallon-salal",
   "latin": "Gaultheria shallon (salal)",
-  "hu": "",
+  "hu": "salal (szalál), oregoni fajdbogyó",
   "aliases": [],
   "note": "",
   "categories": [
@@ -11492,7 +11704,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/5803577/large.jpg",
     "credit": "iNaturalist: (c) williambirmingham, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "gleichenia-microphylla",
@@ -11531,7 +11745,6 @@
   ],
   "image": "images/edc99976d1.jpg",
   "credit": "iNaturalist: (c) 空猫, some rights reserved (CC BY-NC), uploaded by 空猫",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/140762355/large.jpg",
@@ -11541,7 +11754,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/322967430/large.jpg",
     "credit": "iNaturalist: (c) Колесникова Екатерина, some rights reserved (CC BY-NC), uploaded by Колесникова Екатерина"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "myrtus-communis",
@@ -11690,7 +11904,7 @@
  {
   "id": "philodendron-xanadu",
   "latin": "Philodendron xanadu",
-  "hu": "",
+  "hu": "filodendron",
   "aliases": [],
   "note": "",
   "categories": [
@@ -11711,12 +11925,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/258881000/large.jpeg",
     "credit": "iNaturalist: (c) Gustavo Magnago, some rights reserved (CC BY-NC), uploaded by Gustavo Magnago"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "rumohra-adiantiformis",
   "latin": "Rumohra adiantiformis",
-  "hu": "",
+  "hu": "bőrpáfrány",
   "aliases": [],
   "note": "",
   "categories": [
@@ -11733,7 +11949,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/118417368/large.jpeg",
     "credit": "iNaturalist: (c) David Hoare, some rights reserved (CC BY-NC-SA), uploaded by David Hoare"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "ruscus-aculeatus",
@@ -11843,7 +12061,7 @@
  {
   "id": "xerophyllum-tenax-beargrass",
   "latin": "Xerophyllum tenax (beargrass)",
-  "hu": "",
+  "hu": "macifű",
   "aliases": [],
   "note": "",
   "categories": [
@@ -11864,7 +12082,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/15121336/large.jpg",
     "credit": "iNaturalist: (c) Garrett Haynes, some rights reserved (CC BY-NC), uploaded by Garrett Haynes"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "agapanthus-umbellatus",
@@ -12051,12 +12271,15 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/533081234/large.jpg",
     "credit": "iNaturalist: (c) Li Jianong, some rights reserved (CC BY-NC), uploaded by Li Jianong"
    }
+  ],
+  "alt": [
+   "völgycsillag (TERRA)"
   ]
  },
  {
   "id": "bouvardia-domesticum",
   "latin": "Bouvardia domesticum",
-  "hu": "",
+  "hu": "borvirág",
   "aliases": [],
   "note": "",
   "categories": [
@@ -12077,7 +12300,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/159103087/large.jpeg",
     "credit": "iNaturalist: (c) Dwight Baker, some rights reserved (CC BY-NC), uploaded by Dwight Baker"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "bupleurum-rotundifolium",
@@ -12117,7 +12342,6 @@
   ],
   "image": "images/2d594ae670.jpg",
   "credit": "iNaturalist: (c) Hermann Falkner, some rights reserved (CC BY-NC-SA), uploaded by Hermann Falkner",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/21600589/large.jpg",
@@ -12131,7 +12355,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/21909502/large.jpg",
     "credit": "iNaturalist: (c) Roman, some rights reserved (CC BY), uploaded by Roman"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "dendranthema-morifolium",
@@ -12182,6 +12407,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/45364822/large.jpg",
     "credit": "iNaturalist: (c) hamster2020, some rights reserved (CC BY-NC)"
    }
+  ],
+  "alt": [
+   "szegfű (Maszlay)"
   ]
  },
  {
@@ -12277,7 +12505,7 @@
  {
   "id": "freesia-refracta",
   "latin": "Freesia refracta",
-  "hu": "",
+  "hu": "frézia",
   "aliases": [],
   "note": "",
   "categories": [
@@ -12298,12 +12526,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/26734969/large.jpeg",
     "credit": "iNaturalist: (c) Sandra Falanga, some rights reserved (CC BY-NC), uploaded by Sandra Falanga"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "gerbera-jamesonii",
   "latin": "Gerbera jamesonii",
-  "hu": "",
+  "hu": "gerbera",
   "aliases": [],
   "note": "",
   "categories": [
@@ -12324,7 +12554,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/15793969/large.jpg",
     "credit": "iNaturalist: (c) Wynand Uys, some rights reserved (CC BY), uploaded by Wynand Uys"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "gentiana-makinoi",
@@ -12368,7 +12600,7 @@
  {
   "id": "iris-hollandica",
   "latin": "Iris hollandica",
-  "hu": "",
+  "hu": "írisz/nőszirom",
   "aliases": [],
   "note": "",
   "categories": [
@@ -12385,7 +12617,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/297501/large.jpg",
     "credit": "iNaturalist: (c) Jennifer de Graaf, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "leycesteria-formosa",
@@ -12547,7 +12781,7 @@
  {
   "id": "ranunculus-asiaticus",
   "latin": "Ranunculus asiaticus",
-  "hu": "",
+  "hu": "ázsiai boglárka",
   "aliases": [],
   "note": "",
   "categories": [
@@ -12568,7 +12802,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/170419730/large.jpg",
     "credit": "iNaturalist: (c) Alenka Mihoric, some rights reserved (CC BY-NC), uploaded by Alenka Mihoric"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "strelitzia-reginae",
@@ -12595,6 +12831,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/232773100/large.jpeg",
     "credit": "iNaturalist: (c) Craig Peter, some rights reserved (CC BY-NC), uploaded by Craig Peter"
    }
+  ],
+  "alt": [
+   "papagájvirág (Maszlay)"
   ]
  },
  {
@@ -12687,6 +12926,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/7550838/large.jpg",
     "credit": "iNaturalist: no rights reserved, uploaded by Peter de Lange"
    }
+  ],
+  "alt": [
+   "kála (Maszlay)"
   ]
  },
  {
@@ -13277,6 +13519,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/145129428/large.jpeg",
     "credit": "iNaturalist: (c) Surabhi Srivastava, some rights reserved (CC BY), uploaded by Surabhi Srivastava"
    }
+  ],
+  "alt": [
+   "lótusz (Maszlay)"
   ]
  },
  {
@@ -13793,7 +14038,7 @@
  {
   "id": "anthurium-hortulanum",
   "latin": "Anthurium hortulanum",
-  "hu": "",
+  "hu": "flamingóvirág",
   "aliases": [],
   "note": "",
   "categories": [
@@ -13814,7 +14059,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/191531983/large.jpg",
     "credit": "iNaturalist: (c) njweess, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "anthurium-scherzerianum",
@@ -13863,14 +14110,16 @@
  {
   "id": "begonia-elatior",
   "latin": "Begonia elatior",
-  "hu": "",
+  "hu": "virágos begónia",
   "aliases": [],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
   ],
   "image": "images/f9cd2e1e5c.jpg",
-  "credit": "Wikimedia Commons: Begonia semperflorens.jpg"
+  "credit": "Wikimedia Commons: Begonia semperflorens.jpg",
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "bougainvillea-glabra",
@@ -13897,6 +14146,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/56593804/large.jpg",
     "credit": "iNaturalist: (c) Derek Groves, some rights reserved (CC BY-NC), uploaded by Derek Groves"
    }
+  ],
+  "alt": [
+   "murvafürt (Maszlay)"
   ]
  },
  {
@@ -13959,7 +14211,6 @@
   ],
   "image": "images/7e753aa9e5.jpg",
   "credit": "iNaturalist: (c) Sean Womack, some rights reserved (CC BY-NC), uploaded by Sean Womack",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/91325703/large.jpeg",
@@ -13973,12 +14224,13 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/549200632/large.jpg",
     "credit": "iNaturalist: (c) sfencott, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
   "id": "calceolaria-herbeohybrida",
   "latin": "Calceolaria herbeohybrida",
-  "hu": "",
+  "hu": "papucsvirág",
   "aliases": [],
   "note": "",
   "categories": [
@@ -13999,7 +14251,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/242281487/large.jpg",
     "credit": "iNaturalist: (c) Nodora L. Moyano, some rights reserved (CC BY-NC), uploaded by Nodora L. Moyano"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "camellia-japonica",
@@ -14027,7 +14281,7 @@
  {
   "id": "clivia-miniata",
   "latin": "Clivia miniata",
-  "hu": "",
+  "hu": "narancsliliom",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14048,7 +14302,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2053319/large.jpg",
     "credit": "iNaturalist: (c) Jon Sullivan, some rights reserved (CC BY)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "cyclamen-persicum",
@@ -14075,12 +14331,15 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/173634742/large.jpeg",
     "credit": "iNaturalist: (c) Jens Søgaard Hansen, some rights reserved (CC BY-NC), uploaded by Jens Søgaard Hansen"
    }
+  ],
+  "alt": [
+   "szobai ciklámen (Maszlay)"
   ]
  },
  {
   "id": "erica-gracilis",
   "latin": "Erica gracilis",
-  "hu": "",
+  "hu": "erika, hanga",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14097,7 +14356,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/15559813/large.jpg",
     "credit": "iNaturalist: (c) jillblignaut, some rights reserved (CC BY-SA), uploaded by jillblignaut"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "euphorbia-pulcherrima",
@@ -14110,7 +14371,6 @@
   ],
   "image": "images/dbb218cedd.jpg",
   "credit": "iNaturalist: (c) nmoorhatch, some rights reserved (CC BY), uploaded by nmoorhatch",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/467993780/large.jpeg",
@@ -14124,12 +14384,13 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/215842523/large.jpeg",
     "credit": "iNaturalist: (c) Richie Southerton, some rights reserved (CC BY-NC), uploaded by Richie Southerton"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "exacum-affine",
   "latin": "Exacum affine",
-  "hu": "",
+  "hu": "keserűlevélke",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14150,12 +14411,14 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/327895332/large.jpg",
     "credit": "iNaturalist: (c) jhp68, certains droits réservés (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "fuchsia-hybrida",
   "latin": "Fuchsia hybrida",
-  "hu": "",
+  "hu": "fukszia",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14176,7 +14439,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/56483912/large.jpeg",
     "credit": "iNaturalist: (c) Juan Carlos Caicedo Hernández, some rights reserved (CC BY), uploaded by Juan Carlos Caicedo Hernández"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "gardenia-jasminoides",
@@ -14207,7 +14472,7 @@
  {
   "id": "hibiscus-rosa-sinensis",
   "latin": "Hibiscus rosa-sinensis",
-  "hu": "",
+  "hu": "szobai hibiszkusz/mályvacserje",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14224,7 +14489,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/252814260/large.jpeg",
     "credit": "iNaturalist: (c) capecarbs, some rights reserved (CC BY-NC)"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "hippeastrum-hybrida",
@@ -14299,6 +14566,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/142491973/large.jpg",
     "credit": "iNaturalist: (c) jtmudge, some rights reserved (CC BY-NC)"
    }
+  ],
+  "alt": [
+   "hortenzia (Maszlay)"
   ]
  },
  {
@@ -14380,6 +14650,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/293307057/large.jpeg",
     "credit": "iNaturalist: (c) Ellen, some rights reserved (CC BY-NC), uploaded by Ellen"
    }
+  ],
+  "alt": [
+   "korallvirág (Maszlay)"
   ]
  },
  {
@@ -14507,7 +14780,6 @@
   ],
   "image": "images/870312b695.jpg",
   "credit": "iNaturalist: (c) Cheng-wei, Liu (Jack), some rights reserved (CC BY-NC), uploaded by Cheng-wei, Liu (Jack)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9512852/large.jpeg",
@@ -14521,7 +14793,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/7891494/large.jpeg",
     "credit": "iNaturalist: (c) reddad, some rights reserved (CC BY-NC), uploaded by reddad"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "passiflora-caerulea",
@@ -14588,7 +14861,6 @@
   ],
   "image": "images/f6080bf635.jpg",
   "credit": "iNaturalist: (c) Andrew Dilley, some rights reserved (CC BY-NC), uploaded by Andrew Dilley",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/70555976/large.jpeg",
@@ -14598,7 +14870,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1646203/large.jpg",
     "credit": "iNaturalist: (c) Pomax, some rights reserved (CC BY-NC-ND)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "pelargonium-hortorum",
@@ -14621,6 +14894,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/8309302/large.jpeg",
     "credit": "iNaturalist: (c) Benjamin J. Dion, some rights reserved (CC BY-NC-SA), uploaded by Benjamin J. Dion"
    }
+  ],
+  "alt": [
+   "álló muskátli (Maszlay)"
   ]
  },
  {
@@ -14634,7 +14910,6 @@
   ],
   "image": "images/4466f1b104.jpg",
   "credit": "iNaturalist: (c) Marco Schmidt, some rights reserved (CC BY-NC-SA), uploaded by Marco Schmidt",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/229519950/large.jpeg",
@@ -14648,7 +14923,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/229519931/large.jpeg",
     "credit": "iNaturalist: (c) Nicola van Berkel, some rights reserved (CC BY-SA), uploaded by Nicola van Berkel"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "punica-granatum",
@@ -14781,6 +15057,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/16785560/large.jpg",
     "credit": "iNaturalist: (c) Mathew Wan, some rights reserved (CC BY-NC), uploaded by Mathew Wan"
    }
+  ],
+  "alt": [
+   "kínai azálea (Maszlay)"
   ]
  },
  {
@@ -14806,13 +15085,13 @@
   ],
   "image": "images/c5a5d1cb1a.jpg",
   "credit": "iNaturalist: (c) Heinrich Human, some rights reserved (CC BY-NC), uploaded by Heinrich Human",
-  "verify": true,
-  "more": []
+  "more": [],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "schlumbergera-truncata",
   "latin": "Schlumbergera truncata",
-  "hu": "",
+  "hu": "karácsonyi kaktusz",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14833,24 +15112,28 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/210148736/large.jpeg",
     "credit": "iNaturalist: (c) Victor Hugo Rebecchi Siqueira, some rights reserved (CC BY-NC), uploaded by Victor Hugo Rebecchi Siqueira"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "senecio-cruentus",
   "latin": "Senecio cruentus",
-  "hu": "",
+  "hu": "cinerária",
   "aliases": [],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
   ],
   "image": "images/1029e7ea65.jpg",
-  "credit": "Wikimedia Commons: Illustration Senecio vulgaris0.jpg"
+  "credit": "Wikimedia Commons: Illustration Senecio vulgaris0.jpg",
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "sinningia-hybrida",
   "latin": "Sinningia hybrida",
-  "hu": "",
+  "hu": "gloxínia, csuporka",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14871,7 +15154,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/27467475/large.jpeg",
     "credit": "iNaturalist: (c) Fernando Costa Straube, some rights reserved (CC BY-NC), uploaded by Fernando Costa Straube"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "solanum-pseudocapsicum",
@@ -14910,7 +15195,6 @@
   ],
   "image": "images/e9e2147c96.jpg",
   "credit": "iNaturalist: (c) ignputraa, some rights reserved (CC BY-NC), uploaded by ignputraa",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/173607911/large.jpeg",
@@ -14924,7 +15208,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/16535812/large.jpg",
     "credit": "iNaturalist: (c) Lyle Gordon, some rights reserved (CC BY-NC), uploaded by Lyle Gordon"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Maszlay egyezik"
  },
  {
   "id": "stephanotis-floribunda",
@@ -15021,6 +15306,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/115600452/large.jpg",
     "credit": "iNaturalist: (c) Urban Jungle, some rights reserved (CC BY-NC-SA)"
    }
+  ],
+  "alt": [
+   "lándzsarózsa (Maszlay)"
   ]
  },
  {
@@ -15079,7 +15367,7 @@
  {
   "id": "cryptanthus-acaulis",
   "latin": "Cryptanthus acaulis",
-  "hu": "",
+  "hu": "levélcsillag",
   "aliases": [],
   "note": "",
   "categories": [
@@ -15087,7 +15375,9 @@
   ],
   "image": "images/7a35c427f1.jpg",
   "credit": "Wikimedia Commons: SDC11469 - Cryptanthus acaulis.JPG",
-  "more": []
+  "more": [],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  },
  {
   "id": "cryptanthus-bivittatus",
@@ -15454,7 +15744,7 @@
  {
   "id": "vriesea-splendens",
   "latin": "Vriesea splendens",
-  "hu": "",
+  "hu": "pikkelybromélia",
   "aliases": [],
   "note": "",
   "categories": [
@@ -15475,6 +15765,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/18484848/large.jpeg",
     "credit": "iNaturalist: no rights reserved, uploaded by Carlos Henrique Russi"
    }
-  ]
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
+  "verify": true
  }
 ]
