@@ -14512,16 +14512,19 @@
  {
   "id": "mokkara-sp",
   "latin": "Mokkara sp.",
-  "hu": "",
+  "hu": "Mokkara orchidea",
   "aliases": [],
   "note": "",
   "categories": [
    "Orchideák"
   ],
-  "image": "",
-  "credit": "",
-  "alt": [
-   "Mokara-orchidea (ChatGPT: csoportszintű)"
+  "image": "images/9b616aca-419.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/fcc6a525-5e1.jpg",
+    "credit": "Saját feltöltés"
+   }
   ]
  },
  {
