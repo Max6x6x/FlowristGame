@@ -586,6 +586,9 @@ function renderTokenState() {
   $("#tokSet").classList.toggle("hidden", !has);
   $("#tokUnset").classList.toggle("hidden", has);
   $("#aTok").value = store.get("ghToken", "");
+  // only her devices (opened via the setup link) see the editor; visitors can't save anyway
+  document.querySelector('.tabs [data-tab="admin"]').classList.toggle("hidden", !has);
+  if (!has && store.get("tab") === "admin") showTab("play");
 }
 $("#aTok").onchange = () => { store.set("ghToken", $("#aTok").value.trim()); renderTokenState(); };
 $("#tokForget").onclick = () => { store.set("ghToken", ""); renderTokenState(); };
@@ -616,7 +619,7 @@ fetch("data.json?v=" + Date.now()).then(r => r.json()).then(d => {
   $("#lCat").innerHTML = `<option value="">Minden kategória (${plants.length})</option>` + categories().map(c => `<option>${esc(c)}</option>`).join("");
   $("#lQ").oninput = $("#lCat").onchange = renderList;
   $("#aQ").oninput = $("#aFilter").onchange = renderAdminList;
-  $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t) { showTab("admin"); openEditor(t.dataset.id); } };
+  $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t && tok()) { showTab("admin"); openEditor(t.dataset.id); } };
   $("#aList").onclick = e => { const t = e.target.closest(".row"); if (t) openEditor(t.dataset.id); };
   renderToday();
   startRound();
