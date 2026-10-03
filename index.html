@@ -160,7 +160,29 @@ select { flex: 1; min-width: 0; height: 40px; border: 0; border-radius: var(--r-
 ::view-transition-group(plant-photo) { animation-duration: .38s; animation-timing-function: var(--ease-out); }
 ::view-transition-old(root), ::view-transition-new(root) { animation-duration: .2s; }
 
+/* ---------- delight: the bouquet ---------- */
+#today { display: inline-flex; align-items: center; gap: 6px; }
+#today .fl { color: var(--go-text); }
+#today b { font-weight: 800; }
+#today .sep { width: 1px; height: 14px; background: var(--sunk); margin: 0 2px; }
+#today.bloom { animation: bloom .7s var(--ease-out); }
+#today.bloom .fl { animation: twirl .7s var(--ease-out); }
+@keyframes bloom { 30% { transform: scale(1.14); background: var(--go-soft); } }
+@keyframes twirl { from { transform: rotate(-90deg) scale(.6); } }
+.toast { position: fixed; z-index: 40; left: 50%; top: calc(12px + env(safe-area-inset-top)); display: flex; align-items: center; gap: 10px;
+  max-width: min(92vw, 520px); padding: 12px 18px; border-radius: 18px; background: var(--card); color: var(--ink); font-weight: 700; font-size: 15px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.14); transform: translate(-50%, -160%); transition: transform .45s var(--ease-out); pointer-events: none; }
+.toast.show { transform: translate(-50%, 0); }
+.toast .fl { color: var(--go-text); flex: none; width: 22px; height: 22px; }
+.toast i { font-weight: 800; }
+.exscore { margin: 2px 0 0; font-weight: 700; color: var(--ink-2); }
+.exflowers { display: flex; align-items: center; gap: 8px; margin: 6px 0 0; font-weight: 800; color: var(--go-text); }
+.stat .done { display: inline-flex; vertical-align: -3px; margin-right: 4px; color: var(--go-text); }
+
 @media (prefers-reduced-motion: reduce) {
+  #today.bloom, #today.bloom .fl { animation: none; }
+  .toast { transition: opacity .2s; transform: translate(-50%, 0); opacity: 0; }
+  .toast.show { opacity: 1; }
   /* keep fades and colour (they carry state); drop movement */
   .verdict:not(:empty), .exrow, .solution, .hint .newl { animation-name: fade; }
   .verdict mark, .exgiven mark { animation: none; }
@@ -265,7 +287,7 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
     <button data-tab="admin">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>Admin</button>
   </nav>
-  <div class="chip" id="today" title="Ma helyes / összes">0 / 0</div>
+  <div class="chip" id="today" title="Virágok a csokrodban (megtanult növények) · ma helyes / összes"></div>
 </header>
 
 <main>
@@ -324,6 +346,8 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
     <div class="rows" id="aList"></div>
   </section>
 </main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <dialog class="viewer" id="viewer" aria-label="Nagyított kép">
   <button class="close" id="viewerClose" aria-label="Bezárás">
@@ -397,6 +421,25 @@ function grade(id, results, hints) {
   stamps[id] = Date.now();
   store.set("boxes", boxes); store.set("stamps", stamps);
   progDirty = true;
+  return b < 3 && boxes[id] >= 3; // true = just learned: a new flower in her bouquet
+}
+
+// ---------- the bouquet: every learned plant is a flower; the header counts them ----------
+const FLOWER = '<svg class="fl" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="2.2"/><path d="M12 6.8c0-2.4 1.2-3.8 2.6-3.8s2 1.6 1.2 3.2M14.2 9.2c2.2-.6 3.8.2 4.1 1.6s-1.1 2.4-2.8 2M13.4 11c1.4 1.8 1.4 3.6.2 4.3s-2.5-.3-2.6-2.1M10.6 11c-1.4 1.8-3 2.4-3.9 1.4s-.5-2.4 1.1-3.1M9.8 9.2C7.6 8.6 6.4 7.2 7 6s2-1.3 3.2-.1M12 15v6M12 18c-1.5-1-3-1-4-.5"/></svg>';
+const learnedCount = () => plants.filter(p => p.image && isLearned(p.id)).length;
+let toastTimer = null;
+function toast(html) {
+  const t = $("#toast");
+  t.innerHTML = html;
+  t.classList.remove("show"); void t.offsetWidth; t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), 2800);
+}
+function bloom(p) {
+  renderToday();
+  const c = $("#today");
+  c.classList.remove("bloom"); void c.offsetWidth; c.classList.add("bloom");
+  toast(`${FLOWER}<span>Új virág a csokrodban: <i>${esc(p.latin)}</i></span>`);
 }
 
 // ---------- progress sync: progress.json on the "progress" branch (no Pages rebuilds), only with a token ----------
@@ -420,6 +463,7 @@ async function pullProgress() {
     const j = await r.json();
     progSha = j.sha;
     mergeProgress(JSON.parse(fromB64(j.content)));
+    renderToday();
   } catch {}
 }
 async function pushProgress() {
@@ -443,7 +487,7 @@ const saveSettings = () => store.set("settings", settings);
 const todayKey = new Date().toISOString().slice(0, 10);
 let today = store.get("today", {});
 if (today.d !== todayKey) today = { d: todayKey, ok: 0, n: 0 };
-const renderToday = () => { $("#today").textContent = `ma ${today.ok} / ${today.n}`; };
+const renderToday = () => { $("#today").innerHTML = `${FLOWER}<b>${learnedCount()}</b><span class="sep"></span>ma ${today.ok} / ${today.n}`; };
 
 // ---------- play ----------
 let round = null;   // { size, items: [], answers: [] } when a fixed-length round is running
@@ -643,9 +687,10 @@ function reveal() {
     v.innerHTML = r === "almost" ? `${VERDICT[r]}: ${markDiff(inp.value, target)}` : r === "bad" && inp.value.trim() ? `${VERDICT[r]}` : r === "bad" ? "Üresen maradt" : VERDICT[r];
   }
   current.results = results;
-  grade(p.id, results, current.hints);
+  const learned = grade(p.id, results, current.hints);
   today.n++; if (results.every(r => r === "ok")) today.ok++;
   store.set("today", today); renderToday();
+  if (learned) bloom(p);
   if (round) round.answers.push({ p, results, hints: current.hints });
   $("#pSolution").innerHTML = solutionHtml(p, current.photo.credit);
   $("#pHint").disabled = true;
@@ -705,7 +750,7 @@ function renderStats() {
   $("#stats").innerHTML = `<h2>Haladás</h2>
     <p class="sum">${learned} / ${withImg.length} növényt tudsz · ${weak} hibás vár ismétlésre · koppints egy kategóriára a gyakorláshoz</p>
     <div class="statrows">${rows.map(r => `<button class="stat" data-cat="${esc(r.c)}">
-      <span class="n">${esc(r.c)}</span><span class="v">${r.l} / ${r.n}</span>
+      <span class="n">${r.l === r.n ? `<span class="done" title="Az egész kategória megvan">${FLOWER}</span>` : ""}${esc(r.c)}</span><span class="v">${r.l} / ${r.n}</span>
       <span class="roundbar" aria-hidden="true"><div style="width:${r.l / r.n * 100}%"></div></span></button>`).join("")}</div>`;
 }
 function renderList() {
@@ -787,16 +832,25 @@ function examQuestion() {
   });
   if (matchMedia("(min-width: 900px)").matches) inputs[0]?.focus();
 }
+// exam headline in her trade's language; honest at every band
+function verdictLine(share) {
+  if (share >= .9) return "Vizsgaérett!";
+  if (share >= .7) return "Jó úton jársz";
+  if (share >= .4) return "Szépen nő, még öntözni kell";
+  return "Van még mit locsolni";
+}
 function examResult() {
   if (!exam.done) {
     exam.done = true;
+    exam.newFlowers = 0;
     for (const a of exam.answers) {
       a.res = {};
       if (a.lat !== null) a.res.lat = check(a.lat, [...latinVariants(a.p), ...(a.p.aliases || [])]);
       if (a.hu !== null) a.res.hu = check(a.hu, [a.p.hu, ...(a.p.aliases || [])]);
-      grade(a.p.id, Object.values(a.res).map(x => x.r), 0);
+      if (grade(a.p.id, Object.values(a.res).map(x => x.r), 0)) exam.newFlowers++;
     }
     pushProgress();
+    renderToday();
   }
   const fields = exam.answers.flatMap(a => Object.values(a.res));
   const good = fields.filter(x => x.r === "ok").length;
@@ -809,8 +863,10 @@ function examResult() {
   const rows = [...exam.answers].sort((a, b) => Object.values(a.res).every(x => x.r === "ok") - Object.values(b.res).every(x => x.r === "ok"));
   $("#examArea").className = "play";
   $("#examArea").innerHTML = `<div class="panel summary">
-    <h2>${good} / ${fields.length} helyes név (${Math.round(good / Math.max(1, fields.length) * 100)}%)</h2>
-    <p class="muted">${plantsOk} / ${exam.answers.length} növény teljesen hibátlan · elöl a hibásak</p>
+    <h2>${verdictLine(good / Math.max(1, fields.length))}</h2>
+    <p class="exscore">${good} / ${fields.length} helyes név (${Math.round(good / Math.max(1, fields.length) * 100)}%) · ${plantsOk} / ${exam.answers.length} növény hibátlan</p>
+    ${exam.newFlowers ? `<p class="exflowers">${FLOWER}<span>+${exam.newFlowers} új virág a csokrodban · összesen ${learnedCount()}</span></p>` : ""}
+    ${plantsOk < exam.answers.length ? '<p class="muted">Elöl a hibásak — ezek jönnek vissza a „Csak a hibásak” gyakorlásban.</p>' : ""}
     <div class="actions"><button class="btn go" id="exAgain">Új vizsga</button></div>
     <div class="rows">${rows.map((a, i) => {
       const allOk = Object.values(a.res).every(x => x.r === "ok");
