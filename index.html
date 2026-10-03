@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#f3efe8">
+<title>Növényismeret</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232f8f4e'/%3E%3Cpath d='M12 20c-3.5-2.4-6-4.9-6-8.6a6 6 0 0 1 12 0c0 3.7-2.5 6.2-6 8.6zM12 20v-8' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ground: #f3efe8; --card: #ffffff; --sunk: #e8e2d7; --ink: #1d1b18; --ink-2: #5b564e; --ink-3: #6f695f;
+  --go: #2f8f4e; --go-ink: #ffffff; --go-soft: #e3f3e8; --go-text: #23703c;
+  --almost: #9a5b00; --almost-soft: #fbeed4; --bad: #b3261e; --bad-soft: #fbe3e0;
+  --r-s: 14px; --r-m: 20px; --r-l: 28px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .07), 0 6px 18px rgba(0, 0, 0, .05);
+  --bar-h: 64px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #1b1916; --card: #262320; --sunk: #33302b; --ink: #f1ece4; --ink-2: #c3bbae; --ink-3: #a59d90;
+    --go: #4fb06d; --go-ink: #0f1a12; --go-soft: #1f3a27; --go-text: #7fd197;
+    --almost: #f0b44c; --almost-soft: #3d3020; --bad: #ff8a80; --bad-soft: #43231f;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 500 16px/1.45 Nunito, system-ui, sans-serif; min-height: 100dvh; }
+::selection { background: var(--go-soft); color: var(--ink); }
+:focus-visible { outline: 3px solid var(--go); outline-offset: 2px; }
+button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+button:disabled { cursor: default; }
+input, select, textarea { font: inherit; color: var(--ink); caret-color: var(--go); }
+.hidden { display: none !important; }
+
+/* ---------- shell ---------- */
+.top { display: flex; align-items: center; gap: 12px; padding: 14px 16px 6px; }
+.brand { font-weight: 800; font-size: 20px; margin-right: auto; }
+.chip { background: var(--card); border-radius: 14px; padding: 4px 12px; font-weight: 700; font-size: 14px; font-variant-numeric: tabular-nums; box-shadow: var(--shadow); }
+main { padding: 0 16px calc(var(--bar-h) + 24px + env(safe-area-inset-bottom)); max-width: 1320px; margin: 0 auto; }
+.tabs { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; display: flex; justify-content: space-around; background: var(--card);
+  padding: 8px 0 calc(10px + env(safe-area-inset-bottom)); border-top: 1px solid var(--sunk); }
+.tabs button { border: 0; background: none; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 12px; font-weight: 700; color: var(--ink-3); min-width: 72px; padding: 4px 0; }
+.tabs button[aria-current="page"] { color: var(--go-text); }
+.tabs svg { width: 24px; height: 24px; }
+
+/* ---------- controls ---------- */
+.seg { display: flex; background: var(--sunk); border-radius: var(--r-s); padding: 4px; }
+.seg button { flex: 1; height: 38px; border: 0; border-radius: 10px; background: transparent; font-weight: 700; font-size: 14px; color: var(--ink-2); transition: background .2s, color .2s; }
+.seg button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+.selects { display: flex; gap: 8px; margin-top: 8px; }
+select { flex: 1; min-width: 0; height: 40px; border: 0; border-radius: var(--r-s); background: var(--card); padding: 0 12px; font-weight: 600; font-size: 14px; box-shadow: var(--shadow); }
+.btn { height: 52px; border: 0; border-radius: 16px; padding: 0 20px; font-weight: 800; font-size: 16px; transition: transform .15s cubic-bezier(.3,1.6,.5,1), background .2s; }
+.btn:active:not(:disabled) { transform: scale(.96); }
+.btn.go { background: var(--go); color: var(--go-ink); flex: 1; }
+.btn.soft { background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
+.btn.soft:disabled { color: var(--ink-3); box-shadow: none; background: var(--sunk); }
+.badge { display: inline-block; min-width: 22px; margin-left: 6px; padding: 1px 7px; border-radius: 11px; background: var(--go-soft); color: var(--go-text); font-size: 13px; }
+
+/* ---------- play ---------- */
+.play { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 10px; }
+.photo { position: relative; border-radius: var(--r-l); overflow: hidden; background: var(--sunk); height: min(42dvh, 460px); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+.zoom { position: absolute; right: 12px; top: 12px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--card); color: var(--ink); display: grid; place-items: center; box-shadow: var(--shadow); }
+.progress { position: absolute; left: 12px; top: 12px; }
+.panel { background: var(--card); border-radius: var(--r-l); padding: 16px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 6px; }
+.field label { display: block; font-size: 13px; font-weight: 700; color: var(--ink-2); margin: 4px 0 4px 4px; }
+.field input { width: 100%; height: 52px; border-radius: var(--r-s); border: 2px solid var(--sunk); background: var(--card); padding: 0 14px; font-weight: 700; font-size: 18px; outline: none; transition: border-color .2s, background .2s; }
+.field input:focus { border-color: var(--go); }
+.field.lat input { font-style: italic; }
+.field .hint { font-size: 15px; letter-spacing: .14em; color: var(--ink-2); padding: 4px 6px 0; white-space: pre-wrap; font-variant-numeric: tabular-nums; }
+.field.ok input { background: var(--go-soft); border-color: var(--go-soft); }
+.field.almost input { background: var(--almost-soft); border-color: var(--almost-soft); }
+.field.bad input { background: var(--bad-soft); border-color: var(--bad-soft); }
+.verdict { font-size: 14px; font-weight: 800; padding: 4px 6px 0; }
+.verdict.ok { color: var(--go-text); } .verdict.almost { color: var(--almost); } .verdict.bad { color: var(--bad); }
+.verdict mark { background: var(--almost); color: var(--card); border-radius: 4px; padding: 0 2px; }
+.actions { display: flex; gap: 10px; margin-top: 8px; }
+.solution { margin-top: 8px; background: var(--ground); border-radius: var(--r-m); padding: 16px 18px; animation: rise .35s cubic-bezier(.2,.8,.2,1); }
+.solution .k { font-size: 13px; font-weight: 700; color: var(--ink-2); }
+.solution .lat { font-style: italic; font-weight: 800; font-size: 26px; line-height: 1.15; margin-top: 2px; overflow-wrap: anywhere; }
+.solution .hu { font-weight: 700; font-size: 21px; overflow-wrap: anywhere; }
+.solution .meta { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
+.flag { color: var(--almost); font-weight: 700; font-size: 13px; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+
+/* ---------- zoom overlay ---------- */
+dialog.viewer { padding: 0; border: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; background: #0d0c0b; overflow: hidden; }
+dialog.viewer::backdrop { background: #0d0c0b; }
+dialog.viewer img { width: 100%; height: 100%; object-fit: contain; transition: transform .25s cubic-bezier(.2,.8,.2,1); cursor: zoom-in; touch-action: none; user-select: none; -webkit-user-drag: none; }
+dialog.viewer img.zoomed { transform: scale(2.6); cursor: zoom-out; transition: transform .25s cubic-bezier(.2,.8,.2,1), transform-origin 0s; }
+dialog.viewer .close { position: absolute; right: 16px; top: calc(16px + env(safe-area-inset-top)); width: 48px; height: 48px; border-radius: 24px; border: 0; background: rgba(255,255,255,.92); color: #1d1b18; display: grid; place-items: center; }
+dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + env(safe-area-inset-bottom)); text-align: center; color: rgba(255,255,255,.75); font-size: 14px; pointer-events: none; }
+
+/* ---------- summary / list / admin ---------- */
+.summary h2 { margin: 4px 0 4px; font-size: 26px; font-weight: 800; }
+.rows { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.row { display: flex; gap: 12px; align-items: center; background: var(--ground); border-radius: var(--r-s); padding: 8px; border: 0; text-align: left; width: 100%; }
+.row img, .row .noimg { width: 56px; height: 56px; border-radius: 10px; object-fit: cover; flex: none; background: var(--sunk); }
+.row .t { min-width: 0; }
+.row i { display: block; font-weight: 800; overflow-wrap: anywhere; }
+.row small { color: var(--ink-2); font-size: 13px; }
+.search { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.search input { flex: 2 1 220px; height: 44px; border: 0; border-radius: var(--r-s); background: var(--card); padding: 0 14px; font-weight: 600; box-shadow: var(--shadow); outline: none; }
+.search select { flex: 1 1 180px; height: 44px; }
+.count { color: var(--ink-2); font-size: 14px; margin: 10px 4px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(156px, 1fr)); gap: 10px; }
+.tile { background: var(--card); border: 0; border-radius: var(--r-m); overflow: hidden; padding: 0; text-align: left; box-shadow: var(--shadow); }
+.tile img, .tile .noimg { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; background: var(--sunk); }
+.tile div { padding: 8px 10px 10px; font-size: 14px; }
+.tile i { display: block; font-weight: 800; }
+.adm label { display: block; font-size: 13px; font-weight: 700; color: var(--ink-2); margin: 12px 0 4px 4px; }
+.adm input:not([type]), .adm input[type="password"], .adm input[type="text"], .adm textarea { width: 100%; border: 2px solid var(--sunk); border-radius: var(--r-s); background: var(--card); padding: 10px 14px; font-weight: 600; outline: none; }
+.adm input:focus, .adm textarea:focus { border-color: var(--go); }
+.adm .photo { height: 260px; }
+.check { display: flex; gap: 10px; align-items: center; font-weight: 700; margin-top: 12px; }
+.check input { width: 22px; height: 22px; accent-color: var(--go); }
+.muted { color: var(--ink-2); font-size: 14px; }
+.msg { font-weight: 700; font-size: 14px; color: var(--ink-2); }
+.empty { text-align: center; padding: 40px 16px; color: var(--ink-2); }
+
+/* ---------- phone: action row always reachable by thumb ---------- */
+@media (max-width: 899px) {
+  .panel .actions { position: sticky; bottom: calc(var(--bar-h) + env(safe-area-inset-bottom) + 8px); z-index: 5; background: var(--card); margin: 8px -16px -16px; padding: 10px 16px 16px; border-radius: 0 0 var(--r-l) var(--r-l); }
+  /* while typing, the keyboard needs the room: hide the tab bar, drop the row to the bottom */
+  body:has(.field input:focus) .tabs { display: none; }
+  body:has(.field input:focus) .panel .actions { bottom: 0; }
+}
+
+/* ---------- desktop: two-sided page ---------- */
+@media (min-width: 900px) {
+  .tabs { position: static; background: none; border: 0; padding: 0; justify-content: flex-start; gap: 6px; }
+  .tabs button { flex-direction: row; gap: 8px; font-size: 15px; min-width: 0; padding: 8px 16px; border-radius: 12px; color: var(--ink-2); }
+  .tabs button[aria-current="page"] { background: var(--go); color: var(--go-ink); }
+  .tabs svg { width: 18px; height: 18px; }
+  .top { padding: 16px 32px; gap: 20px; }
+  .brand { margin-right: 12px; }
+  .top .chip { margin-left: auto; }
+  main { padding: 0 32px 32px; }
+  /* two-sided page: photo left, controls + answers right */
+  .play { grid-template-columns: minmax(0, 7fr) minmax(360px, 5fr); grid-template-rows: auto 1fr; grid-template-areas: "photo controls" "photo panel"; align-items: start; column-gap: 24px; row-gap: 12px; margin-top: 0; }
+  .play > .controls { grid-area: controls; }
+  .play > .photo { grid-area: photo; height: calc(100dvh - 104px); min-height: 420px; position: sticky; top: 16px; }
+  .play > .panel { grid-area: panel; padding: 24px; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">Növényismeret</div>
+  <nav class="tabs" aria-label="Fő menü">
+    <button data-tab="play" aria-current="page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4.5-3-8-6.2-8-11a8 8 0 0 1 16 0c0 4.8-3.5 8-8 11z"/><path d="M12 21V11"/></svg>Gyakorlás</button>
+    <button data-tab="list">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg>Lista</button>
+    <button data-tab="admin">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>Admin</button>
+  </nav>
+  <div class="chip" id="today" title="Ma helyes / összes">0 / 0</div>
+</header>
+
+<main>
+  <!-- PLAY -->
+  <section id="play">
+    <div class="play" id="playArea"></div>
+  </section>
+
+  <!-- LIST -->
+  <section id="list" class="hidden">
+    <div class="search">
+      <input id="lQ" type="search" placeholder="Keresés latin vagy magyar névre…" aria-label="Keresés">
+      <select id="lCat" aria-label="Kategória"></select>
+    </div>
+    <p class="count" id="lCount"></p>
+    <div class="grid" id="lGrid"></div>
+  </section>
+
+  <!-- ADMIN -->
+  <section id="admin" class="hidden adm">
+    <div class="panel" style="margin-top:10px">
+      <label for="aTok">GitHub token</label>
+      <input id="aTok" type="password" autocomplete="off">
+      <p class="muted">Csak ezen az eszközön tárolódik. Fine-grained token, csak a FlowristGame repóra, „Contents: Read and write” joggal. Mentés után 1–2 perc, mire mindenhol megjelenik.</p>
+    </div>
+    <div class="search">
+      <input id="aQ" type="search" placeholder="Növény keresése…" aria-label="Növény keresése">
+      <select id="aFilter" aria-label="Szűrő">
+        <option value="">Mind</option>
+        <option value="verify">Ellenőrizendő magyar név</option>
+        <option value="nohu">Nincs magyar név</option>
+        <option value="noimg">Nincs kép</option>
+      </select>
+    </div>
+    <div class="panel hidden" id="aEdit" style="margin-top:12px"></div>
+    <p class="count" id="aCount"></p>
+    <div class="rows" id="aList"></div>
+  </section>
+</main>
+
+<dialog class="viewer" id="viewer" aria-label="Nagyított kép">
+  <button class="close" id="viewerClose" aria-label="Bezárás">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <div class="tip">Koppints a nagyításhoz, húzd a mozgatáshoz</div>
+</dialog>
+
+<script>
+const REPO = "Max6x6x/FlowristGame";
+let plants = [];
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
+const ICON = {
+  zoom: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M11 8v6M8 11h6"/></svg>',
+};
+
+// ---------- answer checking ----------
+const norm = s => String(s).toLowerCase().replace(/[‘’'"`.]/g, "").replace(/\s+/g, " ").trim();
+const deacc = s => s.normalize("NFD").replace(/\p{M}/gu, "");
+function latinVariants(p) {
+  const l = p.latin, v = [l, l.replace(/\([^)]*\)/g, "")];
+  l.split("/").forEach(x => v.push(x));
+  (l.match(/\(([^)]*)\)/g) || []).forEach(x => { if (x.includes(" ")) v.push(x.slice(1, -1)); });
+  return v;
+}
+// -> { r: "ok" | "almost" (only accents/diacritics differ) | "bad", target: best matching variant }
+function check(answer, variants) {
+  const a = norm(answer), vs = variants.filter(Boolean);
+  if (!a) return { r: "bad", target: vs[0] };
+  const hit = vs.find(v => norm(v) === a);
+  if (hit) return { r: "ok", target: hit };
+  const near = vs.find(v => deacc(norm(v)) === deacc(a));
+  if (near) return { r: "almost", target: near };
+  return { r: "bad", target: vs[0] };
+}
+// her answer with the differing letters marked (only when letter-by-letter comparable)
+function markDiff(answer, target) {
+  const a = answer.trim().replace(/\s+/g, " "), t = target.replace(/\s+/g, " ").trim();
+  if (a.length !== t.length) return esc(a);
+  return [...a].map((c, i) => c.toLowerCase() === t[i].toLowerCase() ? esc(c) : `<mark>${esc(c)}</mark>`).join("");
+}
+
+// ---------- hints: 1st press = letter count per word, then one more letter each press ----------
+function hintText(name, level) {
+  if (level < 1) return "";
+  let shown = level - 1;
+  return name.trim().split(/\s+/).map(w => [...w].map(c => !/\p{L}/u.test(c) ? c : shown-- > 0 ? c : "_").join(" ")).join("   ");
+}
+
+// ---------- spaced repetition (Leitner boxes 0..5, per device) ----------
+let boxes = store.get("boxes", {});
+function pick(pool, avoidId) {
+  const cands = pool.length > 1 ? pool.filter(p => p.id !== avoidId) : pool;
+  const w = cands.map(p => 2 ** (5 - (boxes[p.id] ?? 0)));
+  let r = Math.random() * w.reduce((a, b) => a + b, 0);
+  for (let i = 0; i < cands.length; i++) if ((r -= w[i]) <= 0) return cands[i];
+  return cands[cands.length - 1];
+}
+function grade(id, results, hints) {
+  const b = boxes[id] ?? 0;
+  const clean = results.every(r => r === "ok") && hints < 2;
+  boxes[id] = clean ? Math.min(5, b + 1) : results.includes("bad") ? 0 : b;
+  store.set("boxes", boxes);
+}
+
+// ---------- settings + today counter ----------
+const settings = Object.assign({ mode: "both", cat: "", round: "0" }, store.get("settings", {}));
+const saveSettings = () => store.set("settings", settings);
+const todayKey = new Date().toISOString().slice(0, 10);
+let today = store.get("today", {});
+if (today.d !== todayKey) today = { d: todayKey, ok: 0, n: 0 };
+const renderToday = () => { $("#today").textContent = `ma ${today.ok} / ${today.n}`; };
+
+// ---------- play ----------
+let round = null;   // { size, items: [], answers: [] } when a fixed-length round is running
+let current = null; // { p, hints, done, results }
+let lastId = null;
+function pool() {
+  return plants.filter(p => p.image && (!settings.cat || p.categories.includes(settings.cat)) && (settings.mode !== "hu" || p.hu));
+}
+function startRound() {
+  const size = +settings.round;
+  round = size ? { size, items: [...pool()].sort(() => Math.random() - .5).slice(0, size), answers: [] } : null;
+  next();
+}
+function next() {
+  if (round && round.answers.length >= round.items.length) return summary();
+  const pl = pool();
+  if (!pl.length) { current = null; return renderPlay(); }
+  const p = round ? round.items[round.answers.length] : pick(pl, lastId);
+  lastId = p.id;
+  current = { p, hints: 0, done: false, results: [] };
+  renderPlay();
+}
+function controlsHtml() {
+  const seg = [["lat", "Latin"], ["hu", "Magyar"], ["both", "Mindkettő"]]
+    .map(([v, t]) => `<button data-mode="${v}" aria-pressed="${settings.mode === v}">${t}</button>`).join("");
+  const cats = `<option value="">Minden kategória</option>` + categories().map(c => `<option${c === settings.cat ? " selected" : ""}>${esc(c)}</option>`).join("");
+  const rounds = [["0", "Folyamatos"], ["20", "20-as kör"], ["50", "50-es vizsgakör"]]
+    .map(([v, t]) => `<option value="${v}"${v === settings.round ? " selected" : ""}>${t}</option>`).join("");
+  return `<div class="controls"><div class="seg" role="group" aria-label="Mit írjak?">${seg}</div>
+    <div class="selects"><select id="pCat" aria-label="Kategória">${cats}</select><select id="pRound" aria-label="Kör hossza">${rounds}</select></div></div>`;
+}
+function bindControls() {
+  document.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { settings.mode = b.dataset.mode; saveSettings(); startRound(); });
+  $("#pCat").onchange = e => { settings.cat = e.target.value; saveSettings(); startRound(); };
+  $("#pRound").onchange = e => { settings.round = e.target.value; saveSettings(); startRound(); };
+}
+function renderPlay() {
+  const area = $("#playArea");
+  if (!current) {
+    area.innerHTML = `<div class="panel">${controlsHtml()}<p class="empty">Ebben a kategóriában még nincs képes növény.</p></div>`;
+    return bindControls();
+  }
+  const { p } = current;
+  const needLat = settings.mode !== "hu", needHu = settings.mode !== "lat" && !!p.hu;
+  const prog = round ? `<div class="chip progress">${round.answers.length + 1} / ${round.items.length}</div>` : "";
+  const field = (cls, id, label) => `<div class="field ${cls}" id="f-${id}">
+      <label for="in-${id}">${label}</label>
+      <input id="in-${id}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="${id === "lat" && needHu ? "next" : "done"}">
+      <div class="hint" id="h-${id}" aria-live="polite"></div><div class="verdict" id="v-${id}" aria-live="polite"></div></div>`;
+  area.innerHTML = `
+    ${controlsHtml()}
+    <div class="photo">
+      <img src="${esc(p.image)}" alt="Felismerendő növény" id="pImg">
+      ${prog}
+      <button class="zoom" id="pZoom" aria-label="Kép nagyítása">${ICON.zoom}</button>
+    </div>
+    <div class="panel">
+      ${needLat ? field("lat", "lat", "Latin név") : ""}
+      ${needHu ? field("hu", "hu", "Hivatalos magyar név") : ""}
+      <div class="actions">
+        <button class="btn soft" id="pHint">Súgó<span class="badge hidden" id="pHintN"></span></button>
+        <button class="btn go" id="pCheck">Mutasd!</button>
+      </div>
+      <div id="pSolution"></div>
+    </div>`;
+  bindControls();
+  $("#pImg").onclick = $("#pZoom").onclick = () => openViewer(p.image);
+  $("#pHint").onclick = hint;
+  $("#pCheck").onclick = () => current.done ? next() : reveal();
+  const inputs = [...area.querySelectorAll(".field input")];
+  inputs.forEach((x, i) => x.onkeydown = e => {
+    if (e.key !== "Enter") return;
+    e.preventDefault();
+    if (current.done) return next();
+    if (inputs[i + 1] && !inputs[i + 1].value) inputs[i + 1].focus(); else reveal();
+  });
+  // don't pop the phone keyboard over the photo; on desktop start typing right away
+  if (matchMedia("(min-width: 900px)").matches) inputs[0]?.focus();
+}
+function hint() {
+  if (current.done) return;
+  current.hints++;
+  const { p } = current;
+  // each word stays on one line; lines may only break between words
+  const show = (el, name) => { if (el) el.innerHTML = hintText(name, current.hints).split("   ").map(w => `<span style="white-space:nowrap">${esc(w)}</span>`).join("   "); };
+  show($("#h-lat"), p.latin.replace(/\s*\([^)]*\)|\s*\/.*$/g, ""));
+  show($("#h-hu"), p.hu);
+  $("#pHintN").textContent = current.hints;
+  $("#pHintN").classList.remove("hidden");
+}
+const VERDICT = { ok: "Helyes!", almost: "Majdnem — ékezet vagy betű eltér", bad: "Nem ez" };
+function reveal() {
+  const { p } = current;
+  current.done = true;
+  const results = [];
+  for (const [id, variants] of [["lat", [...latinVariants(p), ...(p.aliases || [])]], ["hu", [p.hu, ...(p.aliases || [])]]]) {
+    const inp = $(`#in-${id}`);
+    if (!inp) continue;
+    const { r, target } = check(inp.value, variants);
+    results.push(r);
+    $(`#f-${id}`).classList.add(r);
+    inp.readOnly = true;
+    const v = $(`#v-${id}`);
+    v.className = "verdict " + r;
+    v.innerHTML = r === "almost" ? `${VERDICT[r]}: ${markDiff(inp.value, target)}` : r === "bad" && inp.value.trim() ? `${VERDICT[r]}` : r === "bad" ? "Üresen maradt" : VERDICT[r];
+  }
+  current.results = results;
+  grade(p.id, results, current.hints);
+  today.n++; if (results.every(r => r === "ok")) today.ok++;
+  store.set("today", today); renderToday();
+  if (round) round.answers.push({ p, results, hints: current.hints });
+  $("#pSolution").innerHTML = solutionHtml(p);
+  $("#pHint").disabled = true;
+  $("#pCheck").textContent = round && round.answers.length >= round.items.length ? "Eredmény" : "Következő";
+  $("#pCheck").focus();
+}
+function solutionHtml(p) {
+  return `<div class="solution">
+    <div class="k">A helyes válasz</div>
+    <div class="lat">${esc(p.latin)}</div>
+    <div class="hu">${esc(p.hu) || '<span class="muted">nincs magyar név megadva</span>'}</div>
+    ${p.verify ? '<div class="flag">Automatikusan talált név — az Adminban ellenőrizd</div>' : ""}
+    ${p.aliases?.length ? `<div class="meta">Más néven: ${esc(p.aliases.join(", "))}</div>` : ""}
+    ${p.note ? `<div class="meta">${esc(p.note)}</div>` : ""}
+    <div class="meta">${esc(p.categories.join(" · "))}${p.credit ? ` · Kép: ${esc(p.credit)}` : ""}</div>
+  </div>`;
+}
+function summary() {
+  const total = round.answers.reduce((s, a) => s + a.results.length, 0);
+  const good = round.answers.reduce((s, a) => s + a.results.filter(r => r === "ok").length, 0);
+  const missed = round.answers.filter(a => !a.results.every(r => r === "ok"));
+  $("#playArea").innerHTML = `<div class="panel summary" style="grid-column: 1 / -1">
+    <h2>${good} / ${total} helyes név (${Math.round(good / Math.max(1, total) * 100)}%)</h2>
+    <p class="muted">${round.items.length} növény · súgót ${round.answers.filter(a => a.hints).length}-nál használtál</p>
+    <div class="actions"><button class="btn go" id="sAgain">Új kör</button></div>
+    ${missed.length ? `<div class="rows">${missed.map(a => `<div class="row">
+      <img src="${esc(a.p.image)}" alt=""><div class="t"><i>${esc(a.p.latin)}</i><small>${esc(a.p.hu)}</small></div></div>`).join("")}</div>` : '<p class="empty">Mind hibátlan!</p>'}
+  </div>`;
+  $("#sAgain").onclick = startRound;
+}
+
+// ---------- zoom viewer: tap to zoom at that point, drag to pan ----------
+const viewer = $("#viewer"), vImg = new Image();
+vImg.alt = "Nagyított kép a felismerendő növényről";
+vImg.draggable = false;
+viewer.prepend(vImg);
+function openViewer(src) { vImg.src = src; vImg.classList.remove("zoomed"); viewer.showModal(); }
+function setOrigin(e) {
+  const r = vImg.getBoundingClientRect();
+  vImg.style.transformOrigin = `${((e.clientX - r.left) / r.width) * 100}% ${((e.clientY - r.top) / r.height) * 100}%`;
+}
+vImg.onclick = e => { setOrigin(e); vImg.classList.toggle("zoomed"); };
+vImg.onpointermove = e => { if (vImg.classList.contains("zoomed")) setOrigin(e); };
+$("#viewerClose").onclick = () => viewer.close();
+
+// ---------- list ----------
+function categories() { return [...new Set(plants.flatMap(p => p.categories))]; }
+function renderList() {
+  const q = deacc(norm($("#lQ").value)), cat = $("#lCat").value;
+  const rows = plants.filter(p => (!cat || p.categories.includes(cat)) &&
+    (!q || deacc(norm([p.latin, p.hu, ...(p.aliases || [])].join(" "))).includes(q)));
+  $("#lCount").textContent = `${rows.length} növény`;
+  $("#lGrid").innerHTML = rows.map(p => `<button class="tile" data-id="${p.id}">
+    ${p.image ? `<img loading="lazy" src="${esc(p.image)}" alt="">` : '<div class="noimg"></div>'}
+    <div><i>${esc(p.latin)}</i>${esc(p.hu)}${p.verify ? ' <span class="flag">(?)</span>' : ""}</div></button>`).join("");
+}
+
+// ---------- admin: commits data.json + images through the GitHub contents API ----------
+const tok = () => $("#aTok").value.trim();
+async function gh(path, opts = {}) {
+  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+    ...opts, cache: "no-store", headers: { Authorization: `Bearer ${tok()}`, Accept: "application/vnd.github+json" },
+  });
+  if (!r.ok) {
+    const m = (await r.json().catch(() => ({}))).message || "";
+    throw new Error(r.status === 401 ? "érvénytelen token" : r.status === 409 ? "közben máshol is mentettél, próbáld újra" : `GitHub ${r.status} ${m}`);
+  }
+  return r.json();
+}
+function bytesToB64(bytes) { let s = ""; for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode(...bytes.subarray(i, i + 0x8000)); return btoa(s); }
+async function getDataFile() {
+  // contents API omits content for files > 1 MB, so read the blob instead
+  const meta = await gh("data.json");
+  const blob = await fetch(meta.git_url, { headers: { Authorization: `Bearer ${tok()}` } }).then(r => r.json());
+  const bin = atob(blob.content.replace(/\n/g, ""));
+  return { sha: meta.sha, data: JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0)))) };
+}
+async function resizeToJpeg(file, max = 1200) {
+  const img = await createImageBitmap(file);
+  const k = Math.min(1, max / Math.max(img.width, img.height));
+  const c = document.createElement("canvas");
+  c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+  c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+  const blob = await new Promise(r => c.toBlob(r, "image/jpeg", .86));
+  return { b64: bytesToB64(new Uint8Array(await blob.arrayBuffer())), url: URL.createObjectURL(blob) };
+}
+function renderAdminList() {
+  const q = deacc(norm($("#aQ").value)), f = $("#aFilter").value;
+  const all = plants.filter(p =>
+    (!q || deacc(norm(p.latin + " " + p.hu + " " + (p.aliases || []).join(" "))).includes(q)) &&
+    (f !== "verify" || p.verify) && (f !== "nohu" || !p.hu) && (f !== "noimg" || !p.image));
+  $("#aCount").textContent = all.length > 100 ? `${all.length} találat, az első 100 látszik — szűkíts kereséssel` : `${all.length} találat`;
+  $("#aList").innerHTML = all.slice(0, 100).map(p => `<button class="row" data-id="${p.id}">
+    ${p.image ? `<img loading="lazy" src="${esc(p.image)}" alt="">` : '<div class="noimg"></div>'}
+    <div class="t"><i>${esc(p.latin)}</i><small>${esc(p.hu) || "nincs magyar név"}${p.verify ? ' · <span class="flag">ellenőrizendő</span>' : ""}</small></div></button>`).join("");
+}
+function openEditor(id) {
+  const p = plants.find(x => x.id === id);
+  let newImg = null;
+  const el = $("#aEdit");
+  el.classList.remove("hidden");
+  el.innerHTML = `
+    <div class="photo" id="ePhoto">${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.latin)}">` : '<p class="empty">Nincs kép — tölts fel egyet lent.</p>'}</div>
+    <label for="eFile">Kép cseréje</label><input type="file" accept="image/*" id="eFile">
+    <label for="eLat">Latin név</label><input type="text" id="eLat" value="${esc(p.latin)}" spellcheck="false">
+    <label for="eHu">Hivatalos magyar név</label><input type="text" id="eHu" value="${esc(p.hu)}" spellcheck="false">
+    <label for="eAli">Más elfogadott nevek (vesszővel)</label><input type="text" id="eAli" value="${esc((p.aliases || []).join(", "))}" spellcheck="false">
+    <label for="eNote">Jegyzet</label><textarea id="eNote" rows="2">${esc(p.note)}</textarea>
+    <label class="check"><input type="checkbox" id="eVer" ${p.verify ? "" : "checked"}> A magyar név ellenőrizve</label>
+    <div class="actions"><button class="btn soft" id="eClose">Bezár</button><button class="btn go" id="eSave">Mentés</button></div>
+    <p class="msg" id="eMsg" aria-live="polite"></p>`;
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+  $("#eFile").onchange = async e => { if (!e.target.files[0]) return; newImg = await resizeToJpeg(e.target.files[0]); $("#ePhoto").innerHTML = `<img src="${newImg.url}" alt="Új kép">`; };
+  $("#eClose").onclick = () => el.classList.add("hidden");
+  $("#eSave").onclick = async () => {
+    const msg = t => $("#eMsg").textContent = t;
+    if (!tok()) return msg("Előbb add meg a GitHub tokent fent.");
+    try {
+      $("#eSave").disabled = true;
+      const patch = {
+        latin: $("#eLat").value.trim(), hu: $("#eHu").value.trim(), note: $("#eNote").value.trim(),
+        aliases: $("#eAli").value.split(",").map(s => s.trim()).filter(Boolean), verify: !$("#eVer").checked,
+      };
+      if (newImg) {
+        msg("Kép feltöltése…");
+        // fresh random name: no cache shows the old photo, and the name doesn't give the answer away
+        const path = `images/${crypto.randomUUID().slice(0, 12)}.jpg`;
+        await gh(path, { method: "PUT", body: JSON.stringify({ message: `Kép csere: ${patch.latin}`, content: newImg.b64 }) });
+        Object.assign(patch, { image: path, credit: "Saját feltöltés" });
+      }
+      msg("Mentés…");
+      // merge into the latest committed data.json so edits made on another device aren't lost
+      const { sha, data } = await getDataFile();
+      const target = data.find(x => x.id === p.id);
+      Object.assign(target, patch);
+      if (!target.verify) delete target.verify;
+      const content = bytesToB64(new TextEncoder().encode(JSON.stringify(data, null, 1)));
+      await gh("data.json", { method: "PUT", body: JSON.stringify({ message: `Javítás: ${patch.latin}`, content, sha }) });
+      Object.assign(p, patch); if (!p.verify) delete p.verify;
+      if (newImg) p.image = newImg.url; // show now; the published file is live in 1–2 minutes
+      msg("Mentve.");
+      renderAdminList();
+    } catch (e) { msg("Nem sikerült: " + e.message); }
+    finally { $("#eSave").disabled = false; }
+  };
+}
+
+// ---------- boot ----------
+function showTab(tab) {
+  document.querySelectorAll(".tabs button").forEach(b => b.dataset.tab === tab ? b.setAttribute("aria-current", "page") : b.removeAttribute("aria-current"));
+  document.querySelectorAll("main > section").forEach(s => s.classList.toggle("hidden", s.id !== tab));
+  store.set("tab", tab);
+  if (tab === "list") renderList();
+  if (tab === "admin") renderAdminList();
+}
+document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => showTab(b.dataset.tab));
+fetch("data.json?v=" + Date.now()).then(r => r.json()).then(d => {
+  plants = d;
+  $("#lCat").innerHTML = `<option value="">Minden kategória (${plants.length})</option>` + categories().map(c => `<option>${esc(c)}</option>`).join("");
+  $("#lQ").oninput = $("#lCat").onchange = renderList;
+  $("#aQ").oninput = $("#aFilter").onchange = renderAdminList;
+  $("#aTok").value = store.get("ghToken", "");
+  $("#aTok").onchange = () => store.set("ghToken", tok());
+  $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t) { showTab("admin"); openEditor(t.dataset.id); } };
+  $("#aList").onclick = e => { const t = e.target.closest(".row"); if (t) openEditor(t.dataset.id); };
+  renderToday();
+  startRound();
+  showTab(["play", "list", "admin"].includes(store.get("tab")) ? store.get("tab") : "play");
+}).catch(() => { $("#playArea").innerHTML = '<p class="empty">Nem sikerült betölteni a növénylistát. Frissítsd az oldalt.</p>'; });
+</script>
+</body>
+</html>

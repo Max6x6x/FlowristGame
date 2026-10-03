@@ -1,0 +1,4 @@
+.playwright-mcp/
+.impeccable/review/
+.claude/
+__pycache__/
