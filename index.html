@@ -77,7 +77,8 @@ select { flex: 1; min-width: 0; height: 40px; border: 0; border-radius: var(--r-
 .field.lat input { font-style: italic; }
 .play.two .photo { height: min(34dvh, 460px); }
 .done .field .hint { display: none; }
-.roundbar { height: 6px; border-radius: 3px; background: var(--sunk); overflow: hidden; }
+.roundrow { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 14px; color: var(--go-text); font-variant-numeric: tabular-nums; }
+.roundbar { flex: 1; height: 8px; border-radius: 3px; background: var(--sunk); overflow: hidden; }
 .roundbar > div { height: 100%; background: var(--go); border-radius: 3px; transition: width .4s cubic-bezier(.2,.8,.2,1); }
 .field .hint { font-size: 15px; letter-spacing: .06em; color: var(--ink-2); padding: 4px 6px 0; white-space: pre-wrap; font-variant-numeric: tabular-nums; }
 .field.ok input { background: var(--go-soft); border-color: var(--go-soft); }
@@ -331,8 +332,9 @@ function renderPlay() {
   }
   const { p } = current;
   const needLat = settings.mode !== "hu", needHu = settings.mode !== "lat" && !!p.hu;
-  const prog = round ? `<div class="chip progress">${round.answers.length + 1} / ${round.items.length}</div>` : "";
-  const bar = round ? `<div class="roundbar" role="progressbar" aria-valuemin="0" aria-valuemax="${round.items.length}" aria-valuenow="${round.answers.length}"><div style="width:${round.answers.length / round.items.length * 100}%"></div></div>` : "";
+  const prog = "";
+  const n = round ? round.answers.length + 1 : 0;
+  const bar = round ? `<div class="roundrow"><div class="roundbar" role="progressbar" aria-label="Kör" aria-valuemin="1" aria-valuemax="${round.items.length}" aria-valuenow="${n}"><div style="width:${n / round.items.length * 100}%"></div></div><span>${n} / ${round.items.length}</span></div>` : "";
   area.classList.toggle("two", needLat && needHu);
   area.classList.remove("done");
   const field = (cls, id, label) => `<div class="field ${cls}" id="f-${id}">
