@@ -9325,10 +9325,16 @@
   "categories": [
    "Cserepes levéldísznövények"
   ],
-  "image": "",
-  "credit": "",
+  "image": "images/162eadd5-681.jpg",
+  "credit": "Saját feltöltés",
   "src": "Schmidt Gábor",
-  "verify": true
+  "verify": true,
+  "more": [
+   {
+    "image": "images/d7a9a51f-d1b.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "fatsia-japonica",
