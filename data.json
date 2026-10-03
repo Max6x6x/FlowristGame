@@ -560,7 +560,7 @@
  {
   "id": "nemesia-strumosa",
   "latin": "Nemesia strumosa",
-  "hu": "tarka vörösbegyvirág",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -582,8 +582,9 @@
     "credit": "iNaturalist: (c) mikemittelmeyer, some rights reserved (CC BY-NC)"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "tarka vörösbegyvirág (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "nicotiana-alata",
@@ -1654,7 +1655,7 @@
  {
   "id": "chasmantium-latifolium",
   "latin": "Chasmantium latifolium",
-  "hu": "széleslevelű különösfű",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -1662,8 +1663,9 @@
   ],
   "image": "images/af889983ec.jpg",
   "credit": "iNaturalist: (c) Susan Elliott, some rights reserved (CC BY-NC), uploaded by Susan Elliott",
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "széleslevelű különösfű (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "celosia-argentea-var-forma-plumosa",
@@ -3302,7 +3304,7 @@
  {
   "id": "lewisia-cotyledon",
   "latin": "Lewisia cotyledon",
-  "hu": "változékony dohánygyökér",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -3316,8 +3318,9 @@
     "credit": "iNaturalist: (c) 100460587416170889624, some rights reserved (CC BY), uploaded by 100460587416170889624"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "változékony dohánygyökér (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "lilium-sp-azsiai-hibridek",
@@ -4669,7 +4672,7 @@
  {
   "id": "hyacinthoides-hispanica",
   "latin": "Hyacinthoides hispanica",
-  "hu": "spanyol kékcsengő",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -4691,8 +4694,9 @@
     "credit": "iNaturalist: (c) jltasset, some rights reserved (CC BY-NC), uploaded by jltasset"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "spanyol kékcsengő (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "galanthus-nivalis",
@@ -6504,7 +6508,7 @@
  {
   "id": "callicarpa-bodinieri",
   "latin": "Callicarpa bodinieri",
-  "hu": "Bodinier-szépségbogyó",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6526,8 +6530,9 @@
     "credit": "iNaturalist: (c) MP Zhou, some rights reserved (CC BY-NC), uploaded by MP Zhou"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "Bodinier-szépségbogyó (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "chinese-mahogany",
@@ -8929,7 +8934,7 @@
  {
   "id": "calathea-rosea-picta",
   "latin": "Calathea rosea-picta",
-  "hu": "rózsás zebralevél",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8951,8 +8956,9 @@
     "credit": "iNaturalist: (c) dhfischer, some rights reserved (CC BY), uploaded by dhfischer"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "rózsás zebralevél (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "castanospermum-australe",
@@ -9628,10 +9634,8 @@
  {
   "id": "pachira-aquatica",
   "latin": "Pachira aquatica",
-  "hu": "vízipachira",
-  "aliases": [
-   "szerencsefa"
-  ],
+  "hu": "",
+  "aliases": [],
   "note": "",
   "categories": [
    "Cserepes levéldísznövények"
@@ -9648,8 +9652,9 @@
     "credit": "iNaturalist: (c) Bodo Nuñez Oberg, some rights reserved (CC BY-NC), uploaded by Bodo Nuñez Oberg"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "vízipachira / szerencsefa (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "peperomia-caperata",
@@ -9771,7 +9776,7 @@
  {
   "id": "stromanthe-sanguinea",
   "latin": "Stromanthe sanguinea",
-  "hu": "véres sztromante",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -9793,8 +9798,9 @@
     "credit": "iNaturalist: (c) ssmeds, some rights reserved (CC BY-NC), uploaded by ssmeds"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "véres sztromante (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "yucca-elephantipes",
@@ -10773,7 +10779,7 @@
  {
   "id": "haworthia-fasciata",
   "latin": "Haworthia fasciata",
-  "hu": "sávos szemölcsliliom",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -10781,8 +10787,9 @@
   ],
   "image": "images/5e58b013c0.jpg",
   "credit": "Wikimedia Commons: 1 Haworthia fasciata -MBB Kabeljouws River.jpg",
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "sávos szemölcsliliom (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "lithops-sp",
@@ -11463,10 +11470,8 @@
  {
   "id": "soleirolia-soleirolii",
   "latin": "Soleirolia soleirolii",
-  "hu": "aprólevelű üvegcsalán",
-  "aliases": [
-   "párnafű"
-  ],
+  "hu": "",
+  "aliases": [],
   "note": "",
   "categories": [
    "Ámpolnanövények"
@@ -11487,8 +11492,9 @@
     "credit": "iNaturalist: (c) Carnat Joel, some rights reserved (CC BY)"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "aprólevelű üvegcsalán / párnafű (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "syngonium-podophyllum",
@@ -13116,7 +13122,7 @@
  {
   "id": "gentiana-makinoi",
   "latin": "Gentiana makinoi",
-  "hu": "Makinó-tárnics",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -13125,16 +13131,15 @@
   "image": "images/7c95da8e17.jpg",
   "credit": "iNaturalist: (c) Marco Mussita, some rights reserved (CC BY), uploaded by Marco Mussita",
   "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "Makinó-tárnics (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "gloriosa-superba",
   "latin": "Gloriosa superba",
-  "hu": "pompás koronafürt",
-  "aliases": [
-   "lángliliom"
-  ],
+  "hu": "",
+  "aliases": [],
   "note": "",
   "categories": [
    "Növényházi vágott virágok"
@@ -13155,8 +13160,9 @@
     "credit": "iNaturalist: (c) Pieter Kotze, some rights reserved (CC BY-NC), uploaded by Pieter Kotze"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "pompás koronafürt / lángliliom (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "iris-hollandica",
@@ -13473,7 +13479,7 @@
  {
   "id": "trachellium-caeruleum",
   "latin": "Trachellium caeruleum",
-  "hu": "kék trachélium",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -13482,8 +13488,9 @@
   "image": "images/7f7842690b.jpg",
   "credit": "iNaturalist: (c) Benoît Segerer, some rights reserved (CC BY-NC), uploaded by Benoît Segerer",
   "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "kék trachélium (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "zantedeschia-aethiopica",
@@ -14036,7 +14043,7 @@
  {
   "id": "leucadendron-salignum",
   "latin": "Leucadendron salignum",
-  "hu": "fűzlevelű ezüstfa",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14058,8 +14065,9 @@
     "credit": "iNaturalist: (c) Tony Rebelo, some rights reserved (CC BY-SA), uploaded by Tony Rebelo"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "fűzlevelű ezüstfa (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "leucadendron-sabulosum",
@@ -14089,7 +14097,7 @@
  {
   "id": "leucospermum-cordifolium",
   "latin": "Leucospermum cordifolium",
-  "hu": "szívlevelű tűpárnacserje",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14107,8 +14115,9 @@
     "credit": "iNaturalist: (c) Tony Rebelo, some rights reserved (CC BY-SA), uploaded by Tony Rebelo"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "szívlevelű tűpárnacserje (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "momordica-charantia",
@@ -14255,10 +14264,8 @@
  {
   "id": "serruria-florida",
   "latin": "Serruria florida",
-  "hu": "menyasszonyvirág",
-  "aliases": [
-   "virágos serruria"
-  ],
+  "hu": "",
+  "aliases": [],
   "note": "",
   "categories": [
    "Egzotikus vágottvirágok, növények"
@@ -14279,13 +14286,14 @@
     "credit": "iNaturalist: (c) Santie Gouws, some rights reserved (CC BY-NC), uploaded by Santie Gouws"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "menyasszonyvirág / virágos serruria (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "solanum-mammosum",
   "latin": "Solanum mammosum",
-  "hu": "emlős csucsor",
+  "hu": "",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14303,8 +14311,9 @@
     "credit": "iNaturalist: (c) cstobie, some rights reserved (CC BY), uploaded by cstobie"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "emlős csucsor (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "theobroma-cacao",
@@ -14713,10 +14722,8 @@
  {
   "id": "albuca-namaquensis",
   "latin": "Albuca namaquensis",
-  "hu": "namaqualandi albuka",
-  "aliases": [
-   "spirálfű"
-  ],
+  "hu": "",
+  "aliases": [],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
@@ -14729,8 +14736,9 @@
     "credit": "iNaturalist: (c) Luc Strydom, some rights reserved (CC BY-NC), uploaded by Luc Strydom"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "namaqualandi albuka / spirálfű (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "anthurium-hortulanum",
@@ -15959,10 +15967,8 @@
  {
   "id": "stephanotis-floribunda",
   "latin": "Stephanotis floribunda",
-  "hu": "dúsvirágú koszorúfutóka",
-  "aliases": [
-   "madagaszkári jázmin"
-  ],
+  "hu": "",
+  "aliases": [],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
@@ -15983,8 +15989,9 @@
     "credit": "iNaturalist: (c) Mauricio Mercadante, some rights reserved (CC BY-NC-SA)"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "alt": [
+   "dúsvirágú koszorúfutóka / madagaszkári jázmin (ChatGPT: gyanús)"
+  ]
  },
  {
   "id": "streptocarpus-hybrida",
