@@ -68,6 +68,18 @@ select { flex: 1; min-width: 0; height: 40px; border: 0; border-radius: var(--r-
 .play { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 10px; }
 .photo { position: relative; border-radius: var(--r-l); overflow: hidden; background: var(--sunk); height: min(42dvh, 460px); }
 .photo img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+.detailnav { margin: 6px -8px 8px; align-items: center; }
+.pager { display: flex; align-items: center; gap: 2px; font-weight: 800; font-size: 14px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.detail { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.detail .photo { height: min(48dvh, 520px); }
+.dlat { margin: 0; font-style: italic; font-weight: 800; font-size: 28px; line-height: 1.15; overflow-wrap: anywhere; }
+.dhu { font-weight: 700; font-size: 22px; overflow-wrap: anywhere; }
+.dsec { margin-top: 14px; }
+.dk { font-size: 13px; font-weight: 700; color: var(--ink-2); margin-bottom: 2px; }
+.dnote { margin: 0; white-space: pre-line; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { background: var(--ground); border-radius: 10px; padding: 3px 10px; font-size: 14px; font-weight: 600; }
+.detail .meta { font-size: 13px; color: var(--ink-2); margin-top: 14px; }
 .plantnav { display: flex; justify-content: space-between; margin: -6px -8px 2px; }
 .plantnav button { display: flex; align-items: center; gap: 4px; min-height: 44px; padding: 0 10px; border: 0; border-radius: 12px; background: none; font-weight: 700; font-size: 14px; color: var(--ink-2); }
 .plantnav button:hover:not(:disabled) { background: var(--ground); color: var(--ink); }
@@ -178,6 +190,11 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
   .play > .photo { grid-area: photo; height: calc(100dvh - 104px); min-height: 420px; position: sticky; top: 16px; }
   .play > .panel { grid-area: panel; padding: 24px; }
   .play.two .photo { height: calc(100dvh - 104px); }
+  .detail { grid-template-columns: minmax(0, 7fr) minmax(360px, 5fr); align-items: start; gap: 24px; }
+  .detail .photo { height: calc(100dvh - 160px); min-height: 420px; position: sticky; top: 16px; }
+  .detail .panel { padding: 28px; }
+  .dlat { font-size: 36px; }
+  .dhu { font-size: 26px; }
   .solution .lat { font-size: 34px; }
   .solution .hu { font-size: 24px; }
 }
@@ -205,13 +222,16 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
 
   <!-- LIST -->
   <section id="list" class="hidden">
-    <div class="panel stats" id="stats" style="margin-top:10px"></div>
-    <div class="search">
-      <input id="lQ" type="search" placeholder="Keresés latin vagy magyar névre…" aria-label="Keresés">
-      <select id="lCat" aria-label="Kategória"></select>
+    <div id="lMain">
+      <div class="panel stats" id="stats" style="margin-top:10px"></div>
+      <div class="search">
+        <input id="lQ" type="search" placeholder="Keresés latin vagy magyar névre…" aria-label="Keresés">
+        <select id="lCat" aria-label="Kategória"></select>
+      </div>
+      <p class="count" id="lCount"></p>
+      <div class="grid" id="lGrid"></div>
     </div>
-    <p class="count" id="lCount"></p>
-    <div class="grid" id="lGrid"></div>
+    <div id="lDetail" class="hidden"></div>
   </section>
 
   <!-- ADMIN -->
@@ -379,11 +399,11 @@ function pool() {
 // primary photo plus extra iNaturalist photos; one is chosen at random per question
 const photosOf = p => [{ image: p.image, credit: p.credit }, ...(p.more || [])].filter(x => x.image);
 // plants shown in continuous mode, so "Előző" can step back and "Következő" forward again
-let history = [], hpos = -1;
+let shown = [], hpos = -1;
 function startRound() {
   const size = +settings.round;
   round = size ? { size, items: [...pool()].sort(() => Math.random() - .5).slice(0, size), answers: [] } : null;
-  history = []; hpos = -1;
+  shown = []; hpos = -1;
   next();
 }
 function showPlant(p) {
@@ -398,11 +418,11 @@ function next() {
   const pl = pool();
   if (!pl.length) { current = null; return renderPlay(); }
   if (round) return showPlant(round.items[round.answers.length]);
-  if (hpos < history.length - 1) return showPlant(history[++hpos]);
-  history.push(pick(pl, lastId)); hpos = history.length - 1;
-  showPlant(history[hpos]);
+  if (hpos < shown.length - 1) return showPlant(shown[++hpos]);
+  shown.push(pick(pl, lastId)); hpos = shown.length - 1;
+  showPlant(shown[hpos]);
 }
-function prev() { if (!round && hpos > 0) showPlant(history[--hpos]); }
+function prev() { if (!round && hpos > 0) showPlant(shown[--hpos]); }
 // skip without grading; in a round the plant goes to the back of the queue
 function skip() {
   if (round) round.items.push(round.items.splice(round.answers.length, 1)[0]);
@@ -464,22 +484,11 @@ function renderPlay() {
       <div id="pSolution"></div>
     </div>`;
   bindControls();
-  // an extra (hotlinked) photo that fails to load falls back to the photo stored in the repo
-  // a hotlinked extra photo that fails to load is dropped from this plant's set
-  $("#pImg").onerror = () => {
-    if (current.photos.length < 2) return;
-    current.photos.splice(current.idx, 1);
-    showPhoto(current.idx);
-  };
-  drawStepper();
-  // swipe left/right on the photo steps; a tap (no swipe) opens the zoom viewer
-  let x0 = null, swiped = false;
-  $("#pImg").onpointerdown = e => { x0 = e.clientX; swiped = false; };
-  $("#pImg").onpointerup = e => {
-    if (x0 !== null && Math.abs(e.clientX - x0) > 40 && current.photos.length > 1) { swiped = true; showPhoto(current.idx + (e.clientX < x0 ? 1 : -1)); }
-    x0 = null;
-  };
-  $("#pImg").onclick = () => { if (!swiped) openViewer(current.photo.image); };
+  current.gallery = gallery($("#pImg"), $("#pStep"), current.photos, current.idx, ph => {
+    current.photo = ph;
+    const credit = $("#pCredit");
+    if (credit) credit.textContent = ph.credit ? ` · Kép: ${ph.credit}` : "";
+  });
   $("#pZoom").onclick = () => openViewer(current.photo.image);
   $("#pHint").onclick = hint;
   $("#pPrev").onclick = prev;
@@ -495,25 +504,38 @@ function renderPlay() {
   // don't pop the phone keyboard over the photo; on desktop start typing right away
   if (matchMedia("(min-width: 900px)").matches) inputs[0]?.focus();
 }
-// ---------- photo stepper: prev / dots / next under the photo ----------
-function drawStepper() {
-  const n = current.photos.length, el = $("#pStep");
-  if (n < 2) { el.innerHTML = ""; el.classList.add("hidden"); return; }
-  el.classList.remove("hidden");
-  const arrow = (d, label, path) => `<button data-step="${d}" aria-label="${label}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${path}"/></svg></button>`;
-  el.innerHTML = arrow(-1, "Előző kép", "M15 5l-7 7 7 7")
-    + `<span class="dots" aria-label="${current.idx + 1}. kép a ${n}-ből">${current.photos.map((_, i) => `<i${i === current.idx ? ' class="on"' : ""}></i>`).join("")}</span>`
-    + arrow(1, "Következő kép", "M9 5l7 7-7 7");
-  el.onclick = e => { const b = e.target.closest("[data-step]"); if (b) showPhoto(current.idx + +b.dataset.step); };
-}
-function showPhoto(i) {
-  const n = current.photos.length;
-  current.idx = ((i % n) + n) % n;
-  current.photo = current.photos[current.idx];
-  $("#pImg").src = current.photo.image;
-  drawStepper();
-  const credit = $("#pCredit");
-  if (credit) credit.textContent = current.photo.credit ? ` · Kép: ${current.photo.credit}` : "";
+// ---------- photo gallery: arrows + dots under the photo, swipe, tap = zoom (practice and detail page) ----------
+function gallery(img, stepEl, photos, idx, onChange) {
+  const g = { idx };
+  const draw = () => {
+    const n = photos.length;
+    stepEl.classList.toggle("hidden", n < 2);
+    if (n < 2) { stepEl.innerHTML = ""; return; }
+    const arrow = (d, label, path) => `<button data-step="${d}" aria-label="${label}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${path}"/></svg></button>`;
+    stepEl.innerHTML = arrow(-1, "Előző kép", "M15 5l-7 7 7 7")
+      + `<span class="dots" aria-label="${g.idx + 1}. kép a ${n}-ből">${photos.map((_, i) => `<i${i === g.idx ? ' class="on"' : ""}></i>`).join("")}</span>`
+      + arrow(1, "Következő kép", "M9 5l7 7-7 7");
+  };
+  g.show = i => {
+    const n = photos.length;
+    g.idx = ((i % n) + n) % n;
+    img.src = photos[g.idx].image;
+    draw();
+    onChange?.(photos[g.idx]);
+  };
+  stepEl.onclick = e => { const b = e.target.closest("[data-step]"); if (b) g.show(g.idx + +b.dataset.step); };
+  // a hotlinked extra photo that fails to load is dropped from the set
+  img.onerror = () => { if (photos.length > 1) { photos.splice(g.idx, 1); g.show(g.idx); } };
+  // swipe left/right steps; a tap (no swipe) opens the zoom viewer
+  let x0 = null, swiped = false;
+  img.onpointerdown = e => { x0 = e.clientX; swiped = false; };
+  img.onpointerup = e => {
+    if (x0 !== null && Math.abs(e.clientX - x0) > 40 && photos.length > 1) { swiped = true; g.show(g.idx + (e.clientX < x0 ? 1 : -1)); }
+    x0 = null;
+  };
+  img.onclick = () => { if (!swiped) openViewer(photos[g.idx].image); };
+  draw();
+  return g;
 }
 function hint() {
   if (current.done) return;
@@ -614,11 +636,81 @@ function renderList() {
   const q = deacc(norm($("#lQ").value)), cat = $("#lCat").value;
   const rows = plants.filter(p => (!cat || p.categories.includes(cat)) &&
     (!q || deacc(norm([p.latin, p.hu, ...(p.aliases || [])].join(" "))).includes(q)));
+  listRows = rows;
   $("#lCount").textContent = `${rows.length} növény`;
   $("#lGrid").innerHTML = rows.map(p => `<button class="tile" data-id="${p.id}">
     ${p.image ? `<img loading="lazy" src="${esc(p.image)}" alt="">` : '<div class="noimg"></div>'}
     <div><i>${esc(p.latin)}</i>${esc(p.hu)}${p.verify ? ' <span class="flag">(?)</span>' : ""}</div></button>`).join("");
 }
+
+// ---------- list detail page: read-only learning view of one plant ----------
+let listRows = [], listScroll = 0, detailId = null;
+function knowText(id) {
+  const b = boxes[id];
+  if (b === undefined) return "Még nem gyakoroltad";
+  if (b >= 3) return `Tudod — ${b}× helyes egymás után`;
+  if (b <= 1) return "Ismétlésre vár — legutóbb hibáztál";
+  return "Tanulás alatt";
+}
+function openDetail(id, push = true) {
+  const p = plants.find(x => x.id === id);
+  if (!p) return;
+  if (detailId === null) listScroll = scrollY;
+  if (push) history.pushState({ detail: id }, ""); else if (detailId !== null) history.replaceState({ detail: id }, "");
+  detailId = id;
+  const rows = listRows.length ? listRows : plants, i = rows.findIndex(x => x.id === id);
+  const photos = photosOf(p);
+  const chev = d => `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
+  $("#lMain").classList.add("hidden");
+  const el = $("#lDetail");
+  el.classList.remove("hidden");
+  el.innerHTML = `
+    <div class="plantnav detailnav">
+      <button id="dBack">${chev("M15 5l-7 7 7 7")}Vissza a listához</button>
+      <span class="pager">
+        <button id="dPrev" aria-label="Előző növény"${i <= 0 ? " disabled" : ""}>${chev("M15 5l-7 7 7 7")}</button>
+        <span>${i + 1} / ${rows.length}</span>
+        <button id="dNext" aria-label="Következő növény"${i < 0 || i >= rows.length - 1 ? " disabled" : ""}>${chev("M9 5l7 7-7 7")}</button>
+      </span>
+    </div>
+    <div class="detail">
+      <div class="photo">
+        ${photos.length ? `<img id="dImg" src="${esc(photos[0].image)}" alt="${esc(p.latin)}">` : '<p class="empty">Nincs kép</p>'}
+        <div class="stepper" id="dStep"></div>
+        ${photos.length ? `<button class="zoom" id="dZoom" aria-label="Kép nagyítása">${ICON.zoom}</button>` : ""}
+      </div>
+      <div class="panel">
+        <h2 class="dlat">${esc(p.latin)}</h2>
+        <div class="dhu">${esc(p.hu) || '<span class="muted">nincs magyar név megadva</span>'}</div>
+        ${p.verify ? '<div class="flag">Automatikusan talált név — még nincs ellenőrizve</div>' : ""}
+        ${p.aliases?.length ? `<div class="dsec"><div class="dk">Más elfogadott nevek</div>${esc(p.aliases.join(", "))}</div>` : ""}
+        ${p.note ? `<div class="dsec"><div class="dk">Jegyzet</div><p class="dnote">${esc(p.note)}</p></div>` : ""}
+        <div class="dsec"><div class="dk">Kategória</div><div class="chips">${p.categories.map(c => `<span class="tag">${esc(c)}</span>`).join("")}</div></div>
+        <div class="dsec"><div class="dk">Hol tartasz</div>${knowText(p.id)}</div>
+        <div class="meta" id="dCredit">${photos[0]?.credit ? `Kép: ${esc(photos[0].credit)}` : ""}</div>
+        ${tok() ? '<div class="actions"><button class="btn soft" id="dEdit">Szerkesztés</button></div>' : ""}
+      </div>
+    </div>`;
+  if (photos.length) {
+    const g = gallery($("#dImg"), $("#dStep"), photos, 0, ph => { $("#dCredit").textContent = ph.credit ? `Kép: ${ph.credit}` : ""; });
+    $("#dZoom").onclick = () => openViewer(photos[g.idx].image);
+  }
+  $("#dBack").onclick = () => history.state?.detail ? history.back() : closeDetail();
+  $("#dPrev").onclick = () => openDetail(rows[i - 1].id, false);
+  $("#dNext").onclick = () => openDetail(rows[i + 1].id, false);
+  if ($("#dEdit")) $("#dEdit").onclick = () => { closeDetail(); showTab("admin"); openEditor(p.id); };
+  window.scrollTo(0, 0);
+}
+function closeDetail() {
+  if (detailId === null) return;
+  detailId = null;
+  $("#lDetail").classList.add("hidden");
+  $("#lDetail").innerHTML = "";
+  $("#lMain").classList.remove("hidden");
+  window.scrollTo(0, listScroll);
+}
+// phone back gesture / browser back closes the detail page
+addEventListener("popstate", () => { if (detailId !== null) closeDetail(); });
 
 // ---------- admin: commits data.json + images through the GitHub contents API ----------
 const tok = () => store.get("ghToken", "");
@@ -739,6 +831,7 @@ function showTab(tab) {
   document.querySelectorAll(".tabs button").forEach(b => b.dataset.tab === tab ? b.setAttribute("aria-current", "page") : b.removeAttribute("aria-current"));
   document.querySelectorAll("main > section").forEach(s => s.classList.toggle("hidden", s.id !== tab));
   store.set("tab", tab);
+  if (detailId !== null) closeDetail();
   if (tab === "list") renderList();
   if (tab === "admin") renderAdminList();
 }
@@ -795,7 +888,7 @@ fetch("data.json?v=" + Date.now()).then(r => r.json()).then(d => {
     settings.cat = s.dataset.cat; settings.round = "0"; saveSettings();
     showTab("play"); startRound(); window.scrollTo(0, 0);
   };
-  $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t && tok()) { showTab("admin"); openEditor(t.dataset.id); } };
+  $("#lGrid").onclick = e => { const t = e.target.closest(".tile"); if (t) openDetail(t.dataset.id); };
   $("#aList").onclick = e => { const t = e.target.closest(".row"); if (t) openEditor(t.dataset.id); };
   renderToday();
   startRound();
