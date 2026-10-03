@@ -278,12 +278,12 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
 <header class="top">
   <div class="brand">Növényismeret</div>
   <nav class="tabs" aria-label="Fő menü">
+    <button data-tab="list">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg>Tanulás</button>
     <button data-tab="play" aria-current="page">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4.5-3-8-6.2-8-11a8 8 0 0 1 16 0c0 4.8-3.5 8-8 11z"/><path d="M12 21V11"/></svg>Gyakorlás</button>
     <button data-tab="exam">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 12l2 2 4-4"/></svg>Vizsga</button>
-    <button data-tab="list">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg>Tanulás</button>
     <button data-tab="admin">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>Admin</button>
   </nav>
@@ -1150,7 +1150,7 @@ fetch("data.json?v=" + Date.now()).then(r => r.json()).then(d => {
   $("#aList").onclick = e => { const t = e.target.closest(".row"); if (t) openEditor(t.dataset.id); };
   renderToday();
   startRound();
-  showTab(["play", "exam", "list", "admin"].includes(store.get("tab")) ? store.get("tab") : "play");
+  showTab(["play", "exam", "list", "admin"].includes(store.get("tab")) ? store.get("tab") : "list");
 }).catch(() => { $("#playArea").innerHTML = '<p class="empty">Nem sikerült betölteni a növénylistát. Frissítsd az oldalt.</p>'; });
 </script>
 </body>
