@@ -1571,7 +1571,6 @@
   ],
   "image": "images/676fde8b07.jpg",
   "credit": "iNaturalist: (c) Larry Swift, some rights reserved (CC BY-NC), uploaded by Larry Swift",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/3923446/large.jpg",
@@ -1585,7 +1584,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/3286867/large.jpg",
     "credit": "iNaturalist: no rights reserved, uploaded by Jesse Rorabaugh"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "briza-maxima",
@@ -1964,7 +1964,7 @@
  {
   "id": "setaria-italica",
   "latin": "Setaria italica",
-  "hu": "mohar",
+  "hu": "olasz muhar",
   "aliases": [],
   "note": "",
   "categories": [
@@ -1972,7 +1972,6 @@
   ],
   "image": "images/1595c1e67b.jpg",
   "credit": "iNaturalist: (c) eugenezakharov, some rights reserved (CC BY-NC), uploaded by eugenezakharov",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9580146/large.jpeg",
@@ -1986,12 +1985,16 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/422593126/large.jpeg",
     "credit": "iNaturalist: (c) Thomas Gyselinck, some rights reserved (CC BY), uploaded by Thomas Gyselinck"
    }
-  ]
+  ],
+  "alt": [
+   "mohar (Wikidata/iNaturalist)"
+  ],
+  "src": "Új magyar füvészkönyv"
  },
  {
   "id": "zea-mays",
   "latin": "Zea mays",
-  "hu": "Kukorica",
+  "hu": "tengeri kukorica",
   "aliases": [],
   "note": "",
   "categories": [
@@ -1999,7 +2002,6 @@
   ],
   "image": "images/f30a5a9770.jpg",
   "credit": "iNaturalist: (c) Ken, some rights reserved (CC BY-NC), uploaded by Ken",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/231734941/large.jpg",
@@ -2009,7 +2011,11 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/57590544/large.jpeg",
     "credit": "iNaturalist: (c) Diogo Luiz, some rights reserved (CC BY), uploaded by Diogo Luiz"
    }
-  ]
+  ],
+  "alt": [
+   "Kukorica (Wikidata/iNaturalist)"
+  ],
+  "src": "Új magyar füvészkönyv"
  },
  {
   "id": "bellis-perennis",
@@ -2284,7 +2290,6 @@
   ],
   "image": "images/177861117d.jpg",
   "credit": "iNaturalist: (c) Murray Dawson, some rights reserved (CC BY), uploaded by Murray Dawson",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1229035/large.",
@@ -2294,7 +2299,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9922/large.jpg",
     "credit": "iNaturalist: (c) Bas Kers, some rights reserved (CC BY-NC-SA)"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "erysimum-repandum",
@@ -2307,7 +2313,6 @@
   ],
   "image": "images/50dfb5fae4.jpg",
   "credit": "iNaturalist: (c) Norbert Sauberer, some rights reserved (CC BY-NC), uploaded by Norbert Sauberer",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/278679870/large.jpeg",
@@ -2321,7 +2326,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/33872047/large.jpeg",
     "credit": "iNaturalist: (c) S. Queen, some rights reserved (CC BY-NC), uploaded by S. Queen"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "lunaria-annua",
@@ -2516,7 +2522,6 @@
   ],
   "image": "images/ffc9e98eb9.jpg",
   "credit": "iNaturalist: (c) Pekka Malinen, some rights reserved (CC BY-NC-SA), uploaded by Pekka Malinen",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/44860797/large.jpeg",
@@ -2530,7 +2535,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/82182921/large.jpg",
     "credit": "iNaturalist: (c) Pekka Malinen, some rights reserved (CC BY-NC-SA), uploaded by Pekka Malinen"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "aster-sp",
@@ -2594,7 +2600,6 @@
   ],
   "image": "images/1964ce2e73.jpg",
   "credit": "iNaturalist: (c) Andrey Efremov, some rights reserved (CC BY-NC), uploaded by Andrey Efremov",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/81355398/large.jpeg",
@@ -2608,7 +2613,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/121377601/large.jpeg",
     "credit": "iNaturalist: (c) Todd Boland, some rights reserved (CC BY), uploaded by Todd Boland"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "canna-generalis",
@@ -3155,7 +3161,6 @@
   ],
   "image": "images/5476fdd6c8.jpg",
   "credit": "iNaturalist: (c) gemmamorabito, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/261517102/large.jpg",
@@ -3172,7 +3177,8 @@
   ],
   "alt": [
    "jácint (Maszlay)"
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "iris-barbata",
@@ -3486,7 +3492,6 @@
   ],
   "image": "images/1b5778554a.jpg",
   "credit": "iNaturalist: (c) Xavier Béjar, some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/708077/large.jpg",
@@ -3500,7 +3505,12 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/208930345/large.jpeg",
     "credit": "iNaturalist: (c) Mauro Buscarini, some rights reserved (CC BY-NC), uploaded by Mauro Buscarini"
    }
-  ]
+  ],
+  "alt": [
+   "bánsági bazsarózsa (Füvészkönyv: a hazai alfaj)"
+  ],
+  "src": "Wikidata/iNaturalist",
+  "verify": true
  },
  {
   "id": "papaver-orientale",
@@ -4641,6 +4651,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/622383896/large.jpg",
     "credit": "iNaturalist: (c) james_r_dobson, some rights reserved (CC BY-NC)"
    }
+  ],
+  "alt": [
+   "csupros nárcisz (Füvészkönyv, OCR)"
   ]
  },
  {
@@ -4767,7 +4780,7 @@
  {
   "id": "betula-pendula",
   "latin": "Betula pendula",
-  "hu": "közönséges nyír",
+  "hu": "bibircses nyír",
   "aliases": [],
   "note": "",
   "categories": [
@@ -4775,7 +4788,6 @@
   ],
   "image": "images/19b4baf4ba.jpg",
   "credit": "iNaturalist: (c) Полина Яковлевна Нехаева (Лихачева), some rights reserved (CC BY-NC), uploaded by Полина Яковлевна Нехаева (Лихачева)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/175067773/large.jpg",
@@ -4791,8 +4803,10 @@
    }
   ],
   "alt": [
-   "nyírfa (Maszlay)"
-  ]
+   "nyírfa (Maszlay)",
+   "közönséges nyír (Wikidata/iNaturalist)"
+  ],
+  "src": "Új magyar füvészkönyv"
  },
  {
   "id": "cornus-alba",
@@ -4846,6 +4860,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/4629978/large.jpeg",
     "credit": "iNaturalist: (c) Jason Grant, some rights reserved (CC BY), uploaded by Jason Grant"
    }
+  ],
+  "alt": [
+   "vörösgyűrű-som (Füvészkönyv, OCR)"
   ]
  },
  {
@@ -5744,7 +5761,6 @@
   ],
   "image": "images/d693a5e342.jpg",
   "credit": "iNaturalist: no rights reserved, uploaded by Stephen James McWilliam",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/125366762/large.jpeg",
@@ -5758,7 +5774,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/43010041/large.jpg",
     "credit": "iNaturalist: (c) Sandy Wolkenberg, some rights reserved (CC BY), uploaded by Sandy Wolkenberg"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist",
+  "verify": true
  },
  {
   "id": "ligustrum-vulgare",
@@ -6451,7 +6469,7 @@
  {
   "id": "euonymus-europaeus",
   "latin": "Euonymus europaeus",
-  "hu": "közönséges kecskerágó",
+  "hu": "csíkos kecskerágó",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6459,7 +6477,6 @@
   ],
   "image": "images/ab46e1dbfa.jpg",
   "credit": "iNaturalist: (c) Ricarda Bergen, some rights reserved (CC BY-NC), uploaded by Ricarda Bergen",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/361690839/large.jpeg",
@@ -6475,13 +6492,15 @@
    }
   ],
   "alt": [
-   "európai kecskerágó (Maszlay)"
-  ]
+   "európai kecskerágó (Maszlay)",
+   "közönséges kecskerágó (Wikidata/iNaturalist)"
+  ],
+  "src": "Új magyar füvészkönyv"
  },
  {
   "id": "fagus-sylvatica",
   "latin": "Fagus sylvatica",
-  "hu": "európai bükk",
+  "hu": "közönséges bükk",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6489,7 +6508,6 @@
   ],
   "image": "images/f34c2a992f.jpg",
   "credit": "iNaturalist: (c) sabine-g, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/737550854/large.jpg",
@@ -6501,8 +6519,10 @@
    }
   ],
   "alt": [
-   "bükk (TERRA)"
-  ]
+   "bükk (TERRA)",
+   "európai bükk (Wikidata/iNaturalist)"
+  ],
+  "src": "Új magyar füvészkönyv"
  },
  {
   "id": "gleditsia-triacanthos",
@@ -6637,7 +6657,6 @@
   ],
   "image": "images/7462695195.jpg",
   "credit": "iNaturalist: (c) Charles, some rights reserved (CC BY-NC), uploaded by Charles",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/542199150/large.jpg",
@@ -6651,7 +6670,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/143447707/large.jpg",
     "credit": "iNaturalist: (c) Татьяна Ганина, some rights reserved (CC BY-NC), uploaded by Татьяна Ганина"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "loranthus-europaeus",
@@ -6682,7 +6702,7 @@
  {
   "id": "maclura-pomifera",
   "latin": "Maclura pomifera",
-  "hu": "Narancseper",
+  "hu": "amerikai narancseper",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6690,7 +6710,6 @@
   ],
   "image": "images/f4a497424d.jpg",
   "credit": "iNaturalist: (c) hilliri, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/146755466/large.jpg",
@@ -6706,8 +6725,10 @@
    }
   ],
   "alt": [
-   "narancseperfa (Maszlay)"
-  ]
+   "narancseperfa (Maszlay)",
+   "Narancseper (Wikidata/iNaturalist)"
+  ],
+  "src": "Új magyar füvészkönyv"
  },
  {
   "id": "malus-baccata",
@@ -6846,6 +6867,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/468670599/large.jpg",
     "credit": "iNaturalist: (c) Léo-Guy de Repentigny, some rights reserved (CC BY-NC), uploaded by Léo-Guy de Repentigny"
    }
+  ],
+  "alt": [
+   "ecetszömönre (Füvészkönyv, OCR)"
   ]
  },
  {
@@ -7112,7 +7136,6 @@
   ],
   "image": "images/afca14d441.jpg",
   "credit": "iNaturalist: (c) Elaina Pecher, some rights reserved (CC BY-NC), uploaded by Elaina Pecher",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/23091876/large.jpeg",
@@ -7125,7 +7148,8 @@
   ],
   "alt": [
    "puszpáng (Maszlay)"
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "elaeagnus-ebbingei",
@@ -7613,7 +7637,6 @@
   ],
   "image": "images/b41568d202.jpg",
   "credit": "iNaturalist: (c) fastcoretux, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/141584249/large.jpg",
@@ -7627,7 +7650,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/8385132/large.jpg",
     "credit": "iNaturalist: (c) portioid, some rights reserved (CC BY), uploaded by portioid"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "viscum-album",
@@ -7744,7 +7768,6 @@
   ],
   "image": "images/b2890af73f.jpg",
   "credit": "iNaturalist: (c) Christopher J. Earle, some rights reserved (CC BY-NC), uploaded by Christopher J. Earle",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1342857/large.jpg",
@@ -7758,7 +7781,8 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/47409293/large.jpg",
     "credit": "iNaturalist: (c) faerthen, some rights reserved (CC BY-NC), uploaded by faerthen"
    }
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "abies-nordmanniana",
@@ -7771,7 +7795,6 @@
   ],
   "image": "images/d1386a3ba8.jpg",
   "credit": "iNaturalist: (c) Franz Xaver, some rights reserved (CC BY-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/227334085/large.jpeg",
@@ -7788,7 +7811,8 @@
   ],
   "alt": [
    "kaukázusi jegenyefenyő/nordmann-fenyő (Maszlay)"
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "cedrus-atlantica",
@@ -8367,7 +8391,6 @@
   ],
   "image": "images/d5d4cf8171.jpg",
   "credit": "iNaturalist: (c) Jonathan Tyler, some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/167165354/large.jpeg",
@@ -8384,7 +8407,8 @@
   ],
   "alt": [
    "tiszafa (Maszlay)"
-  ]
+  ],
+  "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
  {
   "id": "thuja-occidentalis",
@@ -11480,6 +11504,9 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/59548486/large.jpg",
     "credit": "iNaturalist: (c) Vladimir Bryukhov, some rights reserved (CC BY-NC), uploaded by Vladimir Bryukhov"
    }
+  ],
+  "alt": [
+   "moore-zsurló (Füvészkönyv, OCR)"
   ]
  },
  {
