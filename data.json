@@ -7099,14 +7099,15 @@
   "id": "schinus-molle",
   "latin": "Schinus molle",
   "hu": "perui borsfa",
-  "aliases": [],
+  "aliases": [
+   "Rózsabors"
+  ],
   "note": "",
   "categories": [
    "Termésükért is felhasználható lombhullató növények"
   ],
   "image": "images/5c2fe322ce.jpg",
   "credit": "iNaturalist: (c) altagray, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/320743277/large.jpeg",
