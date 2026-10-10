@@ -12234,15 +12234,16 @@
  {
   "id": "olea-europaea",
   "latin": "Olea europaea",
-  "hu": "olajfa",
-  "aliases": [],
+  "hu": "Olajfa",
+  "aliases": [
+   "oliva"
+  ],
   "note": "",
   "categories": [
    "Vágott zöldek"
   ],
   "image": "images/e9089ac40e.jpg",
   "credit": "iNaturalist: (c) Alan Dandie, some rights reserved (CC BY-NC), uploaded by Alan Dandie",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/87194494/large.jpg",
