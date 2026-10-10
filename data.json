@@ -2577,9 +2577,9 @@
  {
   "id": "astilbe-arendsii",
   "latin": "Astilbe arendsii",
-  "hu": "Arends-tollbuga",
+  "hu": "Kerti tollbuga",
   "aliases": [
-   "kerti tollbuga"
+   "Arends-tollbuga"
   ],
   "note": "",
   "categories": [
@@ -2597,12 +2597,11 @@
     "credit": "iNaturalist: (c) Felix Riegel, bazı hakları saklıdır (CC BY-NC), yükleyen: Felix Riegel"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/76899544/large.jpg",
-    "credit": "iNaturalist: (c) Nadezhda Zelenova, bazı hakları saklıdır (CC BY-NC), yükleyen: Nadezhda Zelenova"
+    "image": "images/bea13857-30e.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "bergenia-cordifolia",
