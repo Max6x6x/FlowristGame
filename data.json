@@ -5400,31 +5400,19 @@
  {
   "id": "cotinus-coggygria-royal-purple",
   "latin": "Cotinus coggygria 'Royal purple'",
-  "hu": "sárga cserszömörce",
+  "hu": "Bíbor cserszömörce",
   "aliases": [],
   "note": "",
   "categories": [
    "Lombozatukért is felhasználható lombhullató növények"
   ],
-  "image": "images/09237b96ef.jpg",
-  "credit": "iNaturalist: (c) Jeremy Schewe, some rights reserved (CC BY-NC), uploaded by Jeremy Schewe",
-  "verify": true,
+  "image": "images/dd405a1e-027.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/615494237/large.jpg",
-    "credit": "iNaturalist: (c) Platon Kleanthidis, some rights reserved (CC BY-NC), uploaded by Platon Kleanthidis"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/21910652/large.jpg",
-    "credit": "iNaturalist: (c) Roman, some rights reserved (CC BY), uploaded by Roman"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/281020949/large.jpg",
-    "credit": "iNaturalist: (c) juber36, some rights reserved (CC BY-NC)"
+    "image": "images/091b69cc-17e.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "cserszömörce (Schmidt Gábor)"
   ]
  },
  {
