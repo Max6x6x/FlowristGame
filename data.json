@@ -9705,9 +9705,9 @@
  {
   "id": "yucca-elephantipes",
   "latin": "Yucca elephantipes",
-  "hu": "pálmaliliom, elefántláb jukka",
+  "hu": "Óriás pálmaliliom",
   "aliases": [],
-  "note": "",
+  "note": "elefántláb jukka",
   "categories": [
    "Cserepes levéldísznövények"
   ],
@@ -9727,11 +9727,7 @@
     "credit": "iNaturalist: (c) Michael Chassé, some rights reserved (CC BY-NC-ND), uploaded by Michael Chassé"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true,
-  "alt": [
-   "óriás pálmaliliom (Schmidt Gábor)"
-  ]
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "zamioculcas-zamiifolia",
