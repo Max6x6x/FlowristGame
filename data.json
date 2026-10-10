@@ -6836,14 +6836,15 @@
   "id": "loranthus-europaeus",
   "latin": "Loranthus europaeus",
   "hu": "fakín",
-  "aliases": [],
+  "aliases": [
+   "Sárga fagyöngy"
+  ],
   "note": "",
   "categories": [
    "Termésükért is felhasználható lombhullató növények"
   ],
   "image": "images/5debac89e1.jpg",
   "credit": "iNaturalist: (c) Martin A. Prinz, some rights reserved (CC BY-NC), uploaded by Martin A. Prinz",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/103607168/large.jpeg",
@@ -6853,9 +6854,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/7955224/large.jpg",
     "credit": "iNaturalist: (c) Marek Velechovský, some rights reserved (CC BY-NC)"
    }
-  ],
-  "alt": [
-   "sárga fagyöngy, fakín (Maszlay)"
   ]
  },
  {
