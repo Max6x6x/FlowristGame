@@ -3570,7 +3570,7 @@
  {
   "id": "paeonia-officinalis",
   "latin": "Paeonia officinalis",
-  "hu": "kerti bazsarózsa",
+  "hu": "Kerti bazsarózsa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -3588,16 +3588,11 @@
     "credit": "iNaturalist: (c) vallespir, some rights reserved (CC BY-NC)"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/208930345/large.jpeg",
-    "credit": "iNaturalist: (c) Mauro Buscarini, some rights reserved (CC BY-NC), uploaded by Mauro Buscarini"
+    "image": "images/eb3e31c0-f68.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "alt": [
-   "bánsági bazsarózsa (Füvészkönyv: a hazai alfaj)",
-   "bazsarózsa (Schmidt Gábor)"
-  ],
-  "src": "Wikidata/iNaturalist",
-  "verify": true
+  "src": "Wikidata/iNaturalist"
  },
  {
   "id": "papaver-orientale",
