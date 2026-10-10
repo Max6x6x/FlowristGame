@@ -7286,7 +7286,7 @@
  {
   "id": "buxus-sempervirens",
   "latin": "Buxus sempervirens",
-  "hu": "örökzöld puszpáng",
+  "hu": "Örökzöld puszpáng",
   "aliases": [],
   "note": "",
   "categories": [
@@ -7303,9 +7303,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/18652921/large.jpeg",
     "credit": "iNaturalist: (c) Michael Scherer-Lorenzen, some rights reserved (CC BY-NC), uploaded by Michael Scherer-Lorenzen"
    }
-  ],
-  "alt": [
-   "puszpáng (Maszlay)"
   ],
   "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
