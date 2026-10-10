@@ -6457,16 +6457,16 @@
   "categories": [
    "Termésükért is felhasználható lombhullató növények"
   ],
-  "image": "images/3f796e291e.jpg",
-  "credit": "iNaturalist: (c) Chuangzao, some rights reserved (CC BY-NC), uploaded by Chuangzao",
+  "image": "images/5423bd90-1af.jpg",
+  "credit": "Saját feltöltés",
   "more": [
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/470810124/large.png",
-    "credit": "iNaturalist: (c) Li Jianong, some rights reserved (CC BY-NC), uploaded by Li Jianong"
-   },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/68381523/large.jpeg",
     "credit": "iNaturalist: (c) elena_tikhonova, some rights reserved (CC BY-NC), uploaded by elena_tikhonova"
+   },
+   {
+    "image": "images/0293709b-9d2.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
   "src": "Wikidata/iNaturalist + Maszlay egyezik"
