@@ -7466,15 +7466,16 @@
  {
   "id": "lavandula-angustifolia",
   "latin": "Lavandula angustifolia",
-  "hu": "közönséges levendula",
-  "aliases": [],
+  "hu": "Közönséges levendula",
+  "aliases": [
+   "(francia)"
+  ],
   "note": "",
   "categories": [
    "Lomblevelű örökzöld növények"
   ],
   "image": "images/e7aea5b0b0.jpg",
   "credit": "iNaturalist: (c) epicnom, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2697772/large.jpg",
@@ -7484,10 +7485,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2697773/large.jpg",
     "credit": "iNaturalist: (c) Andrey Zharkikh, some rights reserved (CC BY)"
    }
-  ],
-  "alt": [
-   "keskenylevelű levendula (Maszlay)",
-   "levendula (Schmidt Gábor)"
   ]
  },
  {
