@@ -6282,7 +6282,7 @@
  {
   "id": "tamarix-gallica",
   "latin": "Tamarix gallica",
-  "hu": "francia tamariska",
+  "hu": "Nyári tamariska",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6290,7 +6290,6 @@
   ],
   "image": "images/1dc676e1d2.jpg",
   "credit": "iNaturalist: no rights reserved",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/159263742/large.jpeg",
