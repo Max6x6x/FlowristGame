@@ -7023,7 +7023,7 @@
  {
   "id": "rosa-canina",
   "latin": "Rosa canina",
-  "hu": "vadrózsa",
+  "hu": "Vadrózsa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -7031,7 +7031,13 @@
   ],
   "image": "images/657cfe7066.jpg",
   "credit": "Wikimedia Commons: Divlja ruza cvijet 270508.jpg",
-  "src": "Wikidata/iNaturalist + Maszlay egyezik"
+  "src": "Wikidata/iNaturalist + Maszlay egyezik",
+  "more": [
+   {
+    "image": "images/e30e4708-c3e.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "rosa-multiflora",
