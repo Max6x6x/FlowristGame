@@ -7233,17 +7233,19 @@
  {
   "id": "tetradium-ruticarpum",
   "latin": "Tetradium ruticarpum",
-  "hu": "",
+  "hu": "Rutatermésű mézesfa",
   "aliases": [],
   "note": "",
   "categories": [
    "Termésükért is felhasználható lombhullató növények"
   ],
-  "image": "images/a45a23f392.jpg",
-  "credit": "iNaturalist: (c) 呂一起(Lyu yi-chi), some rights reserved (CC BY), uploaded by 呂一起(Lyu yi-chi)",
-  "more": [],
-  "alt": [
-   "rutatermésű mézesfa (ChatGPT: leíró, nem hivatalos)"
+  "image": "images/87ea5e43-f1d.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/674a597e-995.jpg",
+    "credit": "Saját feltöltés"
+   }
   ]
  },
  {
