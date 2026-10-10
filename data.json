@@ -4998,13 +4998,9 @@
   "categories": [
    "Fás szárukért is felhasználható lombhullató növények"
   ],
-  "image": "images/b955b94df4.jpg",
-  "credit": "iNaturalist: (c) Ирина, some rights reserved (CC BY-NC), uploaded by Ирина",
+  "image": "images/a64fdfca-172.jpg",
+  "credit": "Saját feltöltés",
   "more": [
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/173545771/large.jpg",
-    "credit": "iNaturalist: (c) Юрій Бенгус, some rights reserved (CC BY-NC), uploaded by Юрій Бенгус"
-   },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/163426459/large.jpeg",
     "credit": "iNaturalist: (c) Paul G. Schrijvershof, some rights reserved (CC BY-NC-ND), uploaded by Paul G. Schrijvershof"
@@ -5013,9 +5009,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/4629978/large.jpeg",
     "credit": "iNaturalist: (c) Jason Grant, some rights reserved (CC BY), uploaded by Jason Grant"
    }
-  ],
-  "alt": [
-   "vörösgyűrű-som (Füvészkönyv, OCR)"
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
