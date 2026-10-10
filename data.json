@@ -15221,8 +15221,10 @@
  {
   "id": "hydrangea-macrophylla",
   "latin": "Hydrangea macrophylla",
-  "hu": "kerti hortenzia",
-  "aliases": [],
+  "hu": "Hortenzia",
+  "aliases": [
+   "kerti hortenzia"
+  ],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
@@ -15242,9 +15244,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/142491973/large.jpg",
     "credit": "iNaturalist: (c) jtmudge, some rights reserved (CC BY-NC)"
    }
-  ],
-  "alt": [
-   "hortenzia (Maszlay)"
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
