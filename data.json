@@ -7251,15 +7251,20 @@
  {
   "id": "viburnum-opulus",
   "latin": "Viburnum opulus",
-  "hu": "Kányabangita",
+  "hu": "Törpe kányabangita",
   "aliases": [],
-  "note": "",
+  "note": "Viburnum opulus ‘Compactum'",
   "categories": [
    "Termésükért is felhasználható lombhullató növények"
   ],
   "image": "images/6d62c632d8.jpg",
   "credit": "iNaturalist: (c) katelayton, some rights reserved (CC BY-NC)",
-  "more": [],
+  "more": [
+   {
+    "image": "images/dc473b3f-e44.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
   "src": "Wikidata/iNaturalist + TERRA egyezik"
  },
  {
