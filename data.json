@@ -5203,7 +5203,7 @@
  {
   "id": "salix-udensis-sekka",
   "latin": "Salix udensis 'Sekka'",
-  "hu": "japán sárkányfűz",
+  "hu": "Sárkányfűz",
   "aliases": [],
   "note": "",
   "categories": [
@@ -5225,8 +5225,7 @@
     "credit": "iNaturalist: (c) Valery Kambalin, some rights reserved (CC BY-NC), uploaded by Valery Kambalin"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "salix-viminalis",
