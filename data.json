@@ -6146,7 +6146,7 @@
  {
   "id": "salix-caprea",
   "latin": "Salix caprea",
-  "hu": "kecskefűz",
+  "hu": "Kecskefűz",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6156,16 +6156,16 @@
   "credit": "iNaturalist: (c) Colin, some rights reserved (CC BY-NC-ND)",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/105033271/large.jpg",
-    "credit": "iNaturalist: (c) clara7697, some rights reserved (CC BY-NC), uploaded by clara7697"
-   },
-   {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/105393957/large.jpg",
     "credit": "iNaturalist: (c) Tatyana Zarubo, some rights reserved (CC BY-NC), uploaded by Tatyana Zarubo"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/125243359/large.jpg",
     "credit": "iNaturalist: no rights reserved, uploaded by Tero Linjama"
+   },
+   {
+    "image": "images/4f6329d7-797.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
   "src": "Wikidata/iNaturalist + Maszlay egyezik"
