@@ -7440,7 +7440,7 @@
  {
   "id": "ilex-aquifolium",
   "latin": "Ilex aquifolium",
-  "hu": "közönséges magyal",
+  "hu": "Közönséges magyal",
   "aliases": [],
   "note": "",
   "categories": [
@@ -7448,7 +7448,6 @@
   ],
   "image": "images/cef252ca35.jpg",
   "credit": "iNaturalist: (c) Joan Septembre, some rights reserved (CC BY-NC), uploaded by Joan Septembre",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/174575516/large.jpg",
@@ -7462,10 +7461,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/41124613/large.jpg",
     "credit": "iNaturalist: (c) John Martin, some rights reserved (CC BY-NC-ND), uploaded by John Martin"
    }
-  ],
-  "alt": [
-   "magyal (Maszlay)",
-   "magyal (Schmidt Gábor)"
   ]
  },
  {
