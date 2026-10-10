@@ -6718,10 +6718,11 @@
   ],
   "image": "images/9ef83ecb0f.jpg",
   "credit": "iNaturalist: (c) spygliukuburys, some rights reserved (CC BY-NC), uploaded by spygliukuburys",
-  "verify": true,
-  "more": [],
-  "alt": [
-   "komló (TERRA)"
+  "more": [
+   {
+    "image": "images/c49a3b8a-345.jpg",
+    "credit": "Saját feltöltés"
+   }
   ]
  },
  {
