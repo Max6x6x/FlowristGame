@@ -6017,7 +6017,6 @@
   ],
   "image": "images/d8cc2b0fb4.jpg",
   "credit": "iNaturalist: (c) Gertrud K., some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/49788533/large.jpg",
@@ -6027,10 +6026,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1540735/large.jpg",
     "credit": "iNaturalist: (c) candiru, some rights reserved (CC BY)"
    }
-  ],
-  "alt": [
-   "jezsámen (Maszlay)",
-   "jezsámen (Schmidt Gábor)"
   ]
  },
  {
