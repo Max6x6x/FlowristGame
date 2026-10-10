@@ -5699,7 +5699,7 @@
  {
   "id": "chamelaucium-uncinatum",
   "latin": "Chamelaucium uncinatum",
-  "hu": "viaszvirág",
+  "hu": "Viaszvirág",
   "aliases": [
    "waxvirág"
   ],
@@ -5721,6 +5721,10 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/8558899/large.jpeg",
     "credit": "iNaturalist: (c) tangatawhenua, some rights reserved (CC BY-NC), uploaded by tangatawhenua"
+   },
+   {
+    "image": "images/c051a0b7-cf7.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
