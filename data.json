@@ -7563,14 +7563,22 @@
  {
   "id": "mahonia-aquifolium",
   "latin": "Mahonia aquifolium",
-  "hu": "közönséges mahónia",
-  "aliases": [],
+  "hu": "Kerti mahónia",
+  "aliases": [
+   "közönséges mahónia"
+  ],
   "note": "szúróslevelű, ősszel lila termés, mérgező, koszorúk készítéséhez",
   "categories": [
    "Lomblevelű örökzöld növények"
   ],
   "image": "images/0a37164482.jpg",
-  "credit": "Wikimedia Commons: Mahonia aquifolium.jpg"
+  "credit": "Wikimedia Commons: Mahonia aquifolium.jpg",
+  "more": [
+   {
+    "image": "images/b0ec7790-d2c.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "phyllostachys-viridiglaucescens",
