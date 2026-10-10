@@ -7204,8 +7204,10 @@
  {
   "id": "symphoricarpos-chenaultii",
   "latin": "Symphoricarpos chenaultii",
-  "hu": "Chenault-hóbogyó",
-  "aliases": [],
+  "hu": "Kislevelű hóbogyó",
+  "aliases": [
+   "Chenault-hóbogyó"
+  ],
   "note": "",
   "categories": [
    "Termésükért is felhasználható lombhullató növények"
@@ -7226,8 +7228,7 @@
     "credit": "iNaturalist: no rights reserved, uploaded by Stephen James McWilliam"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "tetradium-ruticarpum",
