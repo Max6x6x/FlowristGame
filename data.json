@@ -5988,15 +5988,16 @@
  {
   "id": "magnolia-soulangeana",
   "latin": "Magnolia soulangeana",
-  "hu": "nagyvirágú liliomfa",
-  "aliases": [],
+  "hu": "Liliomfa",
+  "aliases": [
+   "nagyvirágú liliomfa"
+  ],
   "note": "",
   "categories": [
    "Virágukért is felhasználható lombhullató növények"
   ],
   "image": "images/5152083122.jpg",
   "credit": "iNaturalist: (c) Kew on Flickr, some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/65667560/large.jpg",
