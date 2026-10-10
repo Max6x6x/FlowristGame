@@ -5632,15 +5632,16 @@
  {
   "id": "acacia-dealbata",
   "latin": "Acacia dealbata",
-  "hu": "ezüst akácia",
-  "aliases": [],
+  "hu": "Mimóza",
+  "aliases": [
+   "ezüst akácia"
+  ],
   "note": "",
   "categories": [
    "Virágukért is felhasználható lombhullató növények"
   ],
   "image": "images/f8cbdd2a9c.jpg",
   "credit": "iNaturalist: (c) anonymous, some rights reserved (CC BY-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/444378343/large.jpg",
