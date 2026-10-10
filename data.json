@@ -4911,7 +4911,7 @@
  {
   "id": "amorpha-fruticosa",
   "latin": "Amorpha fruticosa",
-  "hu": "cserjés gyalogakác",
+  "hu": "Gyalogakác",
   "aliases": [],
   "note": "",
   "categories": [
@@ -4932,10 +4932,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/465521925/large.jpg",
     "credit": "iNaturalist: (c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman"
    }
-  ],
-  "alt": [
-   "gyalogakác (Maszlay)",
-   "gyalogakác (Schmidt Gábor)"
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
