@@ -6218,15 +6218,22 @@
  {
   "id": "syringa-chinensis",
   "latin": "Syringa chinensis",
-  "hu": "francia orgona",
-  "aliases": [],
+  "hu": "Kínai orgona",
+  "aliases": [
+   "Francia orgona"
+  ],
   "note": "kecsesebb cserje, levél lándzsás, Laza, hatalmas, könnyedén bókoló virágfürtök",
   "categories": [
    "Virágukért is felhasználható lombhullató növények"
   ],
-  "image": "images/87320fa2ab.jpg",
-  "credit": "iNaturalist: (c) Martin A. Prinz, some rights reserved (CC BY-NC), uploaded by Martin A. Prinz",
-  "more": []
+  "image": "images/c62cc52f-826.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/2f03555e-d03.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "syringa-vulgaris",
