@@ -14984,7 +14984,7 @@
  {
   "id": "erica-gracilis",
   "latin": "Erica gracilis",
-  "hu": "erika, hanga",
+  "hu": "Erika, hanga",
   "aliases": [],
   "note": "",
   "categories": [
@@ -15000,13 +15000,13 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/15559813/large.jpg",
     "credit": "iNaturalist: (c) jillblignaut, some rights reserved (CC BY-SA), uploaded by jillblignaut"
+   },
+   {
+    "image": "images/825e93ab-5cf.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true,
-  "alt": [
-   "vékony hanga (Schmidt Gábor)"
-  ]
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "euphorbia-pulcherrima",
