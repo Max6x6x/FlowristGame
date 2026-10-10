@@ -5462,7 +5462,7 @@
  {
   "id": "parthenocissus-tricuspidata",
   "latin": "Parthenocissus tricuspidata",
-  "hu": "háromkaréjú vadszőlő",
+  "hu": "Tapadókorongos vadszőlő",
   "aliases": [],
   "note": "",
   "categories": [
@@ -5483,11 +5483,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/27174829/large.jpeg",
     "credit": "iNaturalist: (c) mkkennedy, some rights reserved (CC BY-NC), uploaded by mkkennedy"
    }
-  ],
-  "alt": [
-   "tapadókorongos vadszőlő (Maszlay)",
-   "japán vadszőlő (Schmidt Gábor)",
-   "más néven repkényszőlő (Schmidt Gábor)"
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
