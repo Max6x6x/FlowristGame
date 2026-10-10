@@ -7364,28 +7364,23 @@
  {
   "id": "euonymus-fortunei",
   "latin": "Euonymus fortunei",
-  "hu": "repkénykecskerágó",
+  "hu": "Kúszó kecskerágó",
   "aliases": [],
   "note": "",
   "categories": [
    "Lomblevelű örökzöld növények"
   ],
-  "image": "images/8bbffba714.jpg",
-  "credit": "iNaturalist: (c) Melissa McMasters, some rights reserved (CC BY)",
-  "verify": true,
+  "image": "images/8f635d43-28b.jpg",
+  "credit": "Saját feltöltés",
   "more": [
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/448342304/large.jpg",
-    "credit": "iNaturalist: (c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman"
-   },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/126191473/large.jpeg",
     "credit": "iNaturalist: (c) kellyfrank98, some rights reserved (CC BY-NC), uploaded by kellyfrank98"
+   },
+   {
+    "image": "images/99e28c1e-713.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "ésa kecskerágó (Schmidt Gábor)",
-   "kúszó örökzöld kecskerágó (Schmidt Gábor)"
   ]
  },
  {
