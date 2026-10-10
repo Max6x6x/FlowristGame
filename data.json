@@ -6630,7 +6630,7 @@
  {
   "id": "euonymus-europaeus",
   "latin": "Euonymus europaeus",
-  "hu": "csíkos kecskerágó",
+  "hu": "Közönséges kecskerágó",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6651,10 +6651,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13507412/large.jpeg",
     "credit": "iNaturalist: (c) Bonnie Kinder, some rights reserved (CC BY-NC), uploaded by Bonnie Kinder"
    }
-  ],
-  "alt": [
-   "európai kecskerágó (Maszlay)",
-   "közönséges kecskerágó (Wikidata/iNaturalist)"
   ],
   "src": "Új magyar füvészkönyv"
  },
