@@ -6053,7 +6053,7 @@
  {
   "id": "prunus-serrulata",
   "latin": "Prunus serrulata",
-  "hu": "japáncseresznye",
+  "hu": "Japán cseresznye",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6074,9 +6074,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/64934544/large.jpg",
     "credit": "iNaturalist: (c) heliamphora, some rights reserved (CC BY-NC)"
    }
-  ],
-  "alt": [
-   "japán díszcseresznye (Maszlay)"
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
