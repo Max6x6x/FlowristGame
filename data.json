@@ -5374,7 +5374,7 @@
  {
   "id": "cotinus-coggygria",
   "latin": "Cotinus coggygria",
-  "hu": "sárga cserszömörce",
+  "hu": "Cserszömörce",
   "aliases": [],
   "note": "",
   "categories": [
@@ -5382,7 +5382,6 @@
   ],
   "image": "images/64af9869c1.jpg",
   "credit": "iNaturalist: (c) Jeremy Schewe, some rights reserved (CC BY-NC), uploaded by Jeremy Schewe",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/615494237/large.jpg",
@@ -5396,9 +5395,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/281020949/large.jpg",
     "credit": "iNaturalist: (c) juber36, some rights reserved (CC BY-NC)"
    }
-  ],
-  "alt": [
-   "cserszömörce (Schmidt Gábor)"
   ]
  },
  {
