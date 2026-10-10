@@ -5784,7 +5784,7 @@
  {
   "id": "genista-sp",
   "latin": "Genista sp.",
-  "hu": "",
+  "hu": "Rekettye",
   "aliases": [],
   "note": "",
   "categories": [
@@ -5798,16 +5798,13 @@
     "credit": "iNaturalist: (c) Santiago Mailhos, some rights reserved (CC BY-NC), uploaded by Santiago Mailhos"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/143008513/large.jpeg",
-    "credit": "iNaturalist: (c) Σάββας Ζαφειρίου (Savvas Zafeiriou), some rights reserved (CC BY-NC), uploaded by Σάββας Ζαφειρίου (Savvas Zafeiriou)"
-   },
-   {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/40488491/large.jpeg",
     "credit": "iNaturalist: (c) Ron Vanderhoff, some rights reserved (CC BY-NC), uploaded by Ron Vanderhoff"
+   },
+   {
+    "image": "images/e031f358-11b.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "rekettyefaj (ChatGPT: csoportszintű)"
   ]
  },
  {
