@@ -5832,7 +5832,7 @@
  {
   "id": "hydrangea-paniculata",
   "latin": "Hydrangea paniculata",
-  "hu": "bugás hortenzia",
+  "hu": "Bugás hortenzia",
   "aliases": [],
   "note": "",
   "categories": [
@@ -5840,11 +5840,14 @@
   ],
   "image": "images/a3cc650656.jpg",
   "credit": "iNaturalist: (c) 空猫, some rights reserved (CC BY-NC), uploaded by 空猫",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/146828813/large.jpg",
     "credit": "iNaturalist: (c) 空猫, some rights reserved (CC BY-NC), uploaded by 空猫"
+   },
+   {
+    "image": "images/8c70189a-e66.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
