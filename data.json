@@ -7599,8 +7599,10 @@
  {
   "id": "prunus-laurocerasus",
   "latin": "Prunus laurocerasus",
-  "hu": "Babérmeggy",
-  "aliases": [],
+  "hu": "Balkáni babérmeggy",
+  "aliases": [
+   "babérmeggy"
+  ],
   "note": "",
   "categories": [
    "Lomblevelű örökzöld növények"
