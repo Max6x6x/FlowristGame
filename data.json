@@ -5754,7 +5754,7 @@
  {
   "id": "forsythia-intermedia",
   "latin": "Forsythia intermedia",
-  "hu": "hibrid aranycserje",
+  "hu": "Aranyfa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -5762,7 +5762,6 @@
   ],
   "image": "images/ead584cf47.jpg",
   "credit": "iNaturalist: (c) Dr. Boli, some rights reserved (CC BY)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1744222/large.jpg",
@@ -5776,9 +5775,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/122919/large.jpg",
     "credit": "iNaturalist: (c) -NjuTIKA-, some rights reserved (CC BY-NC-SA)"
    }
-  ],
-  "alt": [
-   "aranycserje, aranyfa (Maszlay)"
   ]
  },
  {
