@@ -7583,8 +7583,10 @@
  {
   "id": "phyllostachys-viridiglaucescens",
   "latin": "Phyllostachys viridiglaucescens",
-  "hu": "zöldeskék bambusz",
-  "aliases": [],
+  "hu": "Dereslevelű botnád",
+  "aliases": [
+   "bambusz"
+  ],
   "note": "",
   "categories": [
    "Lomblevelű örökzöld növények"
@@ -7592,8 +7594,7 @@
   "image": "images/9d72886a99.jpg",
   "credit": "iNaturalist: (c) D-Kuru, some rights reserved (CC BY-SA)",
   "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "prunus-laurocerasus",
