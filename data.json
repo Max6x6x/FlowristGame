@@ -6342,27 +6342,23 @@
  {
   "id": "wisteria-sinensis",
   "latin": "Wisteria sinensis",
-  "hu": "lilaakác",
+  "hu": "Lilaakác",
   "aliases": [],
   "note": "",
   "categories": [
    "Virágukért is felhasználható lombhullató növények"
   ],
-  "image": "images/786dad2190.jpg",
-  "credit": "iNaturalist: (c) Collin Willson, some rights reserved (CC BY-NC), uploaded by Collin Willson",
-  "verify": true,
+  "image": "images/dab8e5dc-16e.jpg",
+  "credit": "Saját feltöltés",
   "more": [
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/127821846/large.jpeg",
-    "credit": "iNaturalist: (c) Σάββας Ζαφειρίου (Savvas Zafeiriou), some rights reserved (CC BY-NC), uploaded by Σάββας Ζαφειρίου (Savvas Zafeiriou)"
-   },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/102852501/large.jpg",
     "credit": "iNaturalist: (c) hopeanne, some rights reserved (CC BY-NC)"
+   },
+   {
+    "image": "images/c541f7b6-798.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "akác (Schmidt Gábor)"
   ]
  },
  {
