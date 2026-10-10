@@ -6944,15 +6944,14 @@
  {
   "id": "platanus-acerifolia",
   "latin": "Platanus acerifolia",
-  "hu": "juharlevelű platán",
+  "hu": "Közönséges platán",
   "aliases": [],
-  "note": "",
+  "note": "Platanus x acerifolia",
   "categories": [
    "Termésükért is felhasználható lombhullató növények"
   ],
   "image": "images/4870c74466.jpg",
   "credit": "iNaturalist: (c) James Bailey, some rights reserved (CC BY-NC), uploaded by James Bailey",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/271439740/large.jpg",
