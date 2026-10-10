@@ -5015,14 +5015,14 @@
  {
   "id": "cornus-stolonifera-flaviramea",
   "latin": "Cornus stolonifera 'Flaviramea'",
-  "hu": "tarackos som",
+  "hu": "Sárgavesszejű som",
   "aliases": [],
   "note": "",
   "categories": [
    "Fás szárukért is felhasználható lombhullató növények"
   ],
-  "image": "images/a1b5a1483b.jpg",
-  "credit": "iNaturalist: (c) cwtw, some rights reserved (CC BY-NC), uploaded by cwtw",
+  "image": "images/cd2da541-7e8.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/209754345/large.jpg",
@@ -5031,12 +5031,13 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/134664251/large.jpg",
     "credit": "iNaturalist: (c) freejinn, some rights reserved (CC BY-NC), uploaded by freejinn"
+   },
+   {
+    "image": "images/85c88ece-aaf.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik",
-  "alt": [
-   "tarackoló som (Schmidt Gábor)"
-  ]
+  "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
  {
   "id": "corylus-avellana-contorta",
