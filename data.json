@@ -6133,18 +6133,15 @@
  {
   "id": "rosa-sp",
   "latin": "Rosa sp.",
-  "hu": "",
+  "hu": "Rózsák",
   "aliases": [],
-  "note": "",
+  "note": "Rózsafaj",
   "categories": [
    "Virágukért is felhasználható lombhullató növények",
    "Növényházi vágott virágok"
   ],
   "image": "images/ef72922f88.jpg",
-  "credit": "Wikimedia Commons: Rosa pendulina.jpg",
-  "alt": [
-   "rózsafaj (ChatGPT: csoportszintű)"
-  ]
+  "credit": "Wikimedia Commons: Rosa pendulina.jpg"
  },
  {
   "id": "salix-caprea",
