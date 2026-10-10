@@ -7627,7 +7627,7 @@
  {
   "id": "pyracantha-coccinea",
   "latin": "Pyracantha coccinea",
-  "hu": "közönséges tűztövis",
+  "hu": "Közönséges tűztövis",
   "aliases": [],
   "note": "",
   "categories": [
@@ -7635,24 +7635,11 @@
   ],
   "image": "images/5ab7d32fe9.jpg",
   "credit": "iNaturalist: (c) Johnny Roger Pedersen, some rights reserved (CC BY-NC), uploaded by Johnny Roger Pedersen",
-  "verify": true,
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/241501906/large.jpg",
-    "credit": "iNaturalist: (c) Nelson Caja Herrera, some rights reserved (CC BY-NC), uploaded by Nelson Caja Herrera"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/241501947/large.jpg",
-    "credit": "iNaturalist: (c) Nelson Caja Herrera, some rights reserved (CC BY-NC), uploaded by Nelson Caja Herrera"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/128600737/large.jpg",
-    "credit": "iNaturalist: (c) Παναγιώτης Ραφαηλίδης, some rights reserved (CC BY-NC), uploaded by Παναγιώτης Ραφαηλίδης"
+    "image": "images/ecb43bf6-71d.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "tűztövis (Maszlay)",
-   "tűztövis (Schmidt Gábor)"
   ]
  },
  {
