@@ -6595,7 +6595,7 @@
  {
   "id": "cotoneaster-horizontalis",
   "latin": "Cotoneaster horizontalis",
-  "hu": "madárbirs",
+  "hu": "Kerti madárbirs",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6617,10 +6617,7 @@
     "credit": "iNaturalist: (c) Salicyna, some rights reserved (CC BY-SA)"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista + Schmidt Gábor egyezik",
-  "alt": [
-   "kerti madárbirs (Schmidt Gábor)"
-  ]
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista + Schmidt Gábor egyezik"
  },
  {
   "id": "crataegus-monogyna",
