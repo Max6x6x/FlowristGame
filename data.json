@@ -6106,7 +6106,7 @@
  {
   "id": "prunus-triloba-multiplex",
   "latin": "Prunus triloba 'Multiplex'",
-  "hu": "babarózsa",
+  "hu": "Babarózsa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6120,16 +6120,15 @@
     "credit": "iNaturalist: (c) Homemountain/Shan Gui, some rights reserved (CC BY-NC), uploaded by Homemountain/Shan Gui"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/212737575/large.jpg",
-    "credit": "iNaturalist: (c) Jane Charlen, some rights reserved (CC BY-NC), uploaded by Jane Charlen"
-   },
-   {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/93582104/large.jpg",
     "credit": "iNaturalist: (c) manuel m. v., some rights reserved (CC BY)"
+   },
+   {
+    "image": "images/ade713f2-0bd.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "rosa-sp",
