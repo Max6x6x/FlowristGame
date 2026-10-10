@@ -5050,7 +5050,6 @@
   ],
   "image": "images/ccdf5aa9ec.jpg",
   "credit": "iNaturalist: (c) David Ballesteros, some rights reserved (CC BY-NC), uploaded by David Ballesteros",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/180832374/large.jpeg",
@@ -5068,11 +5067,6 @@
     "image": "images/631aa801-058.jpg",
     "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "csavartmogyoró (Maszlay)",
-   "közönséges mogyoró (Schmidt Gábor)",
-   "mogyoró (Schmidt Gábor)"
   ]
  },
  {
