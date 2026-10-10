@@ -6859,7 +6859,7 @@
  {
   "id": "maclura-pomifera",
   "latin": "Maclura pomifera",
-  "hu": "amerikai narancseper",
+  "hu": "Narancseper",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6880,10 +6880,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/146755467/large.jpg",
     "credit": "iNaturalist: (c) Arb O'Retum, some rights reserved (CC BY-NC-SA)"
    }
-  ],
-  "alt": [
-   "narancseperfa (Maszlay)",
-   "Narancseper (Wikidata/iNaturalist)"
   ],
   "src": "Új magyar füvészkönyv"
  },
