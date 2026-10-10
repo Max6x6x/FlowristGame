@@ -6756,7 +6756,7 @@
  {
   "id": "ilex-verticillata",
   "latin": "Ilex verticillata",
-  "hu": "örvös magyal",
+  "hu": "Mocsári magyal",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6778,8 +6778,7 @@
     "credit": "iNaturalist: (c) Clayton D'Orsay, some rights reserved (CC BY-NC), uploaded by Clayton D'Orsay"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "juglans-regia",
