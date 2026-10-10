@@ -7490,7 +7490,7 @@
  {
   "id": "lavandula-intermedia",
   "latin": "Lavandula intermedia",
-  "hu": "hibrid levendula",
+  "hu": "Angol levendula",
   "aliases": [
    "lavandin"
   ],
@@ -7500,9 +7500,13 @@
   ],
   "image": "images/730270d451.jpg",
   "credit": "iNaturalist: (c) Molly Bahr, some rights reserved (CC BY-NC), uploaded by Molly Bahr",
-  "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/92b79a1c-471.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "ligustrum-lucidum",
