@@ -7645,7 +7645,7 @@
  {
   "id": "rhododendron-sp",
   "latin": "Rhododendron sp.",
-  "hu": "",
+  "hu": "Havasszépe",
   "aliases": [],
   "note": "",
   "categories": [
@@ -7655,16 +7655,9 @@
   "credit": "iNaturalist: (c) Guy L. Monty, some rights reserved (CC BY-NC), uploaded by Guy L. Monty",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/111968650/large.jpeg",
-    "credit": "iNaturalist: (c) elenasuslova, some rights reserved (CC BY-NC)"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/157897282/large.jpg",
-    "credit": "iNaturalist: (c) Keith Martin-Smith, some rights reserved (CC BY-NC-SA), uploaded by Keith Martin-Smith"
+    "image": "images/85d5d9e1-e07.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "havasszépefaj (rododendronfaj) (ChatGPT: csoportszintű)"
   ]
  },
  {
