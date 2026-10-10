@@ -7708,7 +7708,7 @@
  {
   "id": "sempervivum-tectorum",
   "latin": "Sempervivum tectorum",
-  "hu": "fali kövirózsa",
+  "hu": "Kövirózsa",
   "aliases": [],
   "note": "",
   "categories": [
@@ -7716,7 +7716,6 @@
   ],
   "image": "images/5c45c2732f.jpg",
   "credit": "iNaturalist: (c) ras2019, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/3891286/large.jpg",
@@ -7730,9 +7729,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/314326755/large.jpg",
     "credit": "iNaturalist: (c) L.J. Lamera, some rights reserved (CC BY), uploaded by L.J. Lamera"
    }
-  ],
-  "alt": [
-   "házi kövirózsa (Schmidt Gábor)"
   ]
  },
  {
