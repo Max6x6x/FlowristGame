@@ -6080,7 +6080,7 @@
  {
   "id": "prunus-tenella",
   "latin": "Prunus tenella",
-  "hu": "törpe mandula",
+  "hu": "Törpe mandula",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6088,7 +6088,6 @@
   ],
   "image": "images/3e8130d766.jpg",
   "credit": "iNaturalist: (c) Bernhard Fischer, some rights reserved (CC BY-NC), uploaded by Bernhard Fischer",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/7288729/large.jpg",
