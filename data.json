@@ -6200,7 +6200,7 @@
  {
   "id": "spirea-vanhouttei",
   "latin": "Spirea vanhouttei",
-  "hu": "kerti gyöngyvessző",
+  "hu": "Gyöngyvessző",
   "aliases": [],
   "note": "",
   "categories": [
@@ -6208,7 +6208,12 @@
   ],
   "image": "images/a0cd5b66e1.jpg",
   "credit": "iNaturalist: (c) Dra. Leah, some rights reserved (CC BY-NC), uploaded by Dra. Leah",
-  "verify": true
+  "more": [
+   {
+    "image": "images/40836922-a4a.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "syringa-chinensis",
