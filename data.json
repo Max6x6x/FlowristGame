@@ -7565,15 +7565,16 @@
  {
   "id": "magnolia-grandiflora",
   "latin": "Magnolia grandiflora",
-  "hu": "nagyvirágú liliomfa",
-  "aliases": [],
+  "hu": "Nagyvirágú liliomfa",
+  "aliases": [
+   "Örökzöld liliomfa"
+  ],
   "note": "",
   "categories": [
    "Lomblevelű örökzöld növények"
   ],
   "image": "images/eacc1061e4.jpg",
   "credit": "iNaturalist: (c) 潘立傑 LiChieh Pan, some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/169262925/large.jpg",
