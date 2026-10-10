@@ -7734,7 +7734,7 @@
  {
   "id": "skimmia-japonica",
   "latin": "Skimmia japonica",
-  "hu": "japán dérbabér",
+  "hu": "Japán dérbabér",
   "aliases": [],
   "note": "",
   "categories": [
@@ -7744,20 +7744,15 @@
   "credit": "iNaturalist: (c) 空猫, some rights reserved (CC BY-NC), uploaded by 空猫",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/63627902/large.jpeg",
-    "credit": "iNaturalist: (c) Светлана Нестерова, some rights reserved (CC BY-NC), uploaded by Светлана Нестерова"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/63628323/large.jpeg",
-    "credit": "iNaturalist: (c) Светлана Нестерова, some rights reserved (CC BY-NC), uploaded by Светлана Нестерова"
-   },
-   {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/233301603/large.jpg",
     "credit": "iNaturalist: (c) liushengyu, some rights reserved (CC BY-NC), uploaded by liushengyu"
+   },
+   {
+    "image": "images/d78ccbbe-6e4.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "Schmidt Gábor",
-  "verify": true
+  "src": "Schmidt Gábor"
  },
  {
   "id": "viburnum-tinus",
