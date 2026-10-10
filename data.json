@@ -6332,16 +6332,21 @@
   "id": "viburnum-opulus-roseum",
   "latin": "Viburnum opulus 'Roseum'",
   "hu": "Kányabangita",
-  "aliases": [],
+  "aliases": [
+   "Hólabda",
+   "labdarózsa"
+  ],
   "note": "",
   "categories": [
    "Virágukért is felhasználható lombhullató növények"
   ],
-  "image": "images/e6438da7e5.jpg",
-  "credit": "iNaturalist: (c) katelayton, some rights reserved (CC BY-NC)",
-  "more": [],
-  "alt": [
-   "labdarózsa (Maszlay)"
+  "image": "images/1157284d-807.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/8bba13c7-013.jpg",
+    "credit": "Saját feltöltés"
+   }
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
