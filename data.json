@@ -12566,9 +12566,13 @@
   ],
   "image": "images/2207748e52.jpg",
   "credit": "Wikimedia Commons: Alstroemeria ligtu ligtu 348091473.jpg",
-  "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/e92adad6-647.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "anemone-coronaria",
