@@ -12724,7 +12724,7 @@
   "latin": "Bouvardia domesticum",
   "hu": "borvirág",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Kifejezetten igényli a speciális tápanyagot, közepes mennyiségű vizébe.\nNyílasztásához langyos vízbe helyezzük!",
   "categories": [
    "Növényházi vágott virágok"
   ],
@@ -12732,20 +12732,19 @@
   "credit": "iNaturalist: (c) scott.zona, some rights reserved (CC BY)",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/12584275/large.jpeg",
-    "credit": "iNaturalist: (c) Juan Carlos López Domínguez, some rights reserved (CC BY-NC), uploaded by Juan Carlos López Domínguez"
-   },
-   {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/248094486/large.jpeg",
     "credit": "iNaturalist: (c) Saban-Sequén, E.A., some rights reserved (CC BY-NC), uploaded by Saban-Sequén, E.A."
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/159103087/large.jpeg",
     "credit": "iNaturalist: (c) Dwight Baker, some rights reserved (CC BY-NC), uploaded by Dwight Baker"
+   },
+   {
+    "image": "images/9c421d16-74c.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "bupleurum-rotundifolium",
