@@ -12804,14 +12804,19 @@
   "latin": "Dendranthema morifolium",
   "hu": "kerti krizantém",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: Leveleit alsó harmadán teljességgel eltávolítjuk, ügyelve a pálhalevelekre is! Ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, közepes mennyiségű víz.",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/14e71b08d7.jpg",
-  "credit": "Wikimedia Commons: Złocień Zawadzkiego P39.jpg",
+  "image": "images/0e2c401b-7d4.jpg",
+  "credit": "Saját feltöltés",
   "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/018a2d89-81a.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "dendranthema-morifolium-santini",
