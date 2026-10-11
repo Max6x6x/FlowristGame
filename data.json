@@ -14042,8 +14042,10 @@
   "id": "protea-cynaroides",
   "latin": "Protea cynaroides",
   "hu": "királyprotea",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "protea"
+  ],
+  "note": "Fás szárú",
   "categories": [
    "Egzotikus vágottvirágok, növények"
   ],
@@ -14063,8 +14065,7 @@
     "credit": "iNaturalist: (c) Tony Rebelo, some rights reserved (CC BY-SA), uploaded by Tony Rebelo"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "scadoxus-multiflorus",
