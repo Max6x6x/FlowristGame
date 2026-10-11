@@ -3212,15 +3212,17 @@
  {
   "id": "hyacinthus-orientalis",
   "latin": "Hyacinthus orientalis",
-  "hu": "Kerti jácint",
-  "aliases": [],
-  "note": "",
+  "hu": "jácint",
+  "aliases": [
+   "kerti jácint"
+  ],
+  "note": "Tisztítás: A virág szárat a levélhüvelyből eltávolítjuk, egyenes metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel. Intenzív illatú növény.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták",
    "Hajtatott évelő dísznövények"
   ],
-  "image": "images/5476fdd6c8.jpg",
-  "credit": "iNaturalist: (c) gemmamorabito, some rights reserved (CC BY-NC)",
+  "image": "images/c9411742-575.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/261517102/large.jpg",
@@ -3234,9 +3236,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13629651/large.jpg",
     "credit": "iNaturalist: (c) saba, some rights reserved (CC BY-NC-SA), uploaded by saba"
    }
-  ],
-  "alt": [
-   "jácint (Maszlay)"
   ],
   "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
