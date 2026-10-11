@@ -14606,21 +14606,22 @@
   "id": "anthurium-scherzerianum",
   "latin": "Anthurium scherzerianum",
   "hu": "kis flamingóvirág",
-  "aliases": [],
+  "aliases": [
+   "scherzer-flamingóvirág"
+  ],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
   ],
-  "image": "images/dc07f68275.jpg",
-  "credit": "iNaturalist: (c) Tanya K. Minott, some rights reserved (CC BY-NC), uploaded by Tanya K. Minott",
+  "image": "images/f0061998-42a.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/38201494/large.jpeg",
     "credit": "iNaturalist: (c) Sara Henderson, some rights reserved (CC BY-NC), uploaded by Sara Henderson"
    }
   ],
-  "src": "Schmidt Gábor",
-  "verify": true
+  "src": "Schmidt Gábor"
  },
  {
   "id": "aphelandra-squarrosa",
