@@ -12847,15 +12847,22 @@
   "id": "eucharis-grandiflora",
   "latin": "Eucharis grandiflora",
   "hu": "nagyvirágú amazonliliom",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "amazonliliom"
+  ],
+  "note": "Tisztítás: Szárán nincsenek levelek, egyenes metsz lapra visszavágjuk. Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/e3c5214afa.jpg",
-  "credit": "Wikimedia Commons: Eucharis candida.jpg",
+  "image": "images/710e7112-d3d.jpg",
+  "credit": "Saját feltöltés",
   "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/eb7fab7d-ca5.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "eucomis-comosa",
