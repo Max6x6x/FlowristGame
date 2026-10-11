@@ -3033,15 +3033,17 @@
  {
   "id": "gypsophila-paniculata",
   "latin": "Gypsophila paniculata",
-  "hu": "buglyos fátyolvirág",
-  "aliases": [],
-  "note": "",
+  "hu": "rezgő",
+  "aliases": [
+   "buglyos fátyolvirág",
+   "évelő fátyolvirág"
+  ],
+  "note": "Tisztítás: Apró leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel.\nKémiai vegyszerezés hatására a leveleit lepergeti.\nMagyarországon vadon is terem.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/d998e63758.jpg",
   "credit": "iNaturalist: (c) artiom_prokhorov, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/29862269/large.jpg",
@@ -3055,9 +3057,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/221559681/large.jpeg",
     "credit": "iNaturalist: (c) eceaicovschi, some rights reserved (CC BY-NC)"
    }
-  ],
-  "alt": [
-   "évelő fátyolvirág (Maszlay)"
   ]
  },
  {
