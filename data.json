@@ -2505,7 +2505,8 @@
   "latin": "Allium siculum",
   "hu": "szicíliai nektárhagyma",
   "aliases": [
-   "mézhagyma"
+   "mézhagyma",
+   "nektárhagyma"
   ],
   "note": "",
   "categories": [
@@ -2523,8 +2524,7 @@
     "credit": "iNaturalist: (c) David Hocken, some rights reserved (CC BY-NC), uploaded by David Hocken"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "allium-schubertii",
