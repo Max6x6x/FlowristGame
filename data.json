@@ -12921,32 +12921,24 @@
  {
   "id": "eustoma-grandiflorum",
   "latin": "Eustoma grandiflorum",
-  "hu": "nagyvirágú préritárnics",
+  "hu": "Lizianthus",
   "aliases": [
-   "liziantusz"
+   "liziantusz",
+   "nagyvirágú préritárnics"
   ],
   "note": "",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/d3b2265491.jpg",
-  "credit": "iNaturalist: (c) cherishwilliams, some rights reserved (CC BY-NC), uploaded by cherishwilliams",
+  "image": "images/3016c50a-229.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/21729921/large.jpg",
-    "credit": "iNaturalist: (c) Bob O'Kennon, some rights reserved (CC BY-NC), uploaded by Bob O'Kennon"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/713534/large.JPG",
-    "credit": "iNaturalist: (c) Andy, some rights reserved (CC BY-NC), uploaded by Andy"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/19560772/large.jpg",
-    "credit": "iNaturalist: (c) aflinam, some rights reserved (CC BY-NC)"
+    "image": "images/dff37982-ac3.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "freesia-refracta",
