@@ -14482,14 +14482,15 @@
   "id": "vanda-coerulea",
   "latin": "Vanda coerulea",
   "hu": "kék vanda",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "vanda"
+  ],
+  "note": "Ezüstös léggyökér! Tápközeget vagy támasztó közeget nem tűr!",
   "categories": [
    "Orchideák"
   ],
   "image": "images/e97cff8b8a.jpg",
   "credit": "iNaturalist: (c) ayuwat, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/424835084/large.jpg",
