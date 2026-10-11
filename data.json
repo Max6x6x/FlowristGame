@@ -864,14 +864,22 @@
  {
   "id": "verbena-hybrida",
   "latin": "Verbena hybrida",
-  "hu": "tarka verbéna",
-  "aliases": [],
+  "hu": "kerti verbéna",
+  "aliases": [
+   "tarka verbéna"
+  ],
   "note": "középkorai magvetés",
   "categories": [
    "Palántaként is forgalmazott egynyári növények"
   ],
-  "image": "images/a6714e4c0d.jpg",
-  "credit": "Wikimedia Commons: Verbena hybrida 3.JPG"
+  "image": "images/4376be22-80a.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/046c4400-402.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "verbena-rigida",
