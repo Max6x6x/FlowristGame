@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#f3efe8">
+<meta name="theme-color" content="#f5e8ea">
 <title>Növényismeret</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232f8f4e'/%3E%3Cpath d='M12 20c-3.5-2.4-6-4.9-6-8.6a6 6 0 0 1 12 0c0 3.7-2.5 6.2-6 8.6zM12 20v-8' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ground: #f3efe8; --card: #ffffff; --sunk: #e8e2d7; --ink: #1d1b18; --ink-2: #5b564e; --ink-3: #6f695f;
+  --ground: #f5e8ea; --card: #ffffff; --sunk: #ecdadd; --ink: #1d1b18; --ink-2: #5b564e; --ink-3: #6f695f;
   --go: #267a41; --go-ink: #ffffff; --go-soft: #e3f3e8; --go-text: #23703c;
   --almost: #9a5b00; --almost-soft: #fbeed4; --bad: #b3261e; --bad-soft: #fbe3e0;
   --r-s: 14px; --r-m: 20px; --r-l: 28px;
@@ -23,7 +23,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --ground: #1b1916; --card: #262320; --sunk: #33302b; --ink: #f1ece4; --ink-2: #c3bbae; --ink-3: #a59d90;
+    --ground: #1e1819; --card: #262320; --sunk: #33302b; --ink: #f1ece4; --ink-2: #c3bbae; --ink-3: #a59d90;
     --go: #4fb06d; --go-ink: #0f1a12; --go-soft: #1f3a27; --go-text: #7fd197;
     --almost: #f0b44c; --almost-soft: #3d3020; --bad: #ff8a80; --bad-soft: #43231f;
     --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.25);
@@ -934,6 +934,7 @@ function knowText(id) {
   if (b <= 1) return "Ismétlésre vár — legutóbb hibáztál";
   return "Tanulás alatt";
 }
+let detailFrom = null; // set when the detail page was opened from the Latin tab
 function openDetail(id, push = true) {
   const p = plants.find(x => x.id === id);
   if (!p) return;
@@ -948,7 +949,7 @@ function openDetail(id, push = true) {
   el.classList.remove("hidden");
   el.innerHTML = `
     <div class="plantnav detailnav">
-      <button id="dBack">${chev("M15 5l-7 7 7 7")}Vissza a listához</button>
+      <button id="dBack">${chev("M15 5l-7 7 7 7")}${detailFrom ? "Vissza a Latin alapokhoz" : "Vissza a listához"}</button>
       <span class="pager">
         <button id="dPrev" aria-label="Előző növény"${i <= 0 ? " disabled" : ""}>${chev("M15 5l-7 7 7 7")}</button>
         <span>${i + 1} / ${rows.length}</span>
@@ -990,6 +991,8 @@ function closeDetail() {
   $("#lDetail").innerHTML = "";
   $("#lMain").classList.remove("hidden");
   window.scrollTo(0, listScroll);
+  // opened from a Latin example chip: go back there, where she was
+  if (detailFrom) { const y = detailFrom.y; detailFrom = null; showTab("latin"); window.scrollTo(0, y); }
 }
 // shared-element morph: the photo travels between the tile and the detail page (View Transitions; instant without support)
 function morph(fromImg, update, getTo) {
@@ -1152,6 +1155,7 @@ function showTab(tab) {
   document.querySelectorAll(".tabs button").forEach(b => b.dataset.tab === tab ? b.setAttribute("aria-current", "page") : b.removeAttribute("aria-current"));
   document.querySelectorAll("main > section").forEach(s => s.classList.toggle("hidden", s.id !== tab));
   store.set("tab", tab);
+  detailFrom = null;
   if (detailId !== null) closeDetail();
   if (tab === "list") renderList();
   if (tab === "admin") renderAdminList();
@@ -1171,7 +1175,7 @@ async function renderLatin() {
     try { latin = await fetch("latin.json?v=" + Date.now()).then(r => r.json()); }
     catch { $("#ltBody").innerHTML = '<p class="empty">Nem sikerült betölteni. Frissítsd az oldalt.</p>'; return; }
     $("#ltQ").oninput = renderLatin;
-    $("#ltBody").onclick = e => { const b = e.target.closest("[data-id]"); if (b) { showTab("list"); openDetail(b.dataset.id); } };
+    $("#ltBody").onclick = e => { const b = e.target.closest("[data-id]"); if (b) { const y = scrollY; showTab("list"); detailFrom = { y }; openDetail(b.dataset.id); } };
   }
   const q = deacc($("#ltQ").value.trim().toLowerCase());
   const sec = (title, body, open) => `<div class="panel stats"><details${open ? " open" : ""}><summary><h2>${esc(title)}</h2>${CHEV}</summary>${body}</details></div>`;
