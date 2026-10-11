@@ -13357,32 +13357,29 @@
  {
   "id": "zantedeschia-aethiopica",
   "latin": "Zantedeschia aethiopica",
-  "hu": "fehér tölcsérvirág",
-  "aliases": [],
-  "note": "",
+  "hu": "kála",
+  "aliases": [
+   "fehér tölcsérvirág"
+  ],
+  "note": "Tisztítás: Vastag, húsos, szivacsos szára van, melynek vége gyakran felpöndörödik,\nezért cellux segítségével körberagasztjuk a szár végét.\nVíz: Különösebb tápanyag igénye nincs, kevés, fertőtlenítőszeres vizet igényel.",
   "categories": [
    "Növényházi vágott virágok"
   ],
   "image": "images/a21b45eaee.jpg",
   "credit": "iNaturalist: (c) flipsockgrrl, some rights reserved (CC BY-NC-SA)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2499159/large.jpg",
     "credit": "iNaturalist: (c) Bruce Calvert, some rights reserved (CC BY), uploaded by Bruce Calvert"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/63504546/large.jpeg",
-    "credit": "iNaturalist: (c) Dominicus Johannes Bergsma, some rights reserved (CC BY-SA)"
+    "image": "images/93530d4e-c30.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/7550838/large.jpg",
     "credit": "iNaturalist: no rights reserved, uploaded by Peter de Lange"
    }
-  ],
-  "alt": [
-   "kála (Maszlay)",
-   "kála (Schmidt Gábor)"
   ]
  },
  {
