@@ -2,8 +2,10 @@
  {
   "id": "ageratum-houstonianum",
   "latin": "Ageratum houstonianum",
-  "hu": "mexikói bojtocska",
-  "aliases": [],
+  "hu": "Bojtocska",
+  "aliases": [
+   "mexikói bojtocska"
+  ],
   "note": "",
   "categories": [
    "Palántaként is forgalmazott egynyári növények"
