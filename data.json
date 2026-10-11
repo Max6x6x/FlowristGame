@@ -14509,9 +14509,9 @@
  {
   "id": "vanda-sanderiana",
   "latin": "Vanda sanderiana",
-  "hu": "",
+  "hu": "Vanda sanderiana",
   "aliases": [],
-  "note": "",
+  "note": "Ezüstös léggyökér! Tápközeget vagy támasztó közeget nem tűr!",
   "categories": [
    "Orchideák"
   ],
@@ -14530,9 +14530,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/58103660/large.jpeg",
     "credit": "iNaturalist: (c) anncabras24, some rights reserved (CC BY-NC), uploaded by anncabras24"
    }
-  ],
-  "alt": [
-   "Sander-vanda (ChatGPT: leíró, nem hivatalos)"
   ]
  },
  {
