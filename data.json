@@ -3242,16 +3242,23 @@
  {
   "id": "iris-barbata",
   "latin": "Iris barbata",
-  "hu": "",
+  "hu": "Nőszirom",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/06622dc0ba.jpg",
   "credit": "Wikimedia Commons: Iris germanica 001.jpg",
-  "alt": [
-   "szakállas nősziromcsoport (ChatGPT: csoportszintű)"
+  "more": [
+   {
+    "image": "images/0dcfea47-367.jpg",
+    "credit": "Saját feltöltés"
+   },
+   {
+    "image": "images/87487ad4-4fe.jpg",
+    "credit": "Saját feltöltés"
+   }
   ]
  },
  {
