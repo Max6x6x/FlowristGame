@@ -13069,9 +13069,12 @@
  {
   "id": "nerine-bowdenii",
   "latin": "Nerine bowdenii",
-  "hu": "Bowden-nerine",
-  "aliases": [],
-  "note": "",
+  "hu": "csillogó pirosliliom",
+  "aliases": [
+   "Pirosliliom",
+   "Bowden-nerine"
+  ],
+  "note": "Tisztítás: Szárán nincsenek levelek, egyenes metsz lapra visszavágjuk. Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Növényházi vágott virágok"
   ],
@@ -13079,20 +13082,15 @@
   "credit": "iNaturalist: (c) Alan Horstmann, some rights reserved (CC BY-NC), uploaded by Alan Horstmann",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/258181127/large.jpg",
-    "credit": "iNaturalist: (c) mikelumley, some rights reserved (CC BY-NC)"
+    "image": "images/98060840-f4a.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/635408933/large.jpg",
     "credit": "iNaturalist: (c) Carla Brevis, some rights reserved (CC BY-NC), uploaded by Carla Brevis"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/521917287/large.jpg",
-    "credit": "iNaturalist: (c) ruthcozien, some rights reserved (CC BY-NC), uploaded by ruthcozien"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "ornithogalum-arabicum",
