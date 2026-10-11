@@ -13426,8 +13426,10 @@
   "id": "anigozanthos-flavidus",
   "latin": "Anigozanthos flavidus",
   "hu": "sárgászöld kengurumancs",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "kengurumancs"
+  ],
+  "note": "Az egész növényt finom szőr borítja be.",
   "categories": [
    "Egzotikus vágottvirágok, növények"
   ],
@@ -13447,8 +13449,7 @@
     "credit": "iNaturalist: (c) Sho Rapley, some rights reserved (CC BY-NC), uploaded by Sho Rapley"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "banksia-menziesii",
