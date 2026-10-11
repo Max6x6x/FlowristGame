@@ -13043,14 +13043,17 @@
  {
   "id": "iris-hollandica",
   "latin": "Iris hollandica",
-  "hu": "írisz/nőszirom",
-  "aliases": [],
-  "note": "",
+  "hu": "holland nőszirom",
+  "aliases": [
+   "Írisz",
+   "nőszirom"
+  ],
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/0ba817de4f.jpg",
-  "credit": "iNaturalist: (c) edwardrooks, some rights reserved (CC BY-NC), uploaded by edwardrooks",
+  "image": "images/cf4fb98f-221.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/748363/large.jpg",
@@ -13061,8 +13064,7 @@
     "credit": "iNaturalist: (c) Jennifer de Graaf, some rights reserved (CC BY-NC)"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "leycesteria-formosa",
