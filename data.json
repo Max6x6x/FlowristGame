@@ -4211,16 +4211,17 @@
  {
   "id": "craspedia-globosa",
   "latin": "Craspedia globosa",
-  "hu": "gömbös kraszpédia",
+  "hu": "Kraszpédia",
   "aliases": [
+   "Gömbös kraszpédia",
    "dobverővirág"
   ],
-  "note": "",
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.\nSzárazvirágként is alkalmazható",
   "categories": [
    "Szárazvirágként is felhasználható évelő növények"
   ],
-  "image": "images/3a62ad3126.jpg",
-  "credit": "iNaturalist: (c) Alice Shanks, some rights reserved (CC BY), uploaded by Alice Shanks",
+  "image": "images/d0119687-bf3.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/412966/large.jpg",
@@ -4231,8 +4232,7 @@
     "credit": "iNaturalist: (c) Cara-Lisa Schloots, some rights reserved (CC BY), uploaded by Cara-Lisa Schloots"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "cortaderia-selloana",
