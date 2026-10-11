@@ -14254,16 +14254,19 @@
  {
   "id": "cymbidium-giganteum",
   "latin": "Cymbidium giganteum",
-  "hu": "",
+  "hu": "Csónakorhidea",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: A virágzati száron levél nem található. Fürtökben virágzik. A virágokat külön-külön leválaszhatjuk a fürtökről, így rövid szártagúak, de fiolázva, szárpótlással meghosszabbítható.\nFerde metsz lapra visszavágva tesszük vízbe. Tűzőhabból nehezen veszi fel a vizet, ezért ilyen esetekben fiolázzuk. Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.\nNem hűtjük az orchideákat!",
   "categories": [
    "Orchideák"
   ],
   "image": "images/3bee85419d.jpg",
   "credit": "Wikimedia Commons: Cymbidium insigne 5zz.jpg",
-  "alt": [
-   "íriszszerű csónakorchidea (ChatGPT: pontosítandó)"
+  "more": [
+   {
+    "image": "images/88600d29-630.jpg",
+    "credit": "Saját feltöltés"
+   }
   ]
  },
  {
