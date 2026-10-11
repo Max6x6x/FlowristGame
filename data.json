@@ -15075,26 +15075,25 @@
  {
   "id": "hippeastrum-hybrida",
   "latin": "Hippeastrum hybrida",
-  "hu": "",
-  "aliases": [],
-  "note": "",
+  "hu": "Hibrid lovagcsillag",
+  "aliases": [
+   "Amarillisz"
+  ],
+  "note": "Tisztítás: Szárán nincsenek levelek, egyenes metsz lapra visszavágjuk.\nSzára vastag, húsos, üreges. Pálcázzuk a szárat, majd cellux segítségével\nkörberagasztjuk a szár alját, a felhasadás elkerülése miatt. Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Virágos cserepes dísznövények"
   ],
-  "image": "images/841df4bc77.jpg",
-  "credit": "iNaturalist: (c) Luca Bove, some rights reserved (CC BY-NC-SA)",
+  "image": "images/5262fa75-b96.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/82055197/large.jpg",
-    "credit": "iNaturalist: (c) abcdefgewing, some rights reserved (CC BY-NC), uploaded by abcdefgewing"
+    "image": "images/6582aea2-f57.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/96459477/large.jpg",
     "credit": "iNaturalist: (c) Jukka Heinonen, some rights reserved (CC BY-ND)"
    }
-  ],
-  "alt": [
-   "hibrid lovagcsillag (ChatGPT: csoportszintű)"
   ]
  },
  {
