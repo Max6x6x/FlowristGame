@@ -3379,9 +3379,11 @@
  {
   "id": "lilium-sp-longiflorum-hibridek",
   "latin": "Lilium sp. Longiflorum hibridek",
-  "hu": "",
-  "aliases": [],
-  "note": "",
+  "hu": "Longiflorum hybrid liliom",
+  "aliases": [
+   "hosszúvirágú liliomhibrid"
+  ],
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.\nA portokokat mindig eltávolítjuk, mert a virágpor erősen színez.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
@@ -3389,16 +3391,9 @@
   "credit": "iNaturalist: (c) dorayoyo, some rights reserved (CC BY-NC)",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/43483118/large.jpeg",
-    "credit": "iNaturalist: no rights reserved, uploaded by 葉子"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/62229850/large.jpeg",
-    "credit": "iNaturalist: no rights reserved, uploaded by 葉子"
+    "image": "images/d81e1497-75b.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "hosszúvirágú liliomhibridek (ChatGPT: csoportszintű)"
   ]
  },
  {
