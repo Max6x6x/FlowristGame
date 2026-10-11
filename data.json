@@ -922,8 +922,8 @@
   "credit": "iNaturalist: (c) Aliaksandr Mialik, bazı hakları saklıdır (CC BY-NC), yükleyen: Aliaksandr Mialik",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/367278124/large.jpeg",
-    "credit": "iNaturalist: (c) Stanislav Lavrentyev / Станислав Лаврентьев, bazı hakları saklıdır (CC BY-NC), yükleyen: Stanislav Lavrentyev / Станислав Лаврентьев"
+    "image": "images/31c0ff5d-f33.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/266542/large.jpg",
@@ -932,6 +932,10 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/991408/large.jpg",
     "credit": "iNaturalist: (c) Dwight Sipler, bazı hakları saklıdır (CC BY)"
+   },
+   {
+    "image": "images/18daa3c4-53d.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
