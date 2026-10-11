@@ -12948,9 +12948,11 @@
  {
   "id": "freesia-refracta",
   "latin": "Freesia refracta",
-  "hu": "frézia",
-  "aliases": [],
-  "note": "",
+  "hu": "Frézia",
+  "aliases": [
+   "visszahajló frézia"
+  ],
+  "note": "Tisztítás: Leveleit és oldal bimbóit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Növényházi vágott virágok"
   ],
@@ -12962,16 +12964,15 @@
     "credit": "iNaturalist: (c) Gawie Malan, some rights reserved (CC BY-NC), uploaded by Gawie Malan"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/6236069/large.jpg",
-    "credit": "iNaturalist: (c) Gawie Malan, some rights reserved (CC BY-NC), uploaded by Gawie Malan"
+    "image": "images/b158f4ec-2db.jpg",
+    "credit": "Saját feltöltés"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/26734969/large.jpeg",
-    "credit": "iNaturalist: (c) Sandra Falanga, some rights reserved (CC BY-NC), uploaded by Sandra Falanga"
+    "image": "images/b30fa71b-720.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "gerbera-jamesonii",
