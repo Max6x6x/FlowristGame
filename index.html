@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
+<script>try { document.documentElement.dataset.bg = JSON.parse(localStorage.getItem("bg")) || "barack"; } catch {}</script>
 <meta name="theme-color" content="#f8eee3">
 <title>Növényismeret</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232f8f4e'/%3E%3Cpath d='M12 20c-3.5-2.4-6-4.9-6-8.6a6 6 0 0 1 12 0c0 3.7-2.5 6.2-6 8.6zM12 20v-8' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
@@ -302,6 +303,20 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
   .solution .lat { font-size: 34px; }
   .solution .hu { font-size: 24px; }
 }
+/* background themes (light mode only), picked in Admin; default = barack */
+@media not (prefers-color-scheme: dark) {
+  :root[data-bg="krem"] { --ground: #f3efe8; --sunk: #e8e2d7; }
+  :root[data-bg="zsalya"] { --ground: #eaefe6; --sunk: #dbe3d5; }
+  :root[data-bg="kodkek"] { --ground: #e9eff3; --sunk: #d9e3ea; }
+  :root[data-bg="levendula"] { --ground: #efecf4; --sunk: #e1dcea; }
+  :root[data-bg="barack"] { --ground: #f8eee3; --sunk: #eedfcf; }
+  :root[data-bg="porcelan"] { --ground: #f1f1ef; --sunk: #e3e3df; }
+  :root[data-bg="rozsa"] { --ground: #f5e8ea; --sunk: #ecdadd; }
+}
+.themes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.themes button { display: flex; align-items: center; gap: 8px; border: 2px solid transparent; background: var(--sunk); color: var(--ink); border-radius: 999px; padding: 6px 14px 6px 6px; font-weight: 700; }
+.themes button[aria-pressed="true"] { border-color: var(--go); }
+.themes .sw { width: 26px; height: 26px; border-radius: 50%; border: 1px solid rgba(0,0,0,.15); }
 </style>
 </head>
 <body>
@@ -353,6 +368,11 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
 
   <!-- ADMIN -->
   <section id="admin" class="hidden adm">
+    <div class="panel" style="margin-top:10px">
+      <p style="margin:0;font-weight:800">Háttérszín</p>
+      <p class="muted" style="margin:2px 0 0">Csak ezen az eszközön, világos módban.</p>
+      <div class="themes" id="themes"><button type="button" data-bg="krem" aria-pressed="false"><span class="sw" style="background:#f3efe8"></span>Krém</button><button type="button" data-bg="zsalya" aria-pressed="false"><span class="sw" style="background:#eaefe6"></span>Zsálya</button><button type="button" data-bg="kodkek" aria-pressed="false"><span class="sw" style="background:#e9eff3"></span>Ködkék</button><button type="button" data-bg="levendula" aria-pressed="false"><span class="sw" style="background:#efecf4"></span>Levendula</button><button type="button" data-bg="barack" aria-pressed="false"><span class="sw" style="background:#f8eee3"></span>Barack</button><button type="button" data-bg="porcelan" aria-pressed="false"><span class="sw" style="background:#f1f1ef"></span>Porcelán</button><button type="button" data-bg="rozsa" aria-pressed="false"><span class="sw" style="background:#f5e8ea"></span>Rózsa</button></div>
+    </div>
     <div class="panel" style="margin-top:10px">
       <div id="tokSet" class="hidden">
         <p style="margin:0;font-weight:800">A mentés be van állítva ezen az eszközön.</p>
@@ -1149,6 +1169,14 @@ function openEditor(id) {
     finally { $("#eSave").disabled = false; }
   };
 }
+
+// ---------- background theme (per device) ----------
+function drawThemes() {
+  document.querySelectorAll("#themes button").forEach(b => b.setAttribute("aria-pressed", b.dataset.bg === document.documentElement.dataset.bg));
+  document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.documentElement).getPropertyValue("--ground").trim();
+}
+$("#themes").onclick = e => { const b = e.target.closest("button[data-bg]"); if (!b) return; document.documentElement.dataset.bg = b.dataset.bg; store.set("bg", b.dataset.bg); drawThemes(); };
+drawThemes();
 
 // ---------- boot ----------
 function showTab(tab) {
