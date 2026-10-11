@@ -1721,22 +1721,18 @@
   "latin": "Celosia argentea var.forma plumosa",
   "hu": "tollas kakastaréj",
   "aliases": [
-   "celózia"
+   "tollas celózia"
   ],
   "note": "víztől barnul a virágzat, középkorai magvetés",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
   ],
-  "image": "images/92a7660add.jpg",
-  "credit": "iNaturalist: (c) Allan Sander, some rights reserved (CC BY-NC), uploaded by Allan Sander",
+  "image": "images/2bf68a20-e3b.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/105023205/large.jpeg",
-    "credit": "iNaturalist: (c) chiuluan, some rights reserved (CC BY), uploaded by chiuluan"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/8328642/large.jpeg",
-    "credit": "iNaturalist: (c) Nelson Wisnik, some rights reserved (CC BY-NC), uploaded by Nelson Wisnik"
+    "image": "images/5b7b587e-41d.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
