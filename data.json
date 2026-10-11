@@ -13146,9 +13146,12 @@
  {
   "id": "ornithogalum-dubium",
   "latin": "Ornithogalum dubium",
-  "hu": "kétes madártej",
-  "aliases": [],
-  "note": "",
+  "hu": "Sárma",
+  "aliases": [
+   "Narancsszínű sárma",
+   "Narancsszínű madártej"
+  ],
+  "note": "Tisztítás: Szárán nincsenek levelek, egyenes metsz lapra visszavágjuk. Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.\nVíz nélküli készítményekhez is remekül alkalmazható.",
   "categories": [
    "Növényházi vágott virágok"
   ],
@@ -13164,8 +13167,7 @@
     "credit": "iNaturalist: (c) Nicola van Berkel, some rights reserved (CC BY-SA), uploaded by Nicola van Berkel"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "oxypetalum-coeruleum",
