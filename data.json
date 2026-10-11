@@ -1402,12 +1402,22 @@
   "latin": "Scabiosa caucasia",
   "hu": "kaukázusi ördögszem",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk\nVíz: Különösebb tápanyagigénye nincs, közepes mennyiségű vizet igényel.",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
   ],
   "image": "images/d31295f439.jpg",
-  "credit": "Wikimedia Commons: Scabiosa columbaria Pink Mist.jpg"
+  "credit": "Wikimedia Commons: Scabiosa columbaria Pink Mist.jpg",
+  "more": [
+   {
+    "image": "images/81718367-01f.jpg",
+    "credit": "Saját feltöltés"
+   },
+   {
+    "image": "images/5b1187a2-cb5.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "scabiosa-stellata",
