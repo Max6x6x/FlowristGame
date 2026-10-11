@@ -2205,7 +2205,9 @@
   "id": "brassica-napus",
   "latin": "Brassica napus",
   "hu": "repce",
-  "aliases": [],
+  "aliases": [
+   "káposztarepce"
+  ],
   "note": "",
   "categories": [
    "Vágottvirágnak is alkalmas kétnyári növények"
