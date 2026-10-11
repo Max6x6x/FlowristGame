@@ -3568,24 +3568,22 @@
   "id": "paeonia-officinalis",
   "latin": "Paeonia officinalis",
   "hu": "Kerti bazsarózsa",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "Pünkösdirózsa"
+  ],
+  "note": "Tisztítás: Leveleit a szár alsó feléről eltávolítjuk, ferde metsz lapra visszavágjuk. Nyílasztáshoz langyos vízbe tesszük.\nVíz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
-  "image": "images/1b5778554a.jpg",
-  "credit": "iNaturalist: (c) Xavier Béjar, some rights reserved (CC BY-NC-SA)",
+  "image": "images/2832e73b-407.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/708077/large.jpg",
     "credit": "iNaturalist: (c) Sarah Gregg, some rights reserved (CC BY-NC-SA)"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/270468804/large.jpg",
-    "credit": "iNaturalist: (c) vallespir, some rights reserved (CC BY-NC)"
-   },
-   {
-    "image": "images/eb3e31c0-f68.jpg",
+    "image": "images/06d50c66-421.jpg",
     "credit": "Saját feltöltés"
    }
   ],
