@@ -13226,15 +13226,16 @@
  {
   "id": "strelitzia-reginae",
   "latin": "Strelitzia reginae",
-  "hu": "pompás papagájvirág",
-  "aliases": [],
+  "hu": "papagájvirág",
+  "aliases": [
+   "pompás papagájvirág"
+  ],
   "note": "",
   "categories": [
    "Növényházi vágott virágok"
   ],
   "image": "images/c2d856eb3a.jpg",
   "credit": "iNaturalist: (c) tshire_letso, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/344084890/large.jpg",
@@ -13248,9 +13249,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/232773100/large.jpeg",
     "credit": "iNaturalist: (c) Craig Peter, some rights reserved (CC BY-NC), uploaded by Craig Peter"
    }
-  ],
-  "alt": [
-   "papagájvirág (Maszlay)"
   ]
  },
  {
