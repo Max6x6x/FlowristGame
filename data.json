@@ -13095,17 +13095,24 @@
  {
   "id": "ornithogalum-arabicum",
   "latin": "Ornithogalum arabicum",
-  "hu": "arab madártej",
-  "aliases": [],
-  "note": "",
+  "hu": "Betlehem csillaga",
+  "aliases": [
+   "arab madártej",
+   "arab sárma"
+  ],
+  "note": "Tisztítás: Szárán nincsenek levelek, egyenes metsz lapra visszavágjuk. Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel. Víz nélküli készítményekhez is remekül alkalmazható.",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/68c9e04617.jpg",
-  "credit": "iNaturalist: (c) Giacomo Gola, some rights reserved (CC BY-NC), uploaded by Giacomo Gola",
-  "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "image": "images/b8c1e8cd-d95.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/ef7c36bd-8dd.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "ornithogalum-thyrsoides",
