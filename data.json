@@ -12515,9 +12515,11 @@
  {
   "id": "agapanthus-umbellatus",
   "latin": "Agapanthus umbellatus",
-  "hu": "afrikai szerelemvirág",
-  "aliases": [],
-  "note": "",
+  "hu": "Szerelemvirág",
+  "aliases": [
+   "afrikai szerelemvirág"
+  ],
+  "note": "Tisztítás: Szárán nincsenek levelek, egyenes metsz lapra visszavágjuk. Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Növényházi vágott virágok"
   ],
@@ -12531,14 +12533,9 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/172743414/large.jpeg",
     "credit": "iNaturalist: (c) Debbie Wall Smith, some rights reserved (CC BY-NC), uploaded by Debbie Wall Smith"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/175410099/large.jpeg",
-    "credit": "iNaturalist: (c) Santie Gouws, some rights reserved (CC BY-NC), uploaded by Santie Gouws"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "ajania-pallasiana",
