@@ -923,8 +923,10 @@
   "id": "antirrhinum-majus",
   "latin": "Antirrhinum majus",
   "hu": "kerti oroszlánszáj",
-  "aliases": [],
-  "note": "középkorai magvetés",
+  "aliases": [
+   "tátika"
+  ],
+  "note": "középkorai magvetés\nTisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel!\nAlulról felfelé virágzik.",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
   ],
