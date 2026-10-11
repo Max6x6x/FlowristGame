@@ -4727,7 +4727,7 @@
   "latin": "Muscari armeniacum",
   "hu": "örmény gyöngyike",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: A virág szárat a levélhüvelyből eltávolítjuk, egyenes metsz lapra\nvisszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Hajtatott évelő dísznövények"
   ],
@@ -4747,10 +4747,7 @@
     "credit": "iNaturalist: (c) Radim Paulič, some rights reserved (CC BY-NC), uploaded by Radim Paulič"
    }
   ],
-  "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik",
-  "alt": [
-   "világoskék örmény gyöngyike (Schmidt Gábor)"
-  ]
+  "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
  {
   "id": "narcissus-pseudonarcissus",
