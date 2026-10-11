@@ -12973,31 +12973,23 @@
   "latin": "Gerbera jamesonii",
   "hu": "gerbera",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: Ferde metsz lapra visszavágjuk a levéltelen szárat.\nSzára belül üreges, kívül finoman szőrözött. Fertőtlenítő a vízébe javasolt!\nVíz: Különösebb tápanyag igénye nincs, kevés vízbe tesszük.",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/005aae6fad.jpg",
-  "credit": "iNaturalist: (c) Joan Faiola, some rights reserved (CC BY-NC), uploaded by Joan Faiola",
+  "image": "images/abb5286f-5be.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/58842899/large.jpg",
-    "credit": "iNaturalist: (c) pdwaar, some rights reserved (CC BY-NC), uploaded by pdwaar"
+    "image": "images/fbbfef3a-24b.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/558790437/large.jpg",
     "credit": "iNaturalist: (c) Kiranraj M S, some rights reserved (CC BY-NC), uploaded by Kiranraj M S"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/15793969/large.jpg",
-    "credit": "iNaturalist: (c) Wynand Uys, some rights reserved (CC BY), uploaded by Wynand Uys"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true,
-  "alt": [
-   "kerti gerbera (Schmidt Gábor)"
-  ]
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "gentiana-makinoi",
