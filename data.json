@@ -3366,30 +3366,23 @@
  {
   "id": "lilium-sp-orientalis-hibridek",
   "latin": "Lilium sp. Orientalis hibridek",
-  "hu": "",
+  "hu": "Oriental hybrid liliom",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel. A portokokat mindig eltávolítjuk, mert a virágpor erősen színez.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
-  "image": "images/1a00421129.jpg",
-  "credit": "iNaturalist: (c) Dayne Galash, some rights reserved (CC BY-NC), uploaded by Dayne Galash",
+  "image": "images/597ee972-d63.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/81504709/large.jpeg",
-    "credit": "iNaturalist: (c) Morgan Stickrod, some rights reserved (CC BY-NC), uploaded by Morgan Stickrod"
+    "image": "images/909f13cc-cab.jpg",
+    "credit": "Saját feltöltés"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/170556991/large.jpeg",
-    "credit": "iNaturalist: (c) Инна Хохлова, some rights reserved (CC BY-NC), uploaded by Инна Хохлова"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/143247052/large.jpeg",
-    "credit": "iNaturalist: (c) Morgan Stickrod, some rights reserved (CC BY-NC), uploaded by Morgan Stickrod"
+    "image": "images/612d00cc-059.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "keleti liliomhibridek (ChatGPT: csoportszintű)"
   ]
  },
  {
