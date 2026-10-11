@@ -1092,7 +1092,7 @@
   "latin": "Cosmos bipinnatus",
   "hu": "pillangóvirág",
   "aliases": [],
-  "note": "rövidszárú",
+  "note": "rövidszárú\nTisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel.",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
   ],
@@ -1108,8 +1108,8 @@
     "credit": "iNaturalist: (c) Enya Roseli, some rights reserved (CC BY-NC), uploaded by Enya Roseli"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/51249694/large.jpeg",
-    "credit": "iNaturalist: (c) Silvano LG, some rights reserved (CC BY-NC), uploaded by Silvano LG"
+    "image": "images/d721df5a-dd6.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
