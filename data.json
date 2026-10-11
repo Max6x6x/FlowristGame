@@ -9586,7 +9586,9 @@
   "id": "pilea-cadierei",
   "latin": "Pilea cadierei",
   "hu": "ezüst pílea",
-  "aliases": [],
+  "aliases": [
+   "ezüst tüzérvirág"
+  ],
   "note": "",
   "categories": [
    "Cserepes levéldísznövények"
@@ -9607,8 +9609,7 @@
     "credit": "iNaturalist: (c) onidiras-iNaturalist, some rights reserved (CC BY-NC), uploaded by onidiras-iNaturalist"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "schefflera-arboricola",
