@@ -1210,9 +1210,11 @@
  {
   "id": "gypsophila-elegans",
   "latin": "Gypsophila elegans",
-  "hu": "kerti fátyolvirág",
-  "aliases": [],
-  "note": "Állandó helyre vethető",
+  "hu": "Fátyolvirág",
+  "aliases": [
+   "egynyári fátyolvirág"
+  ],
+  "note": "",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
   ],
@@ -1222,10 +1224,6 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/173170546/large.jpeg",
     "credit": "iNaturalist: (c) Gennadiy Okatov, some rights reserved (CC BY-NC), uploaded by Gennadiy Okatov"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/295563935/large.jpeg",
-    "credit": "iNaturalist: (c) Tatyana Zarubo, some rights reserved (CC BY-NC), uploaded by Tatyana Zarubo"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/223307913/large.jpg",
