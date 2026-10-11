@@ -2074,24 +2074,16 @@
   "latin": "Brassica oleracea",
   "hu": "Díszkáposzta",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: Alsóbb leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Kevés vízbe érdemes tenni. Vizébe fertőtlenítő szer javasolt.\nSzínes lombleveleivel díszít",
   "categories": [
    "Palántaként is forgalmazott kétnyári növények"
   ],
-  "image": "images/8df00e1a4a.jpg",
-  "credit": "iNaturalist: (c) Miguel A. Casado, some rights reserved (CC BY-NC), uploaded by Miguel A. Casado",
+  "image": "images/527b961a-490.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/163514560/large.jpg",
-    "credit": "iNaturalist: (c) Daniel König, some rights reserved (CC BY-NC), uploaded by Daniel König"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/353871759/large.jpeg",
-    "credit": "iNaturalist: (c) Morgan Stickrod, some rights reserved (CC BY-NC), uploaded by Morgan Stickrod"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/332672188/large.jpeg",
-    "credit": "iNaturalist: (c) Mika Tomta, some rights reserved (CC BY-NC), uploaded by Mika Tomta"
+    "image": "images/9eac576d-ac8.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
