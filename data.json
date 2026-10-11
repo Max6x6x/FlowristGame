@@ -3867,9 +3867,11 @@
  {
   "id": "solidago-canadensis",
   "latin": "Solidago canadensis",
-  "hu": "Kanadai aranyvessző",
-  "aliases": [],
-  "note": "",
+  "hu": "Aranyvessző",
+  "aliases": [
+   "Kanadai aranyvessző"
+  ],
+  "note": "Tisztítás: Leveleit alsó harmadán teljességgel eltávolítjuk.\nFerde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, közepes mennyiségű víz.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
