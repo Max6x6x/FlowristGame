@@ -13632,17 +13632,23 @@
  {
   "id": "curcuma-alismatifolia",
   "latin": "Curcuma alismatifolia",
-  "hu": "sziámi tulipán",
-  "aliases": [],
+  "hu": "Kurkuma",
+  "aliases": [
+   "díszkurkuma"
+  ],
   "note": "",
   "categories": [
    "Egzotikus vágottvirágok, növények"
   ],
   "image": "images/3e178eeccc.jpg",
   "credit": "iNaturalist: (c) NaturemanThaimountain, some rights reserved (CC BY-NC), uploaded by NaturemanThaimountain",
-  "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/6e28ad65-5a9.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "cynara-scolymus",
