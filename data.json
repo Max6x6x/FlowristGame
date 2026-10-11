@@ -1279,17 +1279,19 @@
   "id": "lathyrus-odoratus",
   "latin": "Lathyrus odoratus",
   "hu": "szagos bükköny",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "Illatos lednek"
+  ],
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel. Futó növény, szárát támrendszerre vezetik, a virág szára viszonylag rövid. Intenzív illatú pillangós virágzatú növény.",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
   ],
-  "image": "images/d2d8037f7f.jpg",
-  "credit": "iNaturalist: (c) QuestaGame, some rights reserved (CC BY-NC-ND), uploaded by QuestaGame",
+  "image": "images/e01c05e4-3a2.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/56910645/large.jpg",
-    "credit": "iNaturalist: no rights reserved, uploaded by Peter de Lange"
+    "image": "images/ecf002c4-71c.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/29768002/large.jpg",
