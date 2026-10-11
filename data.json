@@ -3243,7 +3243,9 @@
   "id": "iris-barbata",
   "latin": "Iris barbata",
   "hu": "Nőszirom",
-  "aliases": [],
+  "aliases": [
+   "szakállas nőszirom"
+  ],
   "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
