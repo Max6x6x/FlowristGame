@@ -2529,23 +2529,20 @@
  {
   "id": "allium-schubertii",
   "latin": "Allium schubertii",
-  "hu": "Nagyfejű Hagyma",
-  "aliases": [],
+  "hu": "nagyfejű Hagyma",
+  "aliases": [
+   "Schubert-hagyma"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/c849b2a963.jpg",
   "credit": "iNaturalist: (c) michalmileguir, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/67753376/large.jpeg",
     "credit": "iNaturalist: (c) דבורה שיצר, some rights reserved (CC BY-NC), uploaded by דבורה שיצר"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/65919067/large.jpg",
-    "credit": "iNaturalist: (c) Yizhar Amir, some rights reserved (CC BY-NC), uploaded by Yizhar Amir"
    }
   ]
  },
