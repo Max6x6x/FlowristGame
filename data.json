@@ -1827,14 +1827,16 @@
  {
   "id": "limonium-sinuatum",
   "latin": "Limonium sinuatum",
-  "hu": "kerti sóvirág",
-  "aliases": [],
-  "note": "középkorai magvetés",
+  "hu": "egynyári sóvirág",
+  "aliases": [
+   "kerti sóvirág"
+  ],
+  "note": "középkorai magvetés\nTisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.\nSzárazvirágként is alkalmazható",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
   ],
-  "image": "images/adf92728da.jpg",
-  "credit": "iNaturalist: (c) stevennoyes, some rights reserved (CC BY-NC), uploaded by stevennoyes",
+  "image": "images/d7bfb3d2-3ab.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/8047942/large.jpeg",
