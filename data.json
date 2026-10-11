@@ -7386,7 +7386,9 @@
   "id": "helichrysum-italicum",
   "latin": "Helichrysum italicum",
   "hu": "curryfű",
-  "aliases": [],
+  "aliases": [
+   "Olasz szalmagyopár"
+  ],
   "note": "",
   "categories": [
    "Lomblevelű örökzöld növények"
@@ -7395,8 +7397,8 @@
   "credit": "iNaturalist: (c) Jakob Fahr, some rights reserved (CC BY-NC), uploaded by Jakob Fahr",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/391938201/large.jpeg",
-    "credit": "iNaturalist: (c) Frédéric Pallu, Nantes, France, some rights reserved (CC BY-NC), uploaded by Frédéric Pallu, Nantes, France"
+    "image": "images/069b9953-867.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/141652868/large.jpeg",
