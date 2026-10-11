@@ -836,8 +836,10 @@
  {
   "id": "tagetes-patula",
   "latin": "Tagetes patula",
-  "hu": "bársonyvirág (kisvirágú)",
-  "aliases": [],
+  "hu": "kisvirágú bársonyvirág",
+  "aliases": [
+   "kis büdöske"
+  ],
   "note": "fészkes virágzat, hosszúkás csészelevél, kisebb fejű virágzat, egyszínű v csíkozott",
   "categories": [
    "Palántaként is forgalmazott egynyári növények"
