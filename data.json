@@ -4613,8 +4613,10 @@
   "id": "fritillaria-imperialis",
   "latin": "Fritillaria imperialis",
   "hu": "császárkorona",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "császárliliom"
+  ],
+  "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Egyes fajok kellemetlen szagúak\nVíz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Hajtatott évelő dísznövények"
   ],
@@ -4627,10 +4629,6 @@
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1701577/large.jpg",
-    "credit": "iNaturalist: (c) dynamosquito, some rights reserved (CC BY-SA)"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1701578/large.jpg",
     "credit": "iNaturalist: (c) dynamosquito, some rights reserved (CC BY-SA)"
    }
   ],
