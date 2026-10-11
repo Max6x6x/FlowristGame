@@ -1760,7 +1760,9 @@
   "id": "celosia-argentea-var-forma-spicata",
   "latin": "Celosia argentea var.forma spicata",
   "hu": "füzéres kakastaréj",
-  "aliases": [],
+  "aliases": [
+   "füzéres celózia"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
