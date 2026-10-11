@@ -2862,7 +2862,9 @@
   "id": "dendranthema-grandiflorum",
   "latin": "Dendranthema grandiflorum",
   "hu": "krizantém",
-  "aliases": [],
+  "aliases": [
+   "nagyvirágú krizantém"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták",
@@ -2871,7 +2873,12 @@
   "image": "images/0dacb27a1b.jpg",
   "credit": "Wikimedia Commons: Starr-080117-1761-Dendranthema x grandiflorum-flowers-Walmart Kahului-Maui (24900874795).jpg",
   "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true
+  "more": [
+   {
+    "image": "images/a9aac250-07e.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "dicentra-spectabilis",
