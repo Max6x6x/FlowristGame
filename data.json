@@ -6720,9 +6720,9 @@
  {
   "id": "hypericum-inodorum",
   "latin": "Hypericum inodorum",
-  "hu": "szagtalan orbáncfű",
+  "hu": "Orbáncfű",
   "aliases": [],
-  "note": "",
+  "note": "Tisztítás: Leveleit a szár alsó harmadán eltávolítjuk, törött és hibás részeket levágjuk Víz: Különösebb tápanyag igénye nincs, nem igényel sok vizet\nTermésével díszít",
   "categories": [
    "Termésükért is felhasználható lombhullató növények"
   ],
@@ -6730,20 +6730,19 @@
   "credit": "iNaturalist: (c) Leonora Enking, some rights reserved (CC BY-SA)",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/63876/large.jpg",
-    "credit": "iNaturalist: (c) Drriss, some rights reserved (CC BY-NC-SA)"
-   },
-   {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/298771819/large.jpg",
     "credit": "iNaturalist: (c) lm_2907, some rights reserved (CC BY-NC)"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/96749528/large.jpeg",
     "credit": "iNaturalist: (c) David Earl, some rights reserved (CC BY-NC), uploaded by David Earl"
+   },
+   {
+    "image": "images/57843758-2c9.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "ilex-verticillata",
