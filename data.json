@@ -5751,8 +5751,10 @@
   "id": "forsythia-intermedia",
   "latin": "Forsythia intermedia",
   "hu": "Aranyfa",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "Aranyág"
+  ],
+  "note": "Tisztítás: Virágzása lombfakadás előtt történik. Paraszemölcsös szárát roncsoljuk.\nVíz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel.",
   "categories": [
    "Virágukért is felhasználható lombhullató növények"
   ],
