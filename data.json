@@ -4753,14 +4753,15 @@
   "id": "narcissus-pseudonarcissus",
   "latin": "Narcissus pseudonarcissus",
   "hu": "sárga nárcisz",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "csupros nárcicz"
+  ],
+  "note": "Tisztítás: Szárán nincsenek levelek, egyenes metsz lapra visszavágjuk.\nSzára üreges, könnyen megtörik, tűzőhabba nehéz betűzni.\nFriss metsz lapnál nyálkát bocsát ki, mely más növények szárára tapadva\ngátolja azok vízfelvételét. Külön vázában kifolyatjuk.\nVíz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
    "Hajtatott évelő dísznövények"
   ],
   "image": "images/3950b56cdf.jpg",
   "credit": "iNaturalist: (c) Gilles San Martin, some rights reserved (CC BY-SA), uploaded by Gilles San Martin",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/185233268/large.jpeg",
@@ -4770,11 +4771,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/622383896/large.jpg",
     "credit": "iNaturalist: (c) james_r_dobson, some rights reserved (CC BY-NC)"
    }
-  ],
-  "alt": [
-   "csupros nárcisz (Füvészkönyv, OCR)",
-   "csupros nárcisz (Schmidt Gábor)",
-   "csoport (Schmidt Gábor)"
   ]
  },
  {
