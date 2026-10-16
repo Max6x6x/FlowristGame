@@ -8247,7 +8247,7 @@
  {
   "id": "picea-pungens-glauca",
   "latin": "Picea pungens 'Glauca'",
-  "hu": "szúrós luc",
+  "hu": "Ezüst fenyő",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8255,7 +8255,6 @@
   ],
   "image": "images/6014dd6e08.jpg",
   "credit": "iNaturalist: (c) Stephen Petersen, some rights reserved (CC BY-NC), uploaded by Stephen Petersen",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/83277975/large.jpeg",
@@ -8269,10 +8268,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/248920145/large.jpg",
     "credit": "iNaturalist: (c) Catherine, some rights reserved (CC BY-NC), uploaded by Catherine"
    }
-  ],
-  "alt": [
-   "szürke luc (Schmidt Gábor)",
-   "ezüstfenyő (Schmidt Gábor)"
   ]
  },
  {
