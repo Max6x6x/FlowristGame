@@ -7987,7 +7987,9 @@
   "id": "chamaecyparis-lawsoniana",
   "latin": "Chamaecyparis lawsoniana",
   "hu": "oregoni hamisciprus",
-  "aliases": [],
+  "aliases": [
+   "Lawson ciprus"
+  ],
   "note": "",
   "categories": [
    "Fenyőfélék"
