@@ -8491,7 +8491,7 @@
  {
   "id": "pseudotsuga-menziesii",
   "latin": "Pseudotsuga menziesii",
-  "hu": "amerikai duglászfenyő",
+  "hu": "duglászfenyő",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8499,7 +8499,6 @@
   ],
   "image": "images/25f2efe935.jpg",
   "credit": "iNaturalist: (c) Tracy S., some rights reserved (CC BY-NC), uploaded by Tracy S.",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/253403319/large.jpeg",
@@ -8513,10 +8512,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/132016819/large.jpeg",
     "credit": "iNaturalist: (c) Peter Zika, some rights reserved (CC BY-NC), uploaded by Peter Zika"
    }
-  ],
-  "alt": [
-   "zöld duglászfenyő (Schmidt Gábor)",
-   "duglászfenyő (Schmidt Gábor)"
   ]
  },
  {
