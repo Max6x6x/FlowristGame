@@ -7933,7 +7933,7 @@
   "latin": "Abies nordmanniana",
   "hu": "kaukázusi jegenyefenyő",
   "aliases": [],
-  "note": "",
+  "note": "Széthullik a toboza",
   "categories": [
    "Fenyőfélék"
   ],
@@ -7952,9 +7952,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/19722686/large.jpg",
     "credit": "iNaturalist: (c) Franz Xaver, some rights reserved (CC BY-SA)"
    }
-  ],
-  "alt": [
-   "kaukázusi jegenyefenyő/nordmann-fenyő (Maszlay)"
   ],
   "src": "Wikidata/iNaturalist + Új magyar füvészkönyv egyezik"
  },
