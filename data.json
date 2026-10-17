@@ -8192,8 +8192,10 @@
   "id": "picea-abies",
   "latin": "Picea abies",
   "hu": "közönséges lucfenyő",
-  "aliases": [],
-  "note": "",
+  "aliases": [
+   "Lucfenyő"
+  ],
+  "note": "Szivar toboz",
   "categories": [
    "Fenyőfélék"
   ],
@@ -8208,9 +8210,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/110753344/large.jpeg",
     "credit": "iNaturalist: (c) Вотинцевы Елена и Сергей, some rights reserved (CC BY-NC), uploaded by Вотинцевы Елена и Сергей"
    }
-  ],
-  "alt": [
-   "lucfenyő (Maszlay)"
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
