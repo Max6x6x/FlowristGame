@@ -5420,15 +5420,14 @@
  {
   "id": "paerthenocissus-quinquefolia",
   "latin": "Paerthenocissus quinquefolia",
-  "hu": "tapadó vadszőlő",
+  "hu": "Karéjos vadszőlő",
   "aliases": [],
   "note": "",
   "categories": [
    "Lombozatukért is felhasználható lombhullató növények"
   ],
   "image": "images/3bae695838.jpg",
-  "credit": "iNaturalist: (c) Suzanne Cadwell, some rights reserved (CC BY-NC)",
-  "verify": true
+  "credit": "iNaturalist: (c) Suzanne Cadwell, some rights reserved (CC BY-NC)"
  },
  {
   "id": "parthenocissus-tricuspidata",
