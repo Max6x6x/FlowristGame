@@ -742,8 +742,10 @@
  {
   "id": "portulaca-grandiflora",
   "latin": "Portulaca grandiflora",
-  "hu": "Porcsinrózsa",
-  "aliases": [],
+  "hu": "Kukacvirág",
+  "aliases": [
+   "Porcsinrózsa"
+  ],
   "note": "",
   "categories": [
    "Palántaként is forgalmazott egynyári növények"
