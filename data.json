@@ -2815,10 +2815,13 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/29623247/large.jpeg",
     "credit": "iNaturalist: (c) germangirl, some rights reserved (CC BY-NC), uploaded by germangirl"
+   },
+   {
+    "image": "images/f4b46746-460.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "cynoglossum-amabile",
