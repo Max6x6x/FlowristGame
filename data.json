@@ -1598,8 +1598,10 @@
  {
   "id": "ammobium-alatum",
   "latin": "Ammobium alatum",
-  "hu": "szárnyas papírvirág",
-  "aliases": [],
+  "hu": "szárnyas homokvirág",
+  "aliases": [
+   "homokszárny"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
@@ -1620,8 +1622,7 @@
     "credit": "iNaturalist: (c) Darren Fielder, some rights reserved (CC BY-NC), uploaded by Darren Fielder"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "avena-sativa",
