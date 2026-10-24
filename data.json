@@ -8353,7 +8353,6 @@
   ],
   "image": "images/8a9666ed6a.jpg",
   "credit": "iNaturalist: (c) Paul Asman and Jill Lenoble, some rights reserved (CC BY), uploaded by Paul Asman and Jill Lenoble",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/176283962/large.jpg",
@@ -8362,6 +8361,10 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/135397886/large.jpg",
     "credit": "iNaturalist: (c) Ben Zerante, some rights reserved (CC BY-NC), uploaded by Ben Zerante"
+   },
+   {
+    "image": "images/bcaee521-fc9.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
