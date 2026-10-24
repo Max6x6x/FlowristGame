@@ -8130,7 +8130,7 @@
  {
   "id": "juniperus-sp",
   "latin": "Juniperus sp.",
-  "hu": "",
+  "hu": "Futó borókák",
   "aliases": [],
   "note": "",
   "categories": [
@@ -8146,14 +8146,7 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/54525196/large.jpg",
     "credit": "iNaturalist: (c) Christopher J. Earle, some rights reserved (CC BY-NC), uploaded by Christopher J. Earle"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/179769080/large.jpg",
-    "credit": "iNaturalist: (c) Brett Jackson, some rights reserved (CC BY-NC), uploaded by Brett Jackson"
    }
-  ],
-  "alt": [
-   "borókafaj (ChatGPT: csoportszintű)"
   ]
  },
  {
