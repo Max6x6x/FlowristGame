@@ -2451,18 +2451,19 @@
   "id": "acanthus-hungaricus",
   "latin": "Acanthus hungaricus",
   "hu": "balkáni medveköröm",
-  "aliases": [],
+  "aliases": [
+   "magyar medvetalpfű"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/49362d1122.jpg",
   "credit": "iNaturalist: (c) Karsten Rohweder, some rights reserved (CC BY), uploaded by Karsten Rohweder",
-  "verify": true,
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/60838635/large.jpg",
-    "credit": "iNaturalist: (c) Karsten Rohweder, some rights reserved (CC BY), uploaded by Karsten Rohweder"
+    "image": "images/e1f13b04-b9e.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
