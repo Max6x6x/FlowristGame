@@ -2004,18 +2004,19 @@
   "id": "phalaris-canariensis",
   "latin": "Phalaris canariensis",
   "hu": "Fénymag",
-  "aliases": [],
+  "aliases": [
+   "kanáriköles"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
   ],
   "image": "images/582368ae55.jpg",
   "credit": "iNaturalist: (c) Christian Sørensen, some rights reserved (CC BY-NC), uploaded by Christian Sørensen",
-  "verify": true,
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/393100/large.JPG",
-    "credit": "iNaturalist: (c) Rob Curtis, some rights reserved (CC BY-NC-SA), uploaded by Rob Curtis"
+    "image": "images/786583c2-4bf.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/193170657/large.jpeg",
