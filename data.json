@@ -2826,9 +2826,9 @@
  {
   "id": "cynoglossum-amabile",
   "latin": "Cynoglossum amabile",
-  "hu": "kínai ebnyelvűfű",
+  "hu": "kínai nefelejcs",
   "aliases": [
-   "kínai nefelejcs"
+   "kínai ebnyelvűfű"
   ],
   "note": "",
   "categories": [
@@ -2850,8 +2850,7 @@
     "credit": "iNaturalist: (c) Patrick Hacker, some rights reserved (CC BY), uploaded by Patrick Hacker"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "dahlia-hortensis",
