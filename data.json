@@ -2493,15 +2493,16 @@
  {
   "id": "alchemilla-mollis",
   "latin": "Alchemilla mollis",
-  "hu": "Lágyszőrű Palástfű",
-  "aliases": [],
+  "hu": "Lágyszőrű palástfű",
+  "aliases": [
+   "palástfű"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/2992fa1695.jpg",
   "credit": "iNaturalist: (c) Jami Gramore, some rights reserved (CC BY-NC), uploaded by Jami Gramore",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/10272/large.jpg",
