@@ -7983,9 +7983,10 @@
  {
   "id": "chamaecyparis-lawsoniana",
   "latin": "Chamaecyparis lawsoniana",
-  "hu": "Hamis ciprus",
+  "hu": "Oregoni hamisciprus",
   "aliases": [
-   "Lawson ciprus"
+   "Lawson ciprus",
+   "hamisciprus"
   ],
   "note": "",
   "categories": [
