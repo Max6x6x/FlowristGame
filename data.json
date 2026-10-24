@@ -1830,7 +1830,9 @@
   "id": "helipterum-roseum",
   "latin": "Helipterum roseum",
   "hu": "rózsagyopár",
-  "aliases": [],
+  "aliases": [
+   "napsugárka"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
@@ -1838,7 +1840,12 @@
   "image": "images/a820a97e73.jpg",
   "credit": "iNaturalist: (c) Clare Snow, some rights reserved (CC BY-NC-SA)",
   "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/702afcc4-de0.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "lagurus-ovatus",
