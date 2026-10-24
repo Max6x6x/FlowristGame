@@ -8582,7 +8582,7 @@
  {
   "id": "thujopsis-dolabrata",
   "latin": "Thujopsis dolabrata",
-  "hu": "japán hiba",
+  "hu": "japán hibatuja",
   "aliases": [
    "hiba-álciprus"
   ],
@@ -8600,14 +8600,9 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/14125332/large.jpg",
     "credit": "iNaturalist: (c) Keita Watanabe, some rights reserved (CC BY-NC), uploaded by Keita Watanabe"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/14125337/large.jpg",
-    "credit": "iNaturalist: (c) Keita Watanabe, some rights reserved (CC BY-NC), uploaded by Keita Watanabe"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "aglaonema-commutatum",
