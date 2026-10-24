@@ -8208,7 +8208,9 @@
   "id": "picea-glauca-conica",
   "latin": "Picea glauca 'Conica'",
   "hu": "Cukorsüveg",
-  "aliases": [],
+  "aliases": [
+   "Cukorsüvegfenyő"
+  ],
   "note": "",
   "categories": [
    "Fenyőfélék"
@@ -8225,8 +8227,8 @@
     "credit": "iNaturalist: (c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/52719945/large.jpeg",
-    "credit": "iNaturalist: (c) Simon Larouche, some rights reserved (CC BY-NC), uploaded by Simon Larouche"
+    "image": "images/9eb3293d-694.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
