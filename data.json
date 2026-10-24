@@ -2692,7 +2692,7 @@
   "latin": "Canna generalis",
   "hu": "kánna",
   "aliases": [
-   "rózsanád"
+   "kerti rózsanád"
   ],
   "note": "",
   "categories": [
@@ -2714,8 +2714,7 @@
     "credit": "iNaturalist: (c) Joao Pinelo, some rights reserved (CC BY-NC), uploaded by Joao Pinelo"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "centranthus-ruber",
