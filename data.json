@@ -2217,7 +2217,6 @@
   ],
   "image": "images/8ffcc5d2be.jpg",
   "credit": "iNaturalist: (c) Pavel Kacl, some rights reserved (CC BY), uploaded by Pavel Kacl",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/854803/large.jpg",
@@ -2228,8 +2227,8 @@
     "credit": "iNaturalist: (c) Алексей Лямин, some rights reserved (CC BY-NC), uploaded by Алексей Лямин"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/90911198/large.jpeg",
-    "credit": "iNaturalist: (c) Алексей Лямин, some rights reserved (CC BY-NC), uploaded by Алексей Лямин"
+    "image": "images/e66b3176-cb6.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
