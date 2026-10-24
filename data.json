@@ -7961,7 +7961,7 @@
  {
   "id": "cedrus-atlantica",
   "latin": "Cedrus atlantica",
-  "hu": "atlaszcédrus",
+  "hu": "atlasz cédrus",
   "aliases": [],
   "note": "",
   "categories": [
@@ -7969,7 +7969,6 @@
   ],
   "image": "images/734b6ff19b.jpg",
   "credit": "iNaturalist: (c) Eric Hunt, some rights reserved (CC BY-NC-ND)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/3116102/large.JPG",
