@@ -1808,26 +1808,23 @@
  {
   "id": "helichrysum-bracteatum-var-monstrosum",
   "latin": "Helichrysum bracteatum var. monstrosum",
-  "hu": "szalmarózsa, szalmavirág",
-  "aliases": [],
+  "hu": "szalmavirág",
+  "aliases": [
+   "szalmarózsa"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
   ],
-  "image": "images/06ee223736.jpg",
-  "credit": "iNaturalist: (c) Jerry Cooper, some rights reserved (CC BY), uploaded by Jerry Cooper",
+  "image": "images/3f92746e-9ec.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/20475097/large.jpg",
-    "credit": "iNaturalist: (c) Suzana Ehlin Martins, some rights reserved (CC BY-SA), uploaded by Suzana Ehlin Martins"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/27396899/large.jpg",
-    "credit": "iNaturalist: (c) Linda Loffler, some rights reserved (CC BY-NC), uploaded by Linda Loffler"
+    "image": "images/63985f56-a16.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "helipterum-roseum",
