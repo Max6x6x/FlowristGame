@@ -2235,8 +2235,11 @@
  {
   "id": "campanula-medium",
   "latin": "Campanula medium",
-  "hu": "bögrevirág, harangvirág",
-  "aliases": [],
+  "hu": "bögrevirág",
+  "aliases": [
+   "csupros harangvirág",
+   "harangvirág"
+  ],
   "note": "",
   "categories": [
    "Vágottvirágnak is alkalmas kétnyári növények"
@@ -2257,11 +2260,7 @@
     "credit": "iNaturalist: (c) pierabionda, some rights reserved (CC BY-NC), uploaded by pierabionda"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true,
-  "alt": [
-   "bögrevirág (Schmidt Gábor)"
-  ]
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "dianthus-barbatus",
