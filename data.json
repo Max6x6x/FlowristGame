@@ -8035,20 +8035,17 @@
  {
   "id": "cupressocyparis-leylandii",
   "latin": "Cupressocyparis leylandii",
-  "hu": "leylandi ciprus",
-  "aliases": [],
+  "hu": "leyland ciprus",
+  "aliases": [
+   "Leyland (hamis) ciprus"
+  ],
   "note": "",
   "categories": [
    "Fenyőfélék"
   ],
   "image": "images/1fd23ce429.jpg",
   "credit": "Wikimedia Commons: Cupressocyparis leylandii.jpg",
-  "alt": [
-   "leyland hamisciprus (Schmidt Gábor)",
-   "leyland ciprus (Schmidt Gábor)"
-  ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "cupressus-arizonica",
