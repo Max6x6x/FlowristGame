@@ -3008,7 +3008,9 @@
   "id": "eremurus-stenophyllus",
   "latin": "Eremurus stenophyllus",
   "hu": "korbácsliliom",
-  "aliases": [],
+  "aliases": [
+   "keskenylevelű korbácsliliom"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
@@ -3025,11 +3027,7 @@
     "credit": "iNaturalist: (c) Ralph Martin, some rights reserved (CC BY-NC-ND), uploaded by Ralph Martin"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true,
-  "alt": [
-   "keskenylevelű korbácsliliom (Schmidt Gábor)"
-  ]
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "gaillardia-aristata",
