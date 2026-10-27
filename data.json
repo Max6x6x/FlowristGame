@@ -2849,7 +2849,7 @@
   "latin": "Dahlia hortensis",
   "hu": "kerti dália",
   "aliases": [],
-  "note": "nem hoz magot, gyökérgumóról, fészekvirágzat\nTisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Szára üreges, könnyen megroppanhat. Fertőtlenítőszer a vízbe erősen ajánlott!\nVíz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel.",
+  "note": "nem hoz magot, gyökérgumóról, fészekvirágzat\nTisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk. Szára üreges, könnyen megroppanhat. Fertőtlenítőszer a vízbe erősen ajánlott!\nVíz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
@@ -2857,12 +2857,16 @@
   "credit": "iNaturalist: (c) dmitry tretjakov, some rights reserved (CC BY-NC), uploaded by dmitry tretjakov",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/26882014/large.jpg",
-    "credit": "iNaturalist: (c) Ionela Panainte, some rights reserved (CC BY-NC), uploaded by Ionela Panainte"
+    "image": "images/2940a4d8-7ad.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/153067795/large.jpeg",
     "credit": "iNaturalist: (c) Nuno Veríssimo P., some rights reserved (CC BY-NC-SA), uploaded by Nuno Veríssimo P."
+   },
+   {
+    "image": "images/f801dffc-b30.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
