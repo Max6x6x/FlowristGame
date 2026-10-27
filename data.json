@@ -3684,18 +3684,19 @@
   "id": "phytolacca-americana",
   "latin": "Phytolacca americana",
   "hu": "amerikai alkörmös",
-  "aliases": [],
+  "aliases": [
+   "amerikai karmazsinbogyó"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/170cc0fba0.jpg",
   "credit": "iNaturalist: (c) Craig K. Hunt, some rights reserved (CC BY-NC), uploaded by Craig K. Hunt",
-  "verify": true,
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/559497946/large.jpg",
-    "credit": "iNaturalist: (c) John Tann, some rights reserved (CC BY)"
+    "image": "images/eb947855-454.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/231089680/large.jpeg",
