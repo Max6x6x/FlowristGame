@@ -3655,7 +3655,9 @@
   "id": "physostegia-virginiana",
   "latin": "Physostegia virginiana",
   "hu": "virginiai füzérajak",
-  "aliases": [],
+  "aliases": [
+   "füzérajak"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
@@ -3676,8 +3678,7 @@
     "credit": "iNaturalist: (c) laurabankey, some rights reserved (CC BY-NC), uploaded by laurabankey"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "phytolacca-americana",
