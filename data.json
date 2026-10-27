@@ -3474,14 +3474,15 @@
   "id": "mentha-piperita",
   "latin": "Mentha piperita",
   "hu": "borsmenta",
-  "aliases": [],
+  "aliases": [
+   "borsos menta"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/d12ea0697c.jpg",
   "credit": "iNaturalist: (c) rhillahorse, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/476693/large.JPG",
@@ -3495,9 +3496,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/4677970/large.jpeg",
     "credit": "iNaturalist: (c) Chevaun, some rights reserved (CC BY-NC), uploaded by Chevaun"
    }
-  ],
-  "alt": [
-   "borsos menta (Schmidt Gábor)"
   ]
  },
  {
