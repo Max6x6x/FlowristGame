@@ -3631,26 +3631,24 @@
   "id": "phlox-paniculata",
   "latin": "Phlox paniculata",
   "hu": "lángvirág",
-  "aliases": [],
+  "aliases": [
+   "bugás lángvirág"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/157300e38c.jpg",
   "credit": "iNaturalist: (c) Joanne Muis Redwood, some rights reserved (CC BY-NC), uploaded by Joanne Muis Redwood",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/10246911/large.jpeg",
     "credit": "iNaturalist: (c) Mark Kluge, some rights reserved (CC BY-NC), uploaded by Mark Kluge"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9157794/large.jpeg",
-    "credit": "iNaturalist: (c) cassi saari, some rights reserved (CC BY-NC), uploaded by cassi saari"
+    "image": "images/461fc44d-ac5.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "bugás lángvirág (Schmidt Gábor)"
   ]
  },
  {
