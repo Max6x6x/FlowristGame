@@ -4519,10 +4519,11 @@
  },
  {
   "id": "stipa-tenussima",
-  "latin": "Stipa tenussima",
+  "latin": "Stipa tenuissima",
   "hu": "árvalányhaj",
   "aliases": [
-   "mexikói árvalányhaj"
+   "mexikói árvalányhaj",
+   "csinos árvalányhaj"
   ],
   "note": "",
   "categories": [
@@ -4531,7 +4532,12 @@
   "image": "images/555b4300b7.jpg",
   "credit": "Wikimedia Commons: Green Needle Grass.jpg",
   "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/cc2dd0a4-c58.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "typha-sp",
