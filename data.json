@@ -3420,7 +3420,9 @@
   "id": "liriope-muscari",
   "latin": "Liriope muscari",
   "hu": "gyöngyikés gyepliliom",
-  "aliases": [],
+  "aliases": [
+   "liliomfű"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
@@ -3437,8 +3439,7 @@
     "credit": "iNaturalist: (c) JAxworthy, some rights reserved (CC BY-NC), uploaded by JAxworthy"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "lysimachia-clethroides",
