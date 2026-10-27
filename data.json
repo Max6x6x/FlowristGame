@@ -3203,7 +3203,10 @@
   "id": "heuchera-micrantha",
   "latin": "Heuchera micrantha",
   "hu": "kisvirágú tűzeső",
-  "aliases": [],
+  "aliases": [
+   "tűzeső",
+   "tűzgyöngyvirág"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
@@ -3216,16 +3219,15 @@
     "credit": "iNaturalist: (c) Stefan, some rights reserved (CC BY-NC), uploaded by Stefan"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/7885463/large.jpg",
-    "credit": "iNaturalist: (c) Todd Ramsden, some rights reserved (CC BY-NC), uploaded by Todd Ramsden"
+    "image": "images/a383b5da-82c.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/971066/large.jpg",
     "credit": "iNaturalist: (c) David A. Hofmann, some rights reserved (CC BY-NC-ND)"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "hyacinthus-orientalis",
