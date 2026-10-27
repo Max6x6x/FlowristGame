@@ -3527,7 +3527,8 @@
   "latin": "Oenothera lindheimeri",
   "hu": "Lindheimer-díszgyertya",
   "aliases": [
-   "pillangóvirág"
+   "pillangóvirág",
+   "évelő díszgyertya"
   ],
   "note": "",
   "categories": [
@@ -3549,8 +3550,7 @@
     "credit": "iNaturalist: (c) Pat Enright, some rights reserved (CC BY-NC), uploaded by Pat Enright"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "paeonia-lactiflora",
