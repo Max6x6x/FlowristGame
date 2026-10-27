@@ -4540,17 +4540,16 @@
  {
   "id": "typha-sp",
   "latin": "Typha sp.",
-  "hu": "",
-  "aliases": [],
+  "hu": "gyékény nemzetség",
+  "aliases": [
+   "gyékényfélék"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható évelő növények"
   ],
-  "image": "images/f4debbfa1c.jpg",
-  "credit": "Wikimedia Commons: Illustration Typha latifolia0.jpg",
-  "alt": [
-   "gyékényfaj (ChatGPT: csoportszintű)"
-  ]
+  "image": "images/4b5586c9-347.jpg",
+  "credit": "Saját feltöltés"
  },
  {
   "id": "crocus-vernus",
