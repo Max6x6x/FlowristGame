@@ -658,8 +658,8 @@
   "credit": "iNaturalist: (c) Peter Cooper, some rights reserved (CC BY), uploaded by Peter Cooper",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/227844382/large.jpg",
-    "credit": "iNaturalist: (c) jmatthee, some rights reserved (CC BY-NC), uploaded by jmatthee"
+    "image": "images/3cdf3190-0aa.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "images/78294b64-46a.jpg",
@@ -668,6 +668,10 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/225194819/large.jpg",
     "credit": "iNaturalist: (c) geoffbyrne, some rights reserved (CC BY-NC)"
+   },
+   {
+    "image": "images/87c76389-885.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
