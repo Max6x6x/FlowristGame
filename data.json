@@ -2295,27 +2295,19 @@
  {
   "id": "dianthus-barbatus-green-trick",
   "latin": "Dianthus barbatus 'Green Trick'",
-  "hu": "török szegfű",
+  "hu": "'Green Trick' törökszegfű",
   "aliases": [],
   "note": "",
   "categories": [
    "Vágottvirágnak is alkalmas kétnyári növények"
   ],
-  "image": "images/4ba52c9425.jpg",
-  "credit": "iNaturalist: (c) xulescu_g, some rights reserved (CC BY-SA)",
+  "image": "images/1d2d06cc-0a5.jpg",
+  "credit": "Saját feltöltés",
   "verify": true,
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/81026674/large.jpeg",
-    "credit": "iNaturalist: (c) Aleksandr_Levon, some rights reserved (CC BY-NC), uploaded by Aleksandr_Levon"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/84326834/large.jpg",
-    "credit": "iNaturalist: (c) Мария Филатова, some rights reserved (CC BY-NC), uploaded by Мария Филатова"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/79558665/large.jpeg",
-    "credit": "iNaturalist: (c) illarai, some rights reserved (CC BY-NC)"
+    "image": "images/cf531d60-1c7.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
