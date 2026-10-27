@@ -3712,14 +3712,16 @@
   "id": "polygonatum-odoratum",
   "latin": "Polygonatum odoratum",
   "hu": "orvosi salamonpecsét",
-  "aliases": [],
+  "aliases": [
+   "soktérdű salamonpecsét",
+   "szagos salamonpecsét"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
   "image": "images/d36c164924.jpg",
   "credit": "iNaturalist: (c) 空猫, some rights reserved (CC BY-NC), uploaded by 空猫",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/49509576/large.jpeg",
