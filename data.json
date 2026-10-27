@@ -5583,8 +5583,10 @@
  {
   "id": "salix-integra",
   "latin": "Salix integra",
-  "hu": "ép levelű fűz",
-  "aliases": [],
+  "hu": "épféllevelű fűz",
+  "aliases": [
+   "japán fűz"
+  ],
   "note": "",
   "categories": [
    "Lombozatukért is felhasználható lombhullató növények"
@@ -5605,8 +5607,7 @@
     "credit": "iNaturalist: (c) Gularjanz Grigoryi Mihajlovich, some rights reserved (CC BY-NC), uploaded by Gularjanz Grigoryi Mihajlovich"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "acacia-dealbata",
