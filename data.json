@@ -3445,7 +3445,9 @@
   "id": "lysimachia-clethroides",
   "latin": "Lysimachia clethroides",
   "hu": "kelet-ázsiai lizinka",
-  "aliases": [],
+  "aliases": [
+   "hattyúnyakú lizinka"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
@@ -3466,8 +3468,7 @@
     "credit": "iNaturalist: (c) Lori A Owenby, some rights reserved (CC BY-NC), uploaded by Lori A Owenby"
    }
   ],
-  "src": "Schmidt Gábor",
-  "verify": true
+  "src": "Schmidt Gábor"
  },
  {
   "id": "mentha-piperita",
