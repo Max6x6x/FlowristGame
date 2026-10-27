@@ -4271,9 +4271,9 @@
  {
   "id": "dipsacus-sativus",
   "latin": "Dipsacus sativus",
-  "hu": "termesztett mácsonya",
+  "hu": "takácsmácsonya",
   "aliases": [
-   "takácsmácsonya"
+   "termesztett mácsonya"
   ],
   "note": "",
   "categories": [
@@ -4295,8 +4295,7 @@
     "credit": "iNaturalist: (c) lilithohlson, some rights reserved (CC BY-NC), uploaded by lilithohlson"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "echinops-ritro",
