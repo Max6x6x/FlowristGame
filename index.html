@@ -374,6 +374,12 @@ dialog.viewer .tip { position: absolute; left: 0; right: 0; bottom: calc(18px + 
       <div class="themes" id="themes"><button type="button" data-bg="krem" aria-pressed="false"><span class="sw" style="background:#f3efe8"></span>Krém</button><button type="button" data-bg="zsalya" aria-pressed="false"><span class="sw" style="background:#eaefe6"></span>Zsálya</button><button type="button" data-bg="kodkek" aria-pressed="false"><span class="sw" style="background:#e9eff3"></span>Ködkék</button><button type="button" data-bg="levendula" aria-pressed="false"><span class="sw" style="background:#efecf4"></span>Levendula</button><button type="button" data-bg="barack" aria-pressed="false"><span class="sw" style="background:#f8eee3"></span>Barack</button><button type="button" data-bg="porcelan" aria-pressed="false"><span class="sw" style="background:#f1f1ef"></span>Porcelán</button><button type="button" data-bg="rozsa" aria-pressed="false"><span class="sw" style="background:#f5e8ea"></span>Rózsa</button></div>
     </div>
     <div class="panel" style="margin-top:10px">
+      <p style="margin:0;font-weight:800">Offline használat</p>
+      <p class="muted" style="margin:2px 0 0">Repülés vagy rossz térerő előtt nyomd meg, hogy a képek ezen az eszközön is megmaradjanak. Sok helyet foglal, a kapcsolat erősségétől függően percekig tarthat.</p>
+      <div class="actions"><button class="btn soft" id="offBtn">Képek letöltése offline-hoz</button></div>
+      <p class="msg" id="offMsg" aria-live="polite"></p>
+    </div>
+    <div class="panel" style="margin-top:10px">
       <div id="tokSet" class="hidden">
         <p style="margin:0;font-weight:800">A mentés be van állítva ezen az eszközön.</p>
         <p class="muted">A javításaid azonnal itt látszanak, a többi eszközön 1–2 perc múlva.</p>
@@ -1177,6 +1183,28 @@ function drawThemes() {
 }
 $("#themes").onclick = e => { const b = e.target.closest("button[data-bg]"); if (!b) return; document.documentElement.dataset.bg = b.dataset.bg; store.set("bg", b.dataset.bg); drawThemes(); };
 drawThemes();
+
+// ---------- offline: service worker + photo prefetch ----------
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+$("#offBtn").onclick = async () => {
+  const msg = t => $("#offMsg").textContent = t;
+  const urls = [...new Set(plants.flatMap(p => photosOf(p).map(ph => new URL(ph.image, location.href).href)))];
+  if (!("caches" in window)) return msg("Ez a böngésző nem támogatja az offline tárolást.");
+  $("#offBtn").disabled = true;
+  const c = await caches.open("flowrist-img");
+  let done = 0, failed = 0;
+  for (let i = 0; i < urls.length; i += 6) {
+    await Promise.all(urls.slice(i, i + 6).map(async u => {
+      try {
+        if (!(await c.match(u))) { const r = await fetch(u, { mode: "no-cors" }); await c.put(u, r); }
+        done++;
+      } catch { failed++; }
+      msg(`Letöltés: ${done + failed} / ${urls.length}`);
+    }));
+  }
+  msg(`Kész: ${done} kép offline. ${failed ? failed + " nem sikerült, próbáld újra." : ""}`);
+  $("#offBtn").disabled = false;
+};
 
 // ---------- boot ----------
 function showTab(tab) {
