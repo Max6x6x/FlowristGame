@@ -1686,7 +1686,9 @@
   "id": "carthamus-tinctorius",
   "latin": "Carthamus tinctorius",
   "hu": "sáfrányos szeklice",
-  "aliases": [],
+  "aliases": [
+   "Pórsáfrány"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
