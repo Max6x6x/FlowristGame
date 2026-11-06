@@ -4175,8 +4175,10 @@
  {
   "id": "achillea-filipendulina",
   "latin": "Achillea filipendulina",
-  "hu": "jószagú cickafark",
-  "aliases": [],
+  "hu": "Sárga cickafark",
+  "aliases": [
+   "Jószagú cickafark"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható évelő növények"
