@@ -3857,8 +3857,10 @@
  {
   "id": "sedum-spectabile",
   "latin": "Sedum spectabile",
-  "hu": "varjúháj",
-  "aliases": [],
+  "hu": "Pompás varjúháj",
+  "aliases": [
+   "Varjúháj"
+  ],
   "note": "ősszel virágzik",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
