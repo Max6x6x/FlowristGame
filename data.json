@@ -4258,7 +4258,9 @@
   "id": "cortaderia-selloana",
   "latin": "Cortaderia selloana",
   "hu": "ezüstös pampafű",
-  "aliases": [],
+  "aliases": [
+   "Pampafű"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható évelő növények"
@@ -4279,10 +4281,7 @@
     "credit": "iNaturalist: (c) Cristina Girão Vieira, some rights reserved (CC BY-NC), uploaded by Cristina Girão Vieira"
    }
   ],
-  "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik",
-  "alt": [
-   "pampafű (Schmidt Gábor)"
-  ]
+  "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
  {
   "id": "dipsacus-sativus",
