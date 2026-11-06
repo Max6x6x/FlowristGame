@@ -3184,8 +3184,10 @@
  {
   "id": "heuchera-sanguinea",
   "latin": "Heuchera sanguinea",
-  "hu": "vérvörös tűzeső",
-  "aliases": [],
+  "hu": "tűzeső",
+  "aliases": [
+   "vérvörös tűzeső"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
@@ -3205,10 +3207,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9804874/large.jpg",
     "credit": "iNaturalist: (c) Marissa, some rights reserved (CC BY-NC), uploaded by Marissa"
    }
-  ],
-  "alt": [
-   "tűzeső (Maszlay)",
-   "tűzeső (Schmidt Gábor)"
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
