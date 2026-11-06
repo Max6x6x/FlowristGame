@@ -2957,7 +2957,9 @@
   "id": "echinacea-purpurea",
   "latin": "Echinacea purpurea",
   "hu": "bíbor kasvirág",
-  "aliases": [],
+  "aliases": [
+   "Kasvirág"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
