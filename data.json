@@ -2608,7 +2608,9 @@
   "id": "aster-sp",
   "latin": "Aster sp.",
   "hu": "Évelő őszirózsa",
-  "aliases": [],
+  "aliases": [
+   "Csillagőszirózsa"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
