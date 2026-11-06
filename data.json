@@ -4393,8 +4393,10 @@
  {
   "id": "liatris-spicata",
   "latin": "Liatris spicata",
-  "hu": "füzéres díszcsorba",
-  "aliases": [],
+  "hu": "díszcsorba",
+  "aliases": [
+   "füzéres díszcsorba"
+  ],
   "note": "Tisztítás: Leveleit a szár alsó feléről eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel!\nFelülről lefelé virágzik.",
   "categories": [
    "Szárazvirágként is felhasználható évelő növények"
