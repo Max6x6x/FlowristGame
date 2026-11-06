@@ -4452,7 +4452,9 @@
   "id": "limonium-tataricum",
   "latin": "Limonium tataricum",
   "hu": "tatár sóvirág",
-  "aliases": [],
+  "aliases": [
+   "Évelő sóvirág"
+  ],
   "note": "Mindig feher",
   "categories": [
    "Szárazvirágként is felhasználható évelő növények"
