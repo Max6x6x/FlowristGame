@@ -16082,9 +16082,13 @@
   ],
   "image": "images/a0468a033c.jpg",
   "credit": "iNaturalist: (c) Darwin Varela Lascano, todos os direitos reservados, carregado por Darwin Varela Lascano",
-  "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/8a8ab62c-46c.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "neoregelia-carolinae",
