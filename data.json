@@ -14173,14 +14173,14 @@
  {
   "id": "solanum-mammosum",
   "latin": "Solanum mammosum",
-  "hu": "",
+  "hu": "Cicicsucsor",
   "aliases": [],
   "note": "",
   "categories": [
    "Egzotikus vágottvirágok, növények"
   ],
-  "image": "images/c0f41cced8.jpg",
-  "credit": "iNaturalist: (c) tonypaonpaon, some rights reserved (CC BY-NC)",
+  "image": "images/e2a074c0-24d.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/227748289/large.jpeg",
@@ -14190,9 +14190,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/18277281/large.jpeg",
     "credit": "iNaturalist: (c) cstobie, some rights reserved (CC BY), uploaded by cstobie"
    }
-  ],
-  "alt": [
-   "emlős csucsor (ChatGPT: gyanús)"
   ]
  },
  {
