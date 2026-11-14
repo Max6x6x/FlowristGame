@@ -14205,19 +14205,22 @@
  {
   "id": "zingiber-officinale",
   "latin": "Zingiber officinale",
-  "hu": "közönséges gyömbér",
+  "hu": "gyömbér",
   "aliases": [],
   "note": "",
   "categories": [
    "Egzotikus vágottvirágok, növények"
   ],
-  "image": "images/b9f40accb6.jpg",
-  "credit": "iNaturalist: (c) Greg III Espera, some rights reserved (CC BY), uploaded by Greg III Espera",
-  "verify": true,
+  "image": "images/df43ec61-c71.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/219290535/large.jpeg",
     "credit": "iNaturalist: (c) Jeir Ortega Galvan, some rights reserved (CC BY-NC), uploaded by Jeir Ortega Galvan"
+   },
+   {
+    "image": "images/2c2f9ccc-308.jpg",
+    "credit": "Saját feltöltés"
    }
   ]
  },
