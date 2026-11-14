@@ -14460,7 +14460,8 @@
   "latin": "Phalaenopsis amabilis",
   "hu": "lepkeorchidea",
   "aliases": [
-   "kedves lepkeorchidea"
+   "kedves lepkeorchidea",
+   "pillekosbor"
   ],
   "note": "Tisztítás: A virágzati száron levél nem található. Fürtökben virágzik. A virágokat külön-külön leválaszhatjuk a fürtökről, így rövid szártagúak, de fiolázva, szárpótlással meghosszabbítható.\nFerde metsz lapra visszavágva tesszük vízbe. Tűzőhabból nehezen veszi fel a vizet, ezért ilyen esetekben fiolázzuk.\nVíz: Különösebb tápanyag igénye nincs, kevés vizet igényel.\nNem hűtjük az orchideákat!",
   "categories": [
@@ -14474,8 +14475,8 @@
     "credit": "iNaturalist: (c) Nielbert Raner, some rights reserved (CC BY), uploaded by Nielbert Raner"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/35728505/large.jpg",
-    "credit": "iNaturalist: (c) Hong, some rights reserved (CC BY-NC), uploaded by Hong"
+    "image": "images/5ba3df31-234.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
   "src": "ChatGPT-gyűjtés, ellenőrizetlen"
