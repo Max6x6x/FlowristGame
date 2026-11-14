@@ -13718,7 +13718,7 @@
  {
   "id": "diplocyclos-palmatus",
   "latin": "Diplocyclos palmatus",
-  "hu": "",
+  "hu": "indiai csíkos uborka",
   "aliases": [],
   "note": "",
   "categories": [
@@ -13742,7 +13742,8 @@
   ],
   "alt": [
    "tenyeres diplociklosz (ChatGPT: leíró, nem hivatalos)"
-  ]
+  ],
+  "verify": true
  },
  {
   "id": "dryandra-quercifolia",
