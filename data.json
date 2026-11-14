@@ -16286,7 +16286,7 @@
  {
   "id": "tillandsia-ionantha",
   "latin": "Tillandsia ionantha",
-  "hu": "ibolyavirágú tillandszia",
+  "hu": "ibolyás szakállbromélia",
   "aliases": [],
   "note": "",
   "categories": [
@@ -16296,20 +16296,19 @@
   "credit": "iNaturalist: (c) Mario Castañeda, some rights reserved (CC BY-NC), uploaded by Mario Castañeda",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/249142467/large.jpeg",
-    "credit": "iNaturalist: (c) Gabriel Ortiz, some rights reserved (CC BY-NC), uploaded by Gabriel Ortiz"
+    "image": "images/88106627-3fe.jpg",
+    "credit": "Saját feltöltés"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/6607239/large.jpeg",
-    "credit": "iNaturalist: (c) La Mancha en Movimiento, some rights reserved (CC BY-NC), uploaded by La Mancha en Movimiento"
+    "image": "images/ea5cbe62-566.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/179887837/large.jpeg",
     "credit": "iNaturalist: (c) Fridali García Islas, some rights reserved (CC BY-NC), uploaded by Fridali García Islas"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "vriesea-sp",
