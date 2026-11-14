@@ -13865,7 +13865,7 @@
  {
   "id": "jatropha-podagrica",
   "latin": "Jatropha podagrica",
-  "hu": "köszvényfa",
+  "hu": "Palackfa",
   "aliases": [
    "palackcserje"
   ],
@@ -13889,8 +13889,7 @@
     "credit": "iNaturalist: (c) Klaus Bohn, some rights reserved (CC BY-NC), uploaded by Klaus Bohn"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "leucadendron-plumosum",
