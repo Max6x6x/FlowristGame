@@ -16093,8 +16093,10 @@
  {
   "id": "neoregelia-carolinae",
   "latin": "Neoregelia carolinae",
-  "hu": "karolinai neoregélia",
-  "aliases": [],
+  "hu": "Regel bromélia",
+  "aliases": [
+   "karolinai neoregélia"
+  ],
   "note": "",
   "categories": [
    "Broméliafélék"
@@ -16115,8 +16117,7 @@
     "credit": "iNaturalist: (c) Simon Colenutt, some rights reserved (CC BY), uploaded by Simon Colenutt"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "nidularium-billbergioides",
