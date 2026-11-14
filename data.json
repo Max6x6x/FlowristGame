@@ -16002,7 +16002,7 @@
  {
   "id": "cryptanthus-bivittatus",
   "latin": "Cryptanthus bivittatus",
-  "hu": "kétsávos földicsillag",
+  "hu": "Bíbor levélcsillag",
   "aliases": [],
   "note": "",
   "categories": [
@@ -16024,8 +16024,7 @@
     "credit": "iNaturalist: (c) 阿橋 HQ, some rights reserved (CC BY-SA)"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "guzmania-lingulata",
