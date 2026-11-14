@@ -13084,7 +13084,7 @@
  {
   "id": "leycesteria-formosa",
   "latin": "Leycesteria formosa",
-  "hu": "himalájai lonc",
+  "hu": "himalájai rózsalonc",
   "aliases": [],
   "note": "",
   "categories": [
@@ -13106,8 +13106,7 @@
     "credit": "iNaturalist: (c) Jon Sullivan, some rights reserved (CC BY)"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "nerine-bowdenii",
