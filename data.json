@@ -13337,9 +13337,9 @@
  {
   "id": "triteleia-laxa",
   "latin": "Triteleia laxa",
-  "hu": "kaliforniai jácint",
+  "hu": "Csillaghagyma",
   "aliases": [
-   "laza triteleia"
+   "kaliforniai jácint"
   ],
   "note": "",
   "categories": [
@@ -13361,8 +13361,7 @@
     "credit": "iNaturalist: (c) Philip Bouchard, some rights reserved (CC BY-NC-ND)"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "trachellium-caeruleum",
