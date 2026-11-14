@@ -16029,7 +16029,7 @@
  {
   "id": "guzmania-lingulata",
   "latin": "Guzmania lingulata",
-  "hu": "nyelves guzmánia",
+  "hu": "Guzmán bromélia",
   "aliases": [],
   "note": "",
   "categories": [
@@ -16051,8 +16051,7 @@
     "credit": "iNaturalist: (c) Jose Alicea, some rights reserved (CC BY-NC), uploaded by Jose Alicea"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "guzmania-minor",
