@@ -15251,18 +15251,21 @@
  {
   "id": "kalanchoe-calandiva",
   "latin": "Kalanchoe calandiva",
-  "hu": "Calandiva korallvirág",
-  "aliases": [
-   "teltvirágú korallvirág"
-  ],
+  "hu": "Teltvirágú korallvirág",
+  "aliases": [],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
   ],
-  "image": "images/3cb4ae7bfc.jpg",
-  "credit": "Wikimedia Commons: Kalanchoe pumila 3.jpg",
+  "image": "images/e9942f7c-07d.jpg",
+  "credit": "Saját feltöltés",
   "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/65c9d1c1-e0a.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "kalanchoe-manginii",
