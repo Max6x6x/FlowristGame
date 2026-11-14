@@ -13811,7 +13811,9 @@
   "id": "heliconia-psittacorum",
   "latin": "Heliconia psittacorum",
   "hu": "papagájbanán",
-  "aliases": [],
+  "aliases": [
+   "papagájcsőrű rákollóvirág"
+  ],
   "note": "",
   "categories": [
    "Egzotikus vágottvirágok, növények"
@@ -13832,8 +13834,7 @@
     "credit": "iNaturalist: (c) Yann Pagès - photomatisme.fr, some rights reserved (CC BY-NC-ND), uploaded by Yann Pagès - photomatisme.fr"
    }
   ],
-  "src": "Schmidt Gábor",
-  "verify": true
+  "src": "Schmidt Gábor"
  },
  {
   "id": "heliconia-vellerigera",
