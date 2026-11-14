@@ -11712,29 +11712,15 @@
  {
   "id": "aspidistra-elatior-milky-way",
   "latin": "Aspidistra elatior 'Milky Way'",
-  "hu": "közönséges kukoricalevél",
+  "hu": "kukoricalevél 'Milky Way'",
   "aliases": [],
   "note": "",
   "categories": [
    "Vágott zöldek"
   ],
-  "image": "images/d717e1eec4.jpg",
-  "credit": "iNaturalist: (c) 江国彬, some rights reserved (CC BY-NC), uploaded by 江国彬",
-  "verify": true,
-  "more": [
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/70213726/large.jpg",
-    "credit": "iNaturalist: (c) shelleygodsell, some rights reserved (CC BY-NC)"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/74337335/large.jpeg",
-    "credit": "iNaturalist: (c) amelor, some rights reserved (CC BY-NC)"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/37624919/large.jpg",
-    "credit": "iNaturalist: (c) Eric Keith, some rights reserved (CC BY-NC), uploaded by Eric Keith"
-   }
-  ]
+  "image": "images/95773491-ca1.jpg",
+  "credit": "Saját feltöltés",
+  "more": []
  },
  {
   "id": "cordyline-fruticosa-black-tie",
