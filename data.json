@@ -14366,14 +14366,14 @@
  {
   "id": "ludisia-discolor",
   "latin": "Ludisia discolor",
-  "hu": "ékszerorchidea",
+  "hu": "fekete ékszerorchidea",
   "aliases": [],
   "note": "",
   "categories": [
    "Orchideák"
   ],
-  "image": "images/b765d750a6.jpg",
-  "credit": "iNaturalist: (c) John, some rights reserved (CC BY-NC), uploaded by John",
+  "image": "images/bb3e598a-193.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/28650878/large.jpg",
@@ -14384,8 +14384,7 @@
     "credit": "iNaturalist: (c) Yingyod Lapwong, some rights reserved (CC BY-NC), uploaded by Yingyod Lapwong"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "mokkara-sp",
