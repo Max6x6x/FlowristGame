@@ -13569,7 +13569,7 @@
  {
   "id": "brunia-albiflora",
   "latin": "Brunia albiflora",
-  "hu": "",
+  "hu": "Zöldlevelű brunia",
   "aliases": [],
   "note": "",
   "categories": [
@@ -13577,8 +13577,15 @@
   ],
   "image": "images/9139b049e0.jpg",
   "credit": "Wikimedia Commons: Brunia albiflora (22480343629).jpg",
-  "alt": [
-   "fehérvirágú brunia (ChatGPT: leíró, nem hivatalos)"
+  "more": [
+   {
+    "image": "images/16de711b-da4.jpg",
+    "credit": "Saját feltöltés"
+   },
+   {
+    "image": "images/dd976ddd-439.jpg",
+    "credit": "Saját feltöltés"
+   }
   ]
  },
  {
