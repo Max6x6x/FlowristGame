@@ -16313,14 +16313,14 @@
  {
   "id": "vriesea-sp",
   "latin": "Vriesea sp.",
-  "hu": "",
+  "hu": "Pikkelyvirág",
   "aliases": [],
   "note": "",
   "categories": [
    "Broméliafélék"
   ],
-  "image": "images/85b8fb6838.jpg",
-  "credit": "iNaturalist: (c) Pedro Ivo, some rights reserved (CC BY-NC), uploaded by Pedro Ivo",
+  "image": "images/9f4cd3b2-226.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/44469/large.jpg",
@@ -16334,9 +16334,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/18484848/large.jpeg",
     "credit": "iNaturalist: no rights reserved, uploaded by Carlos Henrique Russi"
    }
-  ],
-  "alt": [
-   "vrízeafaj (pikkelyvirágfaj) (ChatGPT: csoportszintű)"
   ]
  },
  {
