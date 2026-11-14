@@ -10198,7 +10198,12 @@
   "image": "images/3921a82291.jpg",
   "credit": "Wikimedia Commons: Cala Mesquida 05.jpg",
   "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "more": [
+   {
+    "image": "images/f6cabcd3-075.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "cocos-nucifera",
