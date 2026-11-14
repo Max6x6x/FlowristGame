@@ -14336,9 +14336,10 @@
  {
   "id": "dendrobium-bigibbum",
   "latin": "Dendrobium bigibbum",
-  "hu": "kétpúpú vesszőkosbor",
+  "hu": "vesszőkosbor",
   "aliases": [
-   "Cooktown-orchidea"
+   "Cooktown-orchidea",
+   "kétpúpú vesszőkosbor"
   ],
   "note": "",
   "categories": [
@@ -14348,8 +14349,8 @@
   "credit": "iNaturalist: (c) Jason Searle, some rights reserved (CC BY-NC), uploaded by Jason Searle",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/163583012/large.jpeg",
-    "credit": "iNaturalist: (c) sworboys, some rights reserved (CC BY-NC), uploaded by sworboys"
+    "image": "images/c58c081a-957.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/596325818/large.jpg",
@@ -14360,8 +14361,7 @@
     "credit": "iNaturalist: (c) sworboys, some rights reserved (CC BY-NC), uploaded by sworboys"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "ludisia-discolor",
