@@ -16150,17 +16150,14 @@
   "credit": "iNaturalist: (c) Liu Idárraga Orozco, some rights reserved (CC BY-NC), uploaded by Liu Idárraga Orozco",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13021761/large.jpeg",
-    "credit": "iNaturalist: (c) Liu Idárraga Orozco, some rights reserved (CC BY-NC), uploaded by Liu Idárraga Orozco"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/113924575/large.jpeg",
-    "credit": "iNaturalist: no rights reserved, uploaded by Carlos Henrique Russi"
+    "image": "images/78da8837-64b.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
   "alt": [
    "Schultes-neoregélia (ChatGPT: pontosítandó)"
-  ]
+  ],
+  "verify": true
  },
  {
   "id": "tillandsia-cyanea-wallisia-cyanea",
