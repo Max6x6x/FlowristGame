@@ -13367,17 +13367,23 @@
  {
   "id": "trachellium-caeruleum",
   "latin": "Trachellium caeruleum",
-  "hu": "",
+  "hu": "Cérnakürt",
   "aliases": [],
   "note": "",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/7f7842690b.jpg",
-  "credit": "iNaturalist: (c) Benoît Segerer, some rights reserved (CC BY-NC), uploaded by Benoît Segerer",
-  "more": [],
-  "alt": [
-   "kék trachélium (ChatGPT: gyanús)"
+  "image": "images/082b7c3d-e6a.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/d6965685-cb8.jpg",
+    "credit": "Saját feltöltés"
+   },
+   {
+    "image": "images/9b2ca8d0-e80.jpg",
+    "credit": "Saját feltöltés"
+   }
   ]
  },
  {
