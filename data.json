@@ -13492,26 +13492,23 @@
  {
   "id": "banksia-menziesii",
   "latin": "Banksia menziesii",
-  "hu": "",
+  "hu": "banksz cserje",
   "aliases": [],
   "note": "",
   "categories": [
    "Egzotikus vágottvirágok, növények"
   ],
-  "image": "images/b50144b3c0.jpg",
-  "credit": "iNaturalist: (c) Peter Crowcroft, some rights reserved (CC BY), uploaded by Peter Crowcroft",
+  "image": "images/7c910620-967.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/536874994/large.jpg",
-    "credit": "iNaturalist: (c) Mike and Cathy Beamish, some rights reserved (CC BY-NC), uploaded by Mike and Cathy Beamish"
+    "image": "images/e0d1de01-08f.jpg",
+    "credit": "Saját feltöltés"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/661700060/large.jpg",
-    "credit": "iNaturalist: (c) alanayton, some rights reserved (CC BY-NC), uploaded by alanayton"
+    "image": "images/c6338e61-388.jpg",
+    "credit": "Saját feltöltés"
    }
-  ],
-  "alt": [
-   "Menzies-bankszia (ChatGPT: leíró, nem hivatalos)"
   ]
  },
  {
