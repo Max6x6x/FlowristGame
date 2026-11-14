@@ -12518,9 +12518,9 @@
  {
   "id": "agapanthus-umbellatus",
   "latin": "Agapanthus umbellatus",
-  "hu": "Szerelemvirág",
+  "hu": "afrikai szerelemvirág",
   "aliases": [
-   "afrikai szerelemvirág"
+   "szerelemvirág"
   ],
   "note": "Tisztítás: Szárán nincsenek levelek, egyenes metsz lapra visszavágjuk. Víz: Különösebb tápanyag igénye nincs, kevés vizet igényel.",
   "categories": [
@@ -12530,8 +12530,8 @@
   "credit": "iNaturalist: (c) Nick Helme, some rights reserved (CC BY-NC), uploaded by Nick Helme",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/241906939/large.jpeg",
-    "credit": "iNaturalist: (c) Jenny, some rights reserved (CC BY-NC), uploaded by Jenny"
+    "image": "images/5bec4dc2-573.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "images/60e2e3e6-467.jpg",
