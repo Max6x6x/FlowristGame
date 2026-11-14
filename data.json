@@ -13758,9 +13758,10 @@
  {
   "id": "grevillea-banksii",
   "latin": "Grevillea banksii",
-  "hu": "Banks-grevillea",
+  "hu": "Pókvirág",
   "aliases": [
-   "vörös selyemtölgy"
+   "vörös selyemtölgy",
+   "Banks-grevillea"
   ],
   "note": "",
   "categories": [
@@ -13774,16 +13775,15 @@
     "credit": "iNaturalist: (c) Reiner Richter, some rights reserved (CC BY-NC-SA), uploaded by Reiner Richter"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/2386832/large.JPG",
-    "credit": "iNaturalist: (c) fidymbg, some rights reserved (CC BY-NC), uploaded by fidymbg"
+    "image": "images/ba396218-a02.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13707309/large.jpeg",
     "credit": "iNaturalist: (c) Tammy, some rights reserved (CC BY-SA), uploaded by Tammy"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "heliconia-stricta",
