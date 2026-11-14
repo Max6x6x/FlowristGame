@@ -13241,20 +13241,19 @@
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/21d33936a3.jpg",
-  "credit": "iNaturalist: (c) SONU KUMAR, some rights reserved (CC BY-NC), uploaded by SONU KUMAR",
+  "image": "images/f253b29f-36d.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/395096003/large.jpeg",
-    "credit": "iNaturalist: (c) Murtuza Zabuawala, some rights reserved (CC BY-NC), uploaded by Murtuza Zabuawala"
+    "image": "images/5da84aef-cb0.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/722698/large.jpg",
     "credit": "iNaturalist: (c) dogtooth77, some rights reserved (CC BY-NC-SA)"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "ranunculus-asiaticus",
