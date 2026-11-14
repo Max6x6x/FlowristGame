@@ -15923,23 +15923,19 @@
   ],
   "image": "images/1a920a4d02.jpg",
   "credit": "iNaturalist: (c) stevj, some rights reserved (CC BY-NC)",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/9798373/large.jpeg",
     "credit": "iNaturalist: (c) Ivelisse Irizarry, some rights reserved (CC BY-NC), uploaded by Ivelisse Irizarry"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/299009246/large.jpeg",
-    "credit": "iNaturalist: (c) bettinadungs, some rights reserved (CC BY-NC), uploaded by bettinadungs"
+    "image": "images/1fdf348e-4e9.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/115600452/large.jpg",
     "credit": "iNaturalist: (c) Urban Jungle, some rights reserved (CC BY-NC-SA)"
    }
-  ],
-  "alt": [
-   "lándzsarózsa (Maszlay)"
   ]
  },
  {
