@@ -12680,13 +12680,15 @@
   "id": "astrantia-major",
   "latin": "Astrantia major",
   "hu": "Völgycsillag",
-  "aliases": [],
+  "aliases": [
+   "Nagy völgycsillag"
+  ],
   "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel.",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/ea388cf370.jpg",
-  "credit": "iNaturalist: (c) Luca Boscain, some rights reserved (CC BY-NC), uploaded by Luca Boscain",
+  "image": "images/db6b2570-216.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/89011252/large.jpg",
