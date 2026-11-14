@@ -13004,17 +13004,19 @@
  {
   "id": "gentiana-makinoi",
   "latin": "Gentiana makinoi",
-  "hu": "",
+  "hu": "Makinó tárnics",
   "aliases": [],
   "note": "",
   "categories": [
    "Növényházi vágott virágok"
   ],
-  "image": "images/7c95da8e17.jpg",
-  "credit": "iNaturalist: (c) Marco Mussita, some rights reserved (CC BY), uploaded by Marco Mussita",
-  "more": [],
-  "alt": [
-   "Makinó-tárnics (ChatGPT: gyanús)"
+  "image": "images/23da73b8-5c8.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/29dee995-267.jpg",
+    "credit": "Saját feltöltés"
+   }
   ]
  },
  {
