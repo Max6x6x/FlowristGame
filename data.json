@@ -16261,19 +16261,27 @@
  {
   "id": "tillandsia-xerographica",
   "latin": "Tillandsia xerographica",
-  "hu": "xerográf tillandszia",
+  "hu": "sarjadó tillandzia",
   "aliases": [
-   "ezüstös légvirág"
+   "ezüstös szakállbromélia"
   ],
   "note": "",
   "categories": [
    "Broméliafélék"
   ],
-  "image": "images/5d05456017.jpg",
-  "credit": "iNaturalist: (c) Deutsch:, some rights reserved (CC BY-SA)",
-  "more": [],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "image": "images/6fbe17bb-608.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/8800f4b8-9c1.jpg",
+    "credit": "Saját feltöltés"
+   },
+   {
+    "image": "images/29c52e7d-070.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "tillandsia-ionantha",
