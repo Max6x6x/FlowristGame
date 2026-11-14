@@ -15983,7 +15983,7 @@
  {
   "id": "cryptanthus-acaulis",
   "latin": "Cryptanthus acaulis",
-  "hu": "levélcsillag",
+  "hu": "zöld levélcsillag",
   "aliases": [],
   "note": "",
   "categories": [
@@ -15991,9 +15991,13 @@
   ],
   "image": "images/7a35c427f1.jpg",
   "credit": "Wikimedia Commons: SDC11469 - Cryptanthus acaulis.JPG",
-  "more": [],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true
+  "more": [
+   {
+    "image": "images/fd0490e5-519.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "cryptanthus-bivittatus",
