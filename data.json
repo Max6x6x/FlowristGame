@@ -14048,7 +14048,7 @@
  {
   "id": "ozothamnus-ferrugineus",
   "latin": "Ozothamnus ferrugineus",
-  "hu": "",
+  "hu": "Rizsvirág",
   "aliases": [],
   "note": "",
   "categories": [
@@ -14058,8 +14058,8 @@
   "credit": "iNaturalist: (c) Reiner Richter, some rights reserved (CC BY-NC-SA), uploaded by Reiner Richter",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/14943340/large.jpg",
-    "credit": "iNaturalist: (c) Roderic Page, some rights reserved (CC BY), uploaded by Roderic Page"
+    "image": "images/90307ee7-aa7.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/242771074/large.jpg",
@@ -14069,9 +14069,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/179378699/large.jpeg",
     "credit": "iNaturalist: (c) James Cornelious, some rights reserved (CC BY-NC), uploaded by James Cornelious"
    }
-  ],
-  "alt": [
-   "rozsdás ozotamnusz (rizsvirág) (ChatGPT: leíró, nem hivatalos)"
   ]
  },
  {
