@@ -12829,7 +12829,7 @@
  {
   "id": "dianthus-caryophyllus",
   "latin": "Dianthus caryophyllus",
-  "hu": "kerti szegfű",
+  "hu": "Növényházi szegfű",
   "aliases": [],
   "note": "Tisztítás: Leveleit a szár alsó feléről eltávolítjuk, ferde metsz lapra visszavágjuk Szárán nódusz csomók találhatóak, melyeknél könnyen elpattanhat a szára\nVíz: Különösebb tápanyag igénye nincs, közepes mennyiségű vizet igényel.",
   "categories": [
@@ -12837,7 +12837,12 @@
   ],
   "image": "images/3bcc9e44-da8.jpg",
   "credit": "Saját feltöltés",
-  "more": [],
+  "more": [
+   {
+    "image": "images/785f3470-3ec.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
  {
