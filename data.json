@@ -13423,26 +13423,18 @@
  {
   "id": "ananas-comosus-variegatus",
   "latin": "Ananas comosus variegatus",
-  "hu": "Ananász",
+  "hu": "csíkos levelű ananász",
   "aliases": [],
   "note": "",
   "categories": [
    "Egzotikus vágottvirágok, növények"
   ],
-  "image": "images/70746bd2f6.jpg",
-  "credit": "iNaturalist: (c) Diogo Luiz, some rights reserved (CC BY), uploaded by Diogo Luiz",
+  "image": "images/bad0be25-f5a.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/95875113/large.jpg",
-    "credit": "iNaturalist: (c) David Monniaux, some rights reserved (CC BY-SA)"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/193509850/large.jpg",
-    "credit": "iNaturalist: (c) karim_herrera_ico_3c, some rights reserved (CC BY-NC)"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/46620026/large.jpg",
-    "credit": "iNaturalist: (c) fishermanhoppel, some rights reserved (CC BY-NC)"
+    "image": "images/28e47c53-a14.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
   "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
