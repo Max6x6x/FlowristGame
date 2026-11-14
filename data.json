@@ -16219,13 +16219,18 @@
   "credit": "iNaturalist: (c) geomanuel, some rights reserved (CC BY-NC), uploaded by geomanuel",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/12382450/large.jpeg",
-    "credit": "iNaturalist: (c) Gerobuam Hernandez, some rights reserved (CC BY-NC-SA), uploaded by Gerobuam Hernandez"
+    "image": "images/8b20734c-9aa.jpg",
+    "credit": "Saját feltöltés"
+   },
+   {
+    "image": "images/8f4a04c4-fb2.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
   "alt": [
    "Leibold-tillandszia (ChatGPT: leíró, nem hivatalos)"
-  ]
+  ],
+  "verify": true
  },
  {
   "id": "tillandsia-usneoides",
