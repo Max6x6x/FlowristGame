@@ -16162,7 +16162,7 @@
  {
   "id": "tillandsia-cyanea-wallisia-cyanea",
   "latin": "Tillandsia cyanea / Wallisia cyanea",
-  "hu": "kék tillandszia",
+  "hu": "Bíborkék szakállbromélia",
   "aliases": [
    "rózsaszín tollvirág"
   ],
@@ -16170,24 +16170,15 @@
   "categories": [
    "Broméliafélék"
   ],
-  "image": "images/12858013d0.jpg",
-  "credit": "iNaturalist: (c) Alec McClay, some rights reserved (CC BY), uploaded by Alec McClay",
+  "image": "images/e812c90c-abf.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13559689/large.jpeg",
-    "credit": "iNaturalist: (c) Victoria Cervantes, some rights reserved (CC BY-NC-ND), uploaded by Victoria Cervantes"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/103493406/large.jpg",
-    "credit": "iNaturalist: (c) smartforest, some rights reserved (CC BY-NC)"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/4320674/large.jpg",
-    "credit": "iNaturalist: (c) Neptalí Ramírez Marcial, some rights reserved (CC BY), uploaded by Neptalí Ramírez Marcial"
+    "image": "images/76a06d68-e14.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "tillandsia-dyeriana",
