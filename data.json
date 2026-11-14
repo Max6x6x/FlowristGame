@@ -15966,24 +15966,19 @@
   "categories": [
    "Broméliafélék"
   ],
-  "image": "images/875933554b.jpg",
-  "credit": "iNaturalist: (c) Romi Galeota Lencina, some rights reserved (CC BY), uploaded by Romi Galeota Lencina",
+  "image": "images/c9c90d60-009.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/64047210/large.jpg",
-    "credit": "iNaturalist: (c) Roberto Guller, some rights reserved (CC BY-NC-ND), uploaded by Roberto Guller"
+    "image": "images/de8084e7-3df.jpg",
+    "credit": "Saját feltöltés"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/155621037/large.jpeg",
-    "credit": "iNaturalist: (c) Frederico Acaz Sonntag, some rights reserved (CC BY-NC), uploaded by Frederico Acaz Sonntag"
-   },
-   {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/419691992/large.jpeg",
-    "credit": "iNaturalist: (c) Carlos Eduardo Agne, some rights reserved (CC BY-NC), uploaded by Carlos Eduardo Agne"
+    "image": "images/24c38f63-d4b.jpg",
+    "credit": "Saját feltöltés"
    }
   ],
-  "src": "Schmidt Gábor",
-  "verify": true
+  "src": "Schmidt Gábor"
  },
  {
   "id": "cryptanthus-acaulis",
