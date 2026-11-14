@@ -3981,8 +3981,10 @@
  {
   "id": "tanacetum-parthenium",
   "latin": "Tanacetum parthenium",
-  "hu": "őszi varádics",
-  "aliases": [],
+  "hu": "őszi margitvirág",
+  "aliases": [
+   "őszi varádics"
+  ],
   "note": "Tisztítás: Leveleit alsó harmadán teljességgel eltávolítjuk, ügyelve a pálhalevelekre is! Ferde metsz lapra visszavágjuk Víz: Különösebb tápanyag igénye nincs, közepes mennyiségű víz.",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
