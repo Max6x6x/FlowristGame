@@ -14551,22 +14551,23 @@
   "id": "aeschynanthus-radicans",
   "latin": "Aeschynanthus radicans",
   "hu": "Csüngő Szégyenlősvirág",
-  "aliases": [],
+  "aliases": [
+   "Rúzsvirág"
+  ],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
   ],
   "image": "images/8da33a3f72.jpg",
   "credit": "iNaturalist: (c) Mashuri Waite, some rights reserved (CC BY-NC), uploaded by Mashuri Waite",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/87240194/large.jpeg",
     "credit": "iNaturalist: (c) Arbi Wiguna, some rights reserved (CC BY-NC), uploaded by Arbi Wiguna"
    },
    {
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/59219776/large.jpg",
-    "credit": "iNaturalist: (c) Mashuri Waite, some rights reserved (CC BY-NC), uploaded by Mashuri Waite"
+    "image": "images/672c21b3-528.jpg",
+    "credit": "Saját feltöltés"
    },
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/1537809/large.jpg",
