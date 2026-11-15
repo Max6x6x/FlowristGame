@@ -4589,14 +4589,15 @@
   "id": "crocus-vernus",
   "latin": "Crocus vernus",
   "hu": "kerti sáfrány",
-  "aliases": [],
+  "aliases": [
+   "sáfrány"
+  ],
   "note": "",
   "categories": [
    "Hajtatott évelő dísznövények"
   ],
   "image": "images/22b074ee6e.jpg",
   "credit": "iNaturalist: (c) Luca Boscain, some rights reserved (CC BY-NC), uploaded by Luca Boscain",
-  "verify": true,
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/115889734/large.jpg",
@@ -4610,10 +4611,6 @@
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/6761041/large.jpeg",
     "credit": "iNaturalist: (c) Jakub Pełka, some rights reserved (CC BY-NC), uploaded by Jakub Pełka"
    }
-  ],
-  "alt": [
-   "sáfrány (Maszlay)",
-   "kerti krókusz (Schmidt Gábor)"
   ]
  },
  {
