@@ -4101,7 +4101,9 @@
   "id": "viola-sororia",
   "latin": "Viola sororia",
   "hu": "amerikai ibolya",
-  "aliases": [],
+  "aliases": [
+   "csíkos ibolya"
+  ],
   "note": "",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
@@ -4122,11 +4124,7 @@
     "credit": "iNaturalist: (c) Ken Potter, some rights reserved (CC BY-NC), uploaded by Ken Potter"
    }
   ],
-  "alt": [
-   "csíkos ibolya (Schmidt Gábor)"
-  ],
-  "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "src": "ChatGPT-gyűjtés, ellenőrizetlen"
  },
  {
   "id": "vinca-minor",
