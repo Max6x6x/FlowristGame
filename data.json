@@ -1382,8 +1382,10 @@
  {
   "id": "matthiola-incana",
   "latin": "Matthiola incana",
-  "hu": "kerti viola",
-  "aliases": [],
+  "hu": "nyári viola",
+  "aliases": [
+   "kerti viola"
+  ],
   "note": "Állandó helyre vethető",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
