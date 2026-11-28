@@ -1417,8 +1417,10 @@
  {
   "id": "rudbeckia-hirta",
   "latin": "Rudbeckia hirta",
-  "hu": "borzas kúpvirág",
-  "aliases": [],
+  "hu": "egynyári kúpvirág",
+  "aliases": [
+   "borzas kúpvirág"
+  ],
   "note": "fészkes virágzat",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
