@@ -4186,7 +4186,7 @@
   "latin": "Vinca major",
   "hu": "nagy meténg",
   "aliases": [],
-  "note": "",
+  "note": "Árnyéki évelő",
   "categories": [
    "Évelő vágottvirágok, vágott zöldek és palánták"
   ],
@@ -4206,10 +4206,7 @@
     "credit": "iNaturalist: (c) Kate's Diary: Sydney, some rights reserved (CC BY-NC-ND)"
    }
   ],
-  "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik",
-  "alt": [
-   "nagy télizöld (Schmidt Gábor)"
-  ]
+  "src": "Wikidata/iNaturalist + Schmidt Gábor egyezik"
  },
  {
   "id": "achillea-filipendulina",
