@@ -4520,13 +4520,13 @@
   "latin": "Physalis alkekengi var. 'Franchetti'",
   "hu": "Franchet-lampionvirág",
   "aliases": [
-   "kínai lampionvirág"
+   "kerekded lampionvirág"
   ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható évelő növények"
   ],
-  "image": "images/14f62eab-943.jpg",
+  "image": "images/5dee20ef-64d.jpg",
   "credit": "Saját feltöltés",
   "more": [
    {
@@ -4540,10 +4540,6 @@
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/112718969/large.jpg",
     "credit": "iNaturalist: (c) Celeste Ray, some rights reserved (CC BY), uploaded by Celeste Ray"
-   },
-   {
-    "image": "images/61bc2b7b-f82.jpg",
-    "credit": "Saját feltöltés"
    }
   ],
   "src": "ChatGPT-gyűjtés, ellenőrizetlen"
