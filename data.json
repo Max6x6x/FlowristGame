@@ -1962,8 +1962,10 @@
  {
   "id": "moluccella-laevis",
   "latin": "Moluccella laevis",
-  "hu": "csészetölcsér",
-  "aliases": [],
+  "hu": "kagylóvirág",
+  "aliases": [
+   "csészetölcsér"
+  ],
   "note": "Állandó helyre vethető",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
