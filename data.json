@@ -1554,7 +1554,9 @@
   "id": "zinnia-elegans",
   "latin": "Zinnia elegans",
   "hu": "pompás rézvirág",
-  "aliases": [],
+  "aliases": [
+   "legényvirág"
+  ],
   "note": "őszirózsafélék",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
