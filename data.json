@@ -4569,7 +4569,7 @@
  {
   "id": "polygonum-cuspidatum",
   "latin": "Polygonum cuspidatum",
-  "hu": "japán óriáskeserűfű",
+  "hu": "Ártéri japánkeserűfű",
   "aliases": [],
   "note": "",
   "categories": [
@@ -4578,7 +4578,13 @@
   "image": "images/2c55e2369c.jpg",
   "credit": "Wikimedia Commons: Polygonum persicaria.jpg",
   "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "verify": true,
+  "more": [
+   {
+    "image": "images/86a03440-5ae.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "stipa-tenussima",
