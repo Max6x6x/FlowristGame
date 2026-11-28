@@ -1465,8 +1465,10 @@
  {
   "id": "scabiosa-caucasia",
   "latin": "Scabiosa caucasia",
-  "hu": "kaukázusi ördögszem",
-  "aliases": [],
+  "hu": "ördögszem",
+  "aliases": [
+   "kaukázusi ördögszem"
+  ],
   "note": "Tisztítás: Leveleit eltávolítjuk, ferde metsz lapra visszavágjuk\nVíz: Különösebb tápanyagigénye nincs, közepes mennyiségű vizet igényel.",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
