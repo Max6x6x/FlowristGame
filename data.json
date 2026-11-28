@@ -3740,9 +3740,10 @@
  {
   "id": "phytolacca-americana",
   "latin": "Phytolacca americana",
-  "hu": "amerikai alkörmös",
+  "hu": "alkörmös",
   "aliases": [
-   "amerikai karmazsinbogyó"
+   "amerikai karmazsinbogyó",
+   "amerikai alkörmös"
   ],
   "note": "",
   "categories": [
