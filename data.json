@@ -11679,15 +11679,20 @@
  {
   "id": "asparagus-pseudoscaber",
   "latin": "Asparagus pseudoscaber",
-  "hu": "-",
+  "hu": "Kerti spárga",
   "aliases": [],
   "note": "",
   "categories": [
    "Vágott zöldek"
   ],
-  "image": "images/2752b0eca7.jpg",
-  "credit": "iNaturalist: (c) Dmytro Svyrydiuk, some rights reserved (CC BY-NC), uploaded by Dmytro Svyrydiuk",
-  "more": []
+  "image": "images/8361a28a-7a0.jpg",
+  "credit": "Saját feltöltés",
+  "more": [
+   {
+    "image": "images/972bf2de-eee.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "aspidistra-elatior",
