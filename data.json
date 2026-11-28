@@ -1078,13 +1078,15 @@
   "id": "clarkia-unguiculata",
   "latin": "Clarkia unguiculata",
   "hu": "klárcsi",
-  "aliases": [],
+  "aliases": [
+   "Girland virág"
+  ],
   "note": "",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
   ],
-  "image": "images/56757fc402.jpg",
-  "credit": "iNaturalist: (c) Don Loarie, some rights reserved (CC BY), uploaded by Don Loarie",
+  "image": "images/a84ff5f2-fad.jpg",
+  "credit": "Saját feltöltés",
   "more": [
    {
     "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/119743405/large.jpg",
