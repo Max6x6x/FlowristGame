@@ -1816,7 +1816,9 @@
   "id": "gomphrena-globosa",
   "latin": "Gomphrena globosa",
   "hu": "bíborka",
-  "aliases": [],
+  "aliases": [
+   "gombvirág"
+  ],
   "note": "Állandó helyre vethető",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
