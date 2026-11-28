@@ -11070,7 +11070,9 @@
   "id": "hedera-canariensis",
   "latin": "Hedera canariensis",
   "hu": "kanári borostyán",
-  "aliases": [],
+  "aliases": [
+   "szobaborostyán"
+  ],
   "note": "",
   "categories": [
    "Ámpolnanövények"
@@ -11091,11 +11093,7 @@
     "credit": "iNaturalist: (c) David G. del Olmo, some rights reserved (CC BY-NC), uploaded by David G. del Olmo"
    }
   ],
-  "src": "Maszlay: Virágkötő OKJ 2021 növénylista",
-  "verify": true,
-  "alt": [
-   "szobaborostyán (Schmidt Gábor)"
-  ]
+  "src": "Maszlay: Virágkötő OKJ 2021 növénylista"
  },
  {
   "id": "monstera-obliqua",
