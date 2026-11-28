@@ -918,8 +918,11 @@
  {
   "id": "amberboa-centaurea-moschata",
   "latin": "Amberboa (Centaurea) moschata",
-  "hu": "pézsma szegfű",
-  "aliases": [],
+  "hu": "pézsma búzavirág",
+  "aliases": [
+   "pézsma szegfű",
+   "illatos búzavirág"
+  ],
   "note": "",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
