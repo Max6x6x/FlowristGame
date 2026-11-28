@@ -1054,7 +1054,9 @@
   "id": "centaurea-cyanus",
   "latin": "Centaurea cyanus",
   "hu": "kék búzavirág",
-  "aliases": [],
+  "aliases": [
+   "búzavirág"
+  ],
   "note": "",
   "categories": [
    "Vágottvirágnak is alkalmas egynyári növények"
