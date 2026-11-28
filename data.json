@@ -1892,8 +1892,10 @@
  {
   "id": "lagurus-ovatus",
   "latin": "Lagurus ovatus",
-  "hu": "tollkalász",
-  "aliases": [],
+  "hu": "Nyuszifarok",
+  "aliases": [
+   "tollkalász"
+  ],
   "note": "Állandó helyre vethető",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
