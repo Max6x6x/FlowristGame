@@ -1594,8 +1594,10 @@
  {
   "id": "amaranthus-cruentus",
   "latin": "Amaranthus cruentus",
-  "hu": "bíbor disznóparéj",
-  "aliases": [],
+  "hu": "dísz disznóparéj",
+  "aliases": [
+   "bíbor disznóparéj"
+  ],
   "note": "",
   "categories": [
    "Szárazvirágként is felhasználható egynyári növények"
