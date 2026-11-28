@@ -2338,8 +2338,10 @@
  {
   "id": "dianthus-barbatus-green-trick",
   "latin": "Dianthus barbatus 'Green Trick'",
-  "hu": "'Green Trick' törökszegfű",
-  "aliases": [],
+  "hu": "Virágtalan törökszegfű",
+  "aliases": [
+   "'Green Trick' törökszegfű"
+  ],
   "note": "",
   "categories": [
    "Vágottvirágnak is alkalmas kétnyári növények"
