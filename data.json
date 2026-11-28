@@ -15608,8 +15608,10 @@
  {
   "id": "primula-obconica",
   "latin": "Primula obconica",
-  "hu": "szobai primula",
-  "aliases": [],
+  "hu": "szobai kankalin",
+  "aliases": [
+   "szobai primula"
+  ],
   "note": "",
   "categories": [
    "Virágos cserepes dísznövények"
@@ -15622,8 +15624,7 @@
     "credit": "iNaturalist: (c) 江国彬, some rights reserved (CC BY-NC), uploaded by 江国彬"
    }
   ],
-  "src": "Schmidt Gábor",
-  "verify": true
+  "src": "Schmidt Gábor"
  },
  {
   "id": "rhipsalidopsis-gaertneri",
