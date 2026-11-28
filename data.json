@@ -11446,10 +11446,16 @@
   "categories": [
    "Ámpolnanövények"
   ],
-  "image": "images/1330bb506b.jpg",
-  "credit": "Wikimedia Commons: Zebrina detrita.jpg",
+  "image": "images/1d669465-68f.jpg",
+  "credit": "Saját feltöltés",
   "src": "ChatGPT-gyűjtés, ellenőrizetlen",
-  "verify": true
+  "verify": true,
+  "more": [
+   {
+    "image": "images/f226a4b8-16c.jpg",
+    "credit": "Saját feltöltés"
+   }
+  ]
  },
  {
   "id": "anthurium-andraeanum",
